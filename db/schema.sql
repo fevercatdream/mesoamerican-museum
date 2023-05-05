@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS meso_db;
+CREATE DATABASE meso_db;
+USE meso_db;
