@@ -1,0 +1,83 @@
+:root {
+    --backgroundColor: rgb(29, 29, 32);
+    --borderColor: rgb(168, 154, 22);
+    --textColor: rgb(247, 247, 247);
+}
+
+html {
+    background-color: var(--backgroundColor);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+    margin-top: 2px;
+    margin-left: 1%;
+}
+
+.headerimage {
+    position:absolute;
+    width: 94%;
+    top: 30px;
+    right: 0px;
+    opacity: 80%;
+    border-top: 10px solid var(--borderColor);
+    border-left: 10px solid var(--borderColor);
+    border-radius: 10px 0px 0px 0px;
+}
+
+.museumicon {
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    height: 100px;
+    border: 10px solid rgb(168, 154, 22);
+    z-index: 3;
+}
+
+.navbar {
+    background-color: rgb(17, 17, 17);
+    /* border-top: 5px solid var(--borderColor);
+    border-bottom: 5px solid var(--borderColor); */
+    display: flex;
+    top: 0px;
+    height: 35px;
+    width: 100%;
+    position:absolute;
+    left: 0;
+    z-index: 2;
+    justify-content: right;
+    align-items: center;
+}
+
+.login {
+    color: white;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.timeline {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    margin-top: 30%;
+    border-top: 10px solid rgb(168, 154, 22);
+    background-color: var(--backgroundColor);
+}
+
+.timelinebar {
+    position: relative;
+    margin-top: 20%;
+    margin-left: 10%;
+    width: 80%;
+    border-top: 5px solid rgb(168, 154, 22);
+}
