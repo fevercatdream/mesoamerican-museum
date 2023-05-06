@@ -19,6 +19,6 @@ ArtType.init(
   }
 );
 
-ArtType.sync({ force: false });
+// ArtType.sync({ force: false });
 
 module.exports = ArtType;

@@ -25,7 +25,7 @@ Artwork.init(
       type: DataTypes.DATEONLY,
       allowNull: false,
     },
-    subject_id: {
+    type_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
@@ -40,6 +40,6 @@ Artwork.init(
 );
 
 // This creates the table in the database
-Artwork.sync({ force: false });
+// Artwork.sync({ force: false });
 
 module.exports = Artwork;

@@ -23,6 +23,6 @@ Civ.init(
     }
 );
 
-Civ.sync({ force: false });
+// Civ.sync({ force: false });
 
 module.exports = Civ;
