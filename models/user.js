@@ -18,10 +18,6 @@ User.init(
     liked_subject_id: {
       type: DataTypes.INTEGER,
       allowNull: true,
-      references: {
-        model: 'Subject',
-        key: 'subject_id',
-      },
     },
   },
   {
@@ -33,6 +29,6 @@ User.init(
   }
 );
 
-User.sync({ force: false });
+// User.sync({ force: false });
 
 module.exports = User;

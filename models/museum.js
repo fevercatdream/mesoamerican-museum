@@ -39,6 +39,6 @@ Museum.init(
     }
 );
 
-Museum.sync({ force: false });
+// Museum.sync({ force: false });
 
 module.exports = Museum;
