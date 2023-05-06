@@ -66,7 +66,7 @@ This application uses the following:
 
 [Express](https://www.npmjs.com/package/express/v/4.16.4) as a node js web application framework.
 
-[Express Handlebars](https://handlebarsjs.com/) compiles templates into JavaScript functions.
+[Express Handlebars](https://www.npmjs.com/package/express-handlebars) compiles templates into JavaScript functions.
 
 [Express Session](https://www.npmjs.com/package/express-session) is a simple session middleware for Express. Session data is not saved in the cookie itself, just the session ID. Session data is stored server-side.
 
@@ -88,7 +88,12 @@ To maintain a museum collection of artifacts in a database using a CRUD (create,
 ![ERD](assets/images/erd.png)
 
 ### Wireframe
-![Wireframe](assets/images/wireframe.png)
+![homepage-civ-arttype](./assets/images/homepage-civ-arttype.png)
+
+![catalog-edit](./assets/images/catalog_edit.png)
+
+![login modal](./assets/images/login%20modal.png)
+
 
 ### Screenshot Desktop View
 
@@ -129,7 +134,7 @@ dotenv: https://www.npmjs.com/package/dotenv
 
 Express: https://www.npmjs.com/package/express/v/4.16.4
 
-Express Handlebars: https://handlebarsjs.com/
+Express Handlebars: https://www.npmjs.com/package/express-handlebars
 
 Express Session: https://www.npmjs.com/package/express-session
 
@@ -138,6 +143,10 @@ MySQL2: https://www.npmjs.com/package/mysql2
 Sequelize: https://sequelize.org/docs/v6/
 
 UUID: https://www.npmjs.com/package/uuid
+
+Handlebars: https://handlebarsjs.com/
+
+A Step By Step Guide To Using Handlebars With Your Node js App: https://waelyasmina.medium.com/a-guide-into-using-handlebars-with-your-express-js-application-22b944443b65
 
 Express Session Cookie: https://github.com/expressjs/session#cookie
 
