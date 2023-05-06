@@ -14,22 +14,22 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.use(express.static(path.join(__dirname, 'public')));
-// const sess = {
-//     secret: process.env.SESSION_SECRET,
-//     cookie: {
-//         maxAge:1000*60*60*2
-//     },
-//     resave: false,
-//     saveUninitialized: true,
-//     store: new SequelizeStore({
-//         db: sequelize
-//     })
-// };
+const sess = {
+    secret: process.env.SESSION_SECRET,
+    cookie: {
+        maxAge:1000*60*60*2
+    },
+    resave: false,
+    saveUninitialized: true,
+    store: new SequelizeStore({
+        db: sequelize
+    })
+};
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// app.use(session(sess))
+app.use(session(sess))
 
 const allRoutes = require("./controllers")
 const { Museum, Civ, ArtType, ArtWork, User} = require('./models')
