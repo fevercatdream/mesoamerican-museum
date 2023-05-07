@@ -1,0 +1,127 @@
+:root {
+    --backgroundColor: rgb(29, 29, 32);
+    --borderColor: rgb(168, 154, 22);
+    --textColor: rgb(247, 247, 247);
+    --hoverbackground: rgb(48, 48, 53);
+}
+
+html {
+    background-color: var(--backgroundColor);
+    font-family: 'Roboto Slab', serif;
+}
+
+select {
+    font-size: 16px;
+}
+
+body{
+    margin: 0px;
+}
+
+.pagebox{
+    position: absolute;
+    top:0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalogmodal {
+    position: relative;
+    background-color: rgb(46, 46, 53);
+    border: 3px solid var(--borderColor);
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: var(--textColor);
+    box-shadow: 8px 8px 20px rgb(15, 15, 15);
+    padding: 10px 20px 30px 20px;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.label {
+    font-size: 18px;
+    width: 90%;
+}
+
+.options {
+    font-size: 35px;
+    line-height: .3em;
+    font-weight: 400;
+    width: 90%;
+    text-align: center;
+}
+
+.menuoptions {
+    font-size: 16px;
+}
+
+.catalogbutton, .catalogbutton2, .dropdown, .searchinput, .timeinput {
+    width: 90%;
+    height: 8%;
+    border-radius: 5px;
+    box-shadow: 8px 8px 20px rgb(15, 15, 15);
+    text-align: center;
+}
+
+.searchinput, .timeinput {
+    height: 8%;
+    width: 89%;
+}
+
+.catalogbutton2 {
+    width: 20%;
+    height: 8%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.catalogbutton:hover, .catalogbutton2:hover {
+    cursor: pointer;
+}
+
+.dropdown:hover {
+    cursor: pointer;
+}
+
+.imgicon {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.yellowborder {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--backgroundColor);
+    border: 2px solid var(--borderColor);
+    border-radius: 10px;
+    padding: 0px 0px 0px 18px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.itemicon, .itemvalues {
+    width: 35%;
+    height: 35%;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.itemvalues {
+    width: 32%;
+    margin-left: 8%;
+    text-align: start;
+}

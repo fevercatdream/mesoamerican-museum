@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" />    
+    <link rel="stylesheet" href="./css/deleteitem.css"/>
+    <title>Update Item</title>
+</head>
+<body>
+    <div class="pagebox">
+    <form class="catalogmodal">
+        <h1 class="options">Delete an Item</h1>
+        <label class="label" for="itemsearch">Select item by ID #:</label>
+        <input class="searchinput" placeholder="Item ID #">
+        <label class="label" for="itemicon">Are you sure you want to delete:</label>
+        <div class="yellowborder">
+        <div class="itemicon">
+            <img class="imgicon" src="http://placekitten.com/200/200" alt="icon of selected item">
+        </div>
+        <div class="itemvalues">
+            <p class="itemname">Name</p>
+            <p class="itemtype">Type</p>
+            <p class="itemciv">Civilization</p>
+        </div> 
+        </div>
+        <button class="catalogbutton2 menuoptions"type="submit" class="homebutton">Home</button>
+        <button class="catalogbutton2 menuoptions"type="submit" class="logoutbutton">Logout</button>
+        <button class="catalogbutton2 menuoptions"type="submit" class="deletebutton">Delete</button>
+    </form>
+    </div>
+</body>
+</html>
