@@ -33,6 +33,28 @@ router.get('/', async (req, res) => {
     //change this res.send to be res.render and then the name of the views file
     res.render('usercollection', {layout:false});
   });
+  router.get('/additem', async (req, res) => {
+    //change this res.send to be res.render and then the name of the views file
+    res.render('additem', {layout:false});
+  });
+  router.get('/olmac', async (req, res) => {
+    //change this res.send to be res.render and then the name of the views file
+    res.render('olmac', {layout:false});
+  });
+  router.get('/maya', async (req, res) => {
+    //change this res.send to be res.render and then the name of the views file
+    res.render('maya', {layout:false});
+  });
+  router.get('/inca', async (req, res) => {
+    //change this res.send to be res.render and then the name of the views file
+    res.render('inca', {layout:false});
+  });
+  router.get('/aztec', async (req, res) => {
+    //change this res.send to be res.render and then the name of the views file
+    res.render('aztec', {layout:false});
+  });
+
+
 
 
 
