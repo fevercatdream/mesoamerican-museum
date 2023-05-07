@@ -144,11 +144,34 @@ Sequelize: https://sequelize.org/docs/v6/
 
 UUID: https://www.npmjs.com/package/uuid
 
+Splide: https://splidejs.com/
+slider/carousel written in TypeScript
+
+Splide Getting Started: https://splidejs.com/guides/getting-started/
+
+How To Integrate Cloudinary: https://cloudinary.com/documentation/how_to_integrate_cloudinary
+
+Cloudinary node integration: https://cloudinary.com/documentation/node_integration
+
 Handlebars: https://handlebarsjs.com/
 
 A Step By Step Guide To Using Handlebars With Your Node js App: https://waelyasmina.medium.com/a-guide-into-using-handlebars-with-your-express-js-application-22b944443b65
 
 Express Session Cookie: https://github.com/expressjs/session#cookie
+
+Wikimedia: https://commons.wikimedia.org/wiki/Main_Page
+images
+
+Open Access at the National Gallery of Art: https://www.nga.gov/open-access-images.html
+images
+
+Getty Museum Collection: https://www.getty.edu/art/collection/
+images
+
+Museum of Indian Arts + Culture: https://www.indianartsandculture.org/collections
+reference material
+
+"The Art of MesoAmerica" Thames & Hudson world of art, sixth edition, Author: Mary Ellen Miller
 
 
 ## License

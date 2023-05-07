@@ -64,8 +64,7 @@ h1 {
     padding:5px;
 }
 
-.loginmodal {
-    position: absolute;
+.modal[open] {
     background-color: rgb(46, 46, 53);
     border: 3px solid var(--borderColor);
     width: 300px;
