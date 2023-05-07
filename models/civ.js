@@ -5,15 +5,6 @@ class Civ extends Model {}
 
 Civ.init(
     {
-        category_id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            primaryKey: true
-        },
-        civilization_id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-        },
         name: {
             type: DataTypes.STRING,
             allowNull: false
@@ -31,5 +22,7 @@ Civ.init(
         modelName: 'civ'
     }
 );
+
+// Civ.sync({ force: false });
 
 module.exports = Civ;
