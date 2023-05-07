@@ -5,6 +5,8 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const exphbs = require('express-handlebars');
 const path = require('path');
 const hbs = exphbs.create({});
+const { uploadImage } = require('./utils/cloudinary'); // Import the uploadImage function
+
 
 
 const app = express();
