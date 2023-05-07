@@ -85,14 +85,15 @@ To maintain a museum collection of artifacts in a database using a CRUD (create,
 
 
 ### ERD
-![ERD](assets/images/erd.png)
+![ERD](./assets/images/erd.png)
+
 
 ### Wireframe
-![homepage-civ-arttype](./assets/images/homepage-civ-arttype.png)
+![wireframe index civart singleart](./assets/images/wireframe-index-civart-singleart.png)
 
-![catalog-edit](./assets/images/catalog_edit.png)
+![wireframe add update delete](./assets/images/wireframe-add-update-delete.png)
 
-![login modal](./assets/images/login%20modal.png)
+![wireframe login modal](./assets/images/wireframe-login-modal.png)
 
 
 ### Screenshot Desktop View
