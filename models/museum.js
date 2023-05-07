@@ -5,22 +5,6 @@ class Museum extends Model {}
 
 Museum.init(
     {
-        name: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        address: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        phone: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        email: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
         username: {
             type: DataTypes.STRING,
             allowNull: false,
