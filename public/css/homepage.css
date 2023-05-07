@@ -64,6 +64,49 @@ h1 {
     padding:5px;
 }
 
+.loginmodal {
+    position: absolute;
+    background-color: rgb(46, 46, 53);
+    border: 3px solid var(--borderColor);
+    width: 300px;
+    height: 300px;
+    right: 0px;
+    margin-top: 4%;
+    margin-right: 2%;
+    z-index: 3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    color: var(--textColor);
+    box-shadow: 8px 8px 20px rgb(15, 15, 15);
+    padding: 20px 0px 0px 30px;
+    font-size: large;
+}
+
+input {
+    height: 13%;
+    border-radius: 3px;
+    width: 90%;
+}
+
+.createbutton, .submitbutton {
+    margin-top: 10px;
+    width:55%;
+    height: 13%;
+    margin-right: 5%;
+    border-radius: 5px;
+}
+
+.submitbutton {
+    width: 30%;
+}
+
+.createbutton:hover, .submitbutton:hover {
+    cursor: pointer;
+}
+
 a:hover {
     cursor: pointer;
     background-color: rgb(51, 51, 51);
