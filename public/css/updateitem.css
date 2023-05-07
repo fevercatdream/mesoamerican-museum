@@ -47,12 +47,12 @@ body{
 }
 
 .label {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .options {
     font-size: 35px;
-    line-height: 1em;
+    line-height: .3em;
     font-weight: 400;
     width: 90%;
     text-align: center;
@@ -62,22 +62,22 @@ body{
     font-size: 16px;
 }
 
-.catalogbutton, .catalogbutton2, .dropdown, .timeinput {
+.catalogbutton, .catalogbutton2, .dropdown, .searchinput, .timeinput {
     width: 90%;
-    height: 9%;
+    height: 8%;
     border-radius: 5px;
     box-shadow: 8px 8px 20px rgb(15, 15, 15);
     text-align: center;
 }
 
-.timeinput {
-    height: 9%;
+.searchinput, .timeinput {
+    height: 8%;
     width: 89%;
 }
 
 .catalogbutton2 {
     width: 20%;
-    height: 10%;
+    height: 8%;
     margin-right: 5%;
     margin-left: 5%;
     margin-top: 3%;
