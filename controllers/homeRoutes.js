@@ -53,6 +53,11 @@ router.get('/', async (req, res) => {
     //change this res.send to be res.render and then the name of the views file
     res.render('aztec', {layout:false});
   });
+  router.get('/catalogoptions', async (req, res) => {
+    //change this res.send to be res.render and then the name of the views file
+    res.render('catalogoptions', {layout:false});
+  });
+
 
 
 
