@@ -100,7 +100,7 @@ html {
 
 .yellowbar, .yellowbar2, .yellowbar3 {
     position: absolute;
-    width: 29.7%;
+    width: 29.5%;
     height: 2.5vw;
     margin-top: -4%;
     margin-left: 7.9%;
@@ -124,9 +124,9 @@ h4 {
 .splide {
     position: absolute;
     margin-left: 45%;
-    margin-top: -14%;
+    margin-top: -15.5%;
     width: 50vw;
-    height: 13vw;
+    height: 15vw;
     border: 2px solid rgb(77, 75, 58);
     background-color: var(--hoverbackground);
     border-radius: 10px;
