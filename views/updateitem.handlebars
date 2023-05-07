@@ -14,12 +14,29 @@
 <body>
     <div class="pagebox">
     <form class="catalogmodal">
-        <h1 class="options">Catalog Options</h1>
-        <button class="catalogbutton" type="submit">Submit a New Item</button>
-        <button class="catalogbutton"type="submit">Update an Existing Item</button>
-        <button class="catalogbutton"type="submit">Delete an Item</button>
-        <button class="catalogbutton2"type="submit" class="createbutton">Home</button>
-        <button class="catalogbutton2"type="submit" class="submitbutton">Logout</button>
+        <h1 class="options">Update an Item</h1>
+        <label class="label" for="itemsearch">Select item by ID #:</label>
+        <input class="searchinput" placeholder="Item ID #"> 
+        <label class="label" for="itemcategory">Change Item Category:</label>
+            <select title="itemcategory" class="dropdown" name="language" id="item">
+                <option class="menuoptions" value="itemselection" selected disabled>Change Item Category</option>
+                <option class="menuoptions" value="sculpturesandcarvings">Sculptures and Carvings</option>
+                <option class="menuoptions" value="jewlery">Jewelry</option>
+                <option class="menuoptions" value="architecture">Architecture</option>
+            </select>
+        <label class="label" for="civilizationcategory">Change Civilization Category:</label>
+            <select title="civilizationcategory" class="dropdown" name="language" id="civilization" required>
+                <option class="menuoptions" value="itemselection" selected disabled>Change Civilization Category:</option>
+                <option class="menuoptions" value="sculpturesandcarvings">Olmec</option>
+                <option class="menuoptions" value="jewlery">Maya</option>
+                <option class="menuoptions" value="architecture">Inca</option>
+                <option class="menuoptions" value="architecture">Aztec</option>
+            </select>
+        <label class="label" for="timeperiod">Change Time Period:</label>
+        <input class="timeinput" placeholder="Time Period"> 
+        <button class="catalogbutton2 menuoptions"type="submit" class="createbutton">Home</button>
+        <button class="catalogbutton2 menuoptions"type="submit" class="submitbutton">Logout</button>
+        <button class="catalogbutton2 menuoptions"type="submit" class="updatebutton">Update</button>
     </form>
     </div>
 </body>

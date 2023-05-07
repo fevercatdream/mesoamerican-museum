@@ -47,14 +47,14 @@ h1 {
     border-bottom: 5px solid var(--borderColor); */
     display: flex;
     /* top: 0px; */
-    height: 35px;
+    height: 30px;
     width: 100%;
     /* position:absolute; */
     left: 0;
     /* z-index: 2; */
     justify-content: right;
     align-items: center;
-    box-shadow: 0px 10px 15px black;
+    box-shadow: 0px 5px 15px black;
 }
 
 .navlink, .login {
@@ -83,22 +83,24 @@ h1 {
 } */
 
 .modal[open] {
+    position: absolute;
     background-color: rgb(46, 46, 53);
     border: 3px solid var(--borderColor);
     width: 300px;
     height: 300px;
     right: 0px;
-    margin-top: 4%;
+    margin-top: 29%;
     margin-right: 2%;
     z-index: 3;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: space-between;
+    align-items: center;
     color: var(--textColor);
     box-shadow: 8px 8px 20px rgb(15, 15, 15);
-    padding: 20px 0px 0px 30px;
+    padding: 5px 0px 0px 30px;
     font-size: large;
 }
 
@@ -106,6 +108,8 @@ input {
     height: 13%;
     border-radius: 3px;
     width: 90%;
+    margin-top: 7%;
+    margin-bottom: 7%;
 }
 
 .createbutton, .submitbutton {
@@ -156,7 +160,7 @@ a:hover {
 
 .timelinebar {
     position: relative;
-    margin-top: 22%;
+    margin-top: 19.6%;
     margin-left: 10%;
     width: 80%;
     border-top: 5px solid var(--borderColor);
