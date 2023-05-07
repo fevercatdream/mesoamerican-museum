@@ -38,6 +38,6 @@ app.use(allRoutes)
 
 sequelize.sync({force:false}).then(()=>{
     app.listen(PORT,()=>{
-        console.log(`listenin to port ${PORT}!`)
+        console.log(`listening to port ${PORT}!`)
     })
 })

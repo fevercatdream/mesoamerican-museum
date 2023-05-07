@@ -46,12 +46,12 @@ h1 {
     /* border-top: 5px solid var(--borderColor);
     border-bottom: 5px solid var(--borderColor); */
     display: flex;
-    top: 0px;
+    /* top: 0px; */
     height: 35px;
     width: 100%;
-    position:absolute;
+    /* position:absolute; */
     left: 0;
-    z-index: 2;
+    /* z-index: 2; */
     justify-content: right;
     align-items: center;
     box-shadow: 0px 10px 15px black;
@@ -64,8 +64,25 @@ h1 {
     padding:5px;
 }
 
-.loginmodal {
-    position: absolute;
+#nav-ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.header nav ul li {
+    list-style-type: none; 
+    display: flex;
+    flex-grow: 1.5;
+    flex-direction: column;
+    text-align: right;
+}
+
+/* .header nav ul li a {
+    height: 100%;
+} */
+
+.modal[open] {
     background-color: rgb(46, 46, 53);
     border: 3px solid var(--borderColor);
     width: 300px;
@@ -315,4 +332,25 @@ h3 {
 .time4 {
     margin-left: 61%;
     margin-top: 1%;
+}
+
+@media screen and (min-width: 320px) {
+    .top-header nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .top-header nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (min-width:992px){
+    .top-header nav ul {
+        flex-direction: row;
+        align-items: flex-end;
+    }
 }
