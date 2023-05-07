@@ -8,21 +8,20 @@
 html {
     background-color: var(--backgroundColor);
     font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
 }
 
 .collectionh1{
     color: var(--textColor);
     margin-left: 10%;
     margin-top: 3%;
-    font-size: 22px;
+    font-size: 1.8vw;
 }
 
 .collectionarth2 {
     color: var(--textColor);
     margin-left: 13%;
-    margin-top: 1%;
-    font-size: 18px;
+    margin-top: -.5%;
+    font-size: 1.3vw;
 }
 
 .museumicon {
@@ -41,26 +40,18 @@ html {
     cursor: pointer;
 }
 
-.backgroundbar2, .backgroundbar3 {
+.backgroundbar2 {
     position: absolute;
     background-color: rgb(83, 9, 9);
-    width: 32%;
-    height: 125%;
+    width: 40%;
+    height: 115ch;
     top: 0px;
-    margin-left: 2%;
+    margin-left: 3%;
     border-left: 20px solid rgb(126, 38, 7);
     border-right: 20px solid rgb(126, 38, 7);
     box-shadow: 10px 10px 15px black;
     z-index: -1;
 }
-
-.backgroundbar3 {
-    width: 63.3%;
-    margin-left: -9.9%;
-    margin-top: -60%;
-    height: 170vh;
-}
-
 
 .timelinebarhoriz, .timelinebarhoriz2, .timelinebarhoriz3{
     position: absolute;
@@ -96,7 +87,7 @@ html {
     height: 20%;
     position: relative;
     margin-top: 4%;
-    margin-left: 12%;
+    margin-left: 8%;
     border: 5px solid var(--borderColor);
     border-radius: 10px;
     box-shadow: 10px 10px 15px rgb(29, 29, 29);
@@ -104,92 +95,68 @@ html {
 }
 
 .jewelry, .architecture {
-    margin-top: 2%;
-}
-
-.sculptures:hover, .jewelry:hover, .architecture:hover {
-    cursor: pointer;
+    margin-top: 4%;
 }
 
 .yellowbar, .yellowbar2, .yellowbar3 {
     position: absolute;
-    width: 30%;
+    width: 29.7%;
     height: 2.5vw;
     margin-top: -4%;
-    margin-left: 12%;
-    background-color: var(--borderColor);
+    margin-left: 7.9%;
+    background-color: var(--backgroundColor);
     z-index: 3;
-    border-top: 1px solid rgb(143, 130, 18);
-    border-left: 1px solid rgb(139, 127, 19);
+    border-top: 2px solid var(--borderColor);
+    border-bottom: 2px solid var(--borderColor);
     box-shadow: 0px 5px 10px rgb(53, 53, 53);
     display: flex;
     justify-content: end;
     padding-right: 15px;
     align-items: center;
-    color: black;
-    opacity: 95%;
+    color: var(--textColor);
+    opacity: 80%;
 }
 
 h4 {
     font-size: 100%;
 }
 
-#galleryslide, #galleryslide2, #galleryslide3{
-    width: 40%;
-    height: 40%;
-}
-
 .splide {
-    margin-left: 45%;
-    width: 50%;
-}
-
-/* .content {
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
     position: absolute;
-    margin-top: -15%;
-    margin-left: 42%;     
-    align-items: start;
-    color: var(--textColor);
-    text-align: center;
-    line-height: 1.5em;
-    font-size: small;
-}
-
-.genart {
-    width: 25%;
-}
-
-.articon {
-    width: 70%;
-    border-radius: 5px;
-    background-color: var(--hoverbackground);
-    border: 2px solid var(--borderColor);
-    padding: 7%;
-    margin-top: 5%;
-} */
-
-/* .content {
-    display: flex;
-    flex-direction: row;
-    position: relative;
+    margin-left: 45%;
+    margin-top: -14%;
     width: 50vw;
-    margin-top: 2%;
-    margin-left: 5%;
-    padding: 1% 2% 1% 2%;
-    justify-items: flex-start;
-    align-items: start;
+    height: 13vw;
+    border: 2px solid rgb(77, 75, 58);
+    background-color: var(--hoverbackground);
+    border-radius: 10px;
 }
 
-.articon {
-    width: 20%;
+.splide__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
     height: 20%;
-    border-radius: 5px;
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: var(--backgroundColor);
-    border: 2px solid var(--borderColor);
-    padding: 2%;
-} */
+    margin-right: -5%;
+    margin-left: 3%;
+}
+
+.slideicon {
+    border-radius: 50%;
+    width: 60%;
+    height: 60%;
+    box-shadow: 10px 10px 10px rgb(22, 22, 22);
+    opacity: 85%;
+}
+
+.slideicon:hover {
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.icontitle {
+    color: var(--textColor);
+    padding: 8px;
+}
