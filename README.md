@@ -89,7 +89,7 @@ To maintain a museum collection of artifacts in a database using a CRUD (create,
 
 
 ### Wireframe
-![wireframe index civart singleart](./assets/images/wireframe-index-civart-singleart.png)
+![wireframe index catalog civart singleart](./assets/images/wireframe-index-catalog-civart-singleart.png)
 
 ![wireframe add update delete](./assets/images/wireframe-add-update-delete.png)
 
