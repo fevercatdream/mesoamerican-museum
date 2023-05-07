@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" />    
-    <link rel="stylesheet" href="./css/additem.css"/>
+    <link rel="stylesheet" href="../public/css/updateitem.css"/>
     <title>Update Item</title>
 </head>
 <body>
@@ -16,25 +16,25 @@
     <form class="catalogmodal">
         <h1 class="options">Add an Item</h1>
         <label class="label" for="itemcategory">Item Category:</label>
-            <select title="itemcategory" class="dropdown" name="item" id="item" required>
+            <select title="itemcategory" class="dropdown" name="language" id="item" required>
                 <option class="menuoptions" value="itemselection" selected disabled>Item Selection</option>
                 <option class="menuoptions" value="sculpturesandcarvings">Sculptures and Carvings</option>
-                <option class="menuoptions" value="jewelry">Jewelry</option>
+                <option class="menuoptions" value="jewlery">Jewelry</option>
                 <option class="menuoptions" value="architecture">Architecture</option>
             </select>
         <label class="label" for="civilizationcategory">Civilization Category:</label>
-            <select title="civilizationcategory" class="dropdown" name="civilization" id="civilization" required>
-                <option class="menuoptions" value="civilizationselection" selected disabled>Civilization Selection</option>
-                <option class="menuoptions" value="olmec">Olmec</option>
-                <option class="menuoptions" value="maya">Maya</option>
-                <option class="menuoptions" value="inca">Inca</option>
-                <option class="menuoptions" value="aztec">Aztec</option>
+            <select title="civilizationcategory" class="dropdown" name="language" id="civilization" required>
+                <option class="menuoptions" value="itemselection" selected disabled>Civilization Selection</option>
+                <option class="menuoptions" value="sculpturesandcarvings">Olmec</option>
+                <option class="menuoptions" value="jewlery">Maya</option>
+                <option class="menuoptions" value="architecture">Inca</option>
+                <option class="menuoptions" value="architecture">Aztec</option>
             </select>
         <label class="label" for="timeperiod">Time Period:</label>
         <input class="timeinput" placeholder="Time Period"> 
-        <button class="catalogbutton2 menuoptions"type="submit" class="homebutton">Home</button>
-        <button class="catalogbutton2 menuoptions"type="submit" class="logoutbutton">Logout</button>
-        <button class="catalogbutton2 menuoptions"type="submit" class="addbutton">Add</button>
+        <button class="catalogbutton2 menuoptions"type="submit" class="createbutton">Home</button>
+        <button class="catalogbutton2 menuoptions"type="submit" class="submitbutton">Logout</button>
+        <button class="catalogbutton2 menuoptions"type="submit" class="submitbutton">Add</button>
     </form>
     </div>
 </body>
