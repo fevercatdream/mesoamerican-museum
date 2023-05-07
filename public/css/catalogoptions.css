@@ -1,0 +1,67 @@
+:root {
+    --backgroundColor: rgb(29, 29, 32);
+    --borderColor: rgb(168, 154, 22);
+    --textColor: rgb(247, 247, 247);
+    --hoverbackground: rgb(48, 48, 53);
+}
+
+html {
+    background-color: var(--backgroundColor);
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    margin: 0px;
+}
+
+.pagebox{
+    position: absolute;
+    top:0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalogmodal {
+    position: relative;
+    background-color: rgb(46, 46, 53);
+    border: 3px solid var(--borderColor);
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: var(--textColor);
+    box-shadow: 8px 8px 20px rgb(15, 15, 15);
+    padding: 10px 20px 20px 20px;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+}
+
+.options {
+    font-size: 3.5vw;
+    line-height: .6em;
+    font-weight: 400;
+}
+
+.catalogbutton, .catalogbutton2 {
+    width: 80%;
+    height: 10%;
+    border-radius: 5px;
+    box-shadow: 8px 8px 20px rgb(15, 15, 15);
+}
+
+.catalogbutton2 {
+    width: 30%;
+    height: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.catalogbutton:hover, .catalogbutton2:hover {
+    cursor: pointer;
+}

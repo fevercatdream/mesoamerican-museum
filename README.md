@@ -9,9 +9,29 @@ Provide a short description explaining the what, why, and how of your project. U
 - What problem does it solve?
 - What did you learn?
 
-## Table of Contents (Optional)
+### User Story
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
+```
+AS AN employee at a mesoamerican museum
+I WANT a website with a secure login where I can add, update, or remove artifacts from the museum collection
+SO THAT the museum can maintain and organize its collection of artifacts
+AS A visitor to the museum
+I WANT a website where I can view the museum collection artifacts and the associated known information about the artifacts
+```
+
+### Acceptance Criteria
+
+```
+GIVEN a functional CRUD (create, read, update and delete) application
+WHEN I visit the homepage
+THEN I can securely login to add, update, or remove artifacts from the database
+WHEN I visit the homepage
+THEN I can view artifacts by civilization
+WHEN I select a civilization
+THEN I can view the specific artifact from the selected civilization
+```
+
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -20,33 +40,146 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+A step-by-step description of how to get the development environment running.
+
+Install the database by running the following command in the mysql terminal
+
+```
+SOURCE: schema.sql
+```
+
+Use the following command to install the necessary packages
+
+```
+npm install (package_name@version)
+```
+
+This application uses the following:
+
+[Bcrypt](https://www.npmjs.com/package/bcrypt) as a library to help you hash passwords.
+
+[Cloudinary](https://cloudinary.com/documentation/upload_widget) an image uploading tool, the linked widget here will handle the image uploading and hosting, and it will return a hosted url link for you to save in your database.
+
+[Connect Session Sequelize](https://www.npmjs.com/package/connect-session-sequelize) session store for connect-session using sequelize.
+
+[Dotenv](https://www.npmjs.com/package/dotenv) to load environment variables from a .env file.
+
+[Express](https://www.npmjs.com/package/express/v/4.16.4) as a node js web application framework.
+
+[Express Handlebars](https://www.npmjs.com/package/express-handlebars) compiles templates into JavaScript functions.
+
+[Express Session](https://www.npmjs.com/package/express-session) is a simple session middleware for Express. Session data is not saved in the cookie itself, just the session ID. Session data is stored server-side.
+
+[MySQL2](https://www.npmjs.com/package/mysql2) to connect to your MySQL database.
+
+[Sequelize](https://sequelize.org/docs/v6/) as a promise-based Node.js ORM tool for MySQL.
+
+[UUID](https://www.npmjs.com/package/uuid) for generating an Universal Unique Identifier.
+
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+To maintain a museum collection of artifacts in a database using a CRUD (create, read, update and delete) application. To view artifacts organized by civilization.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+### Deployed Site
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+
+### ERD
+![ERD](./assets/images/erd.png)
+
+
+### Wireframe
+![wireframe index catalog civart singleart](./assets/images/wireframe-index-catalog-civart-singleart.png)
+
+![wireframe add update delete](./assets/images/wireframe-add-update-delete.png)
+
+![wireframe login modal](./assets/images/wireframe-login-modal.png)
+
+
+### Screenshot Desktop View
+
+
+### Screenshot Tablet View
+
+
+### Screenshot Mobile View
+
+
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+Collaborators: Abi Kumagai, Taylor Orsini, Lydia Rodriguez, and Ian Danas
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+Tutor: Doug Kumagai:
+<br />
+https://www.linkedin.com/in/doug-kumagai/
+<br />
+https://github.com/ndesmic
+<br />
 
-If you followed tutorials, include links to those here as well.
+mdn web docs: https://developer.mozilla.org/en-US/
+
+Markdown License badges: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
+
+shields.io: https://shields.io/
+
+Insomnia: https://insomnia.rest/
+
+Bcrypt: https://www.npmjs.com/package/bcrypt
+
+Cloudinary Upload Widget: https://cloudinary.com/documentation/upload_widget
+
+Connect Session Sequelize: https://www.npmjs.com/package/connect-session-sequelize
+
+dotenv: https://www.npmjs.com/package/dotenv
+
+Express: https://www.npmjs.com/package/express/v/4.16.4
+
+Express Handlebars: https://www.npmjs.com/package/express-handlebars
+
+Express Session: https://www.npmjs.com/package/express-session
+
+MySQL2: https://www.npmjs.com/package/mysql2
+
+Sequelize: https://sequelize.org/docs/v6/
+
+UUID: https://www.npmjs.com/package/uuid
+
+Splide: https://splidejs.com/
+slider/carousel written in TypeScript
+
+Splide Getting Started: https://splidejs.com/guides/getting-started/
+
+How To Integrate Cloudinary: https://cloudinary.com/documentation/how_to_integrate_cloudinary
+
+Cloudinary node integration: https://cloudinary.com/documentation/node_integration
+
+Handlebars: https://handlebarsjs.com/
+
+A Step By Step Guide To Using Handlebars With Your Node js App: https://waelyasmina.medium.com/a-guide-into-using-handlebars-with-your-express-js-application-22b944443b65
+
+Express Session Cookie: https://github.com/expressjs/session#cookie
+
+Wikimedia: https://commons.wikimedia.org/wiki/Main_Page
+images
+
+Open Access at the National Gallery of Art: https://www.nga.gov/open-access-images.html
+images
+
+Getty Museum Collection: https://www.getty.edu/art/collection/
+images
+
+Museum of Indian Arts + Culture: https://www.indianartsandculture.org/collections
+reference material
+
+"The Art of MesoAmerica" Thames & Hudson world of art, sixth edition, Author: Mary Ellen Miller
+
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+Please refer to the LICENSE in the repo.
 
 ---
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
 
 ## Badges
 
