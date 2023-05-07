@@ -1,0 +1,190 @@
+:root {
+    --backgroundColor: rgb(29, 29, 32);
+    --borderColor: rgb(168, 154, 22);
+    --textColor: rgb(247, 247, 247);
+    --hoverbackground: rgb(48, 48, 53);
+}
+
+html {
+    background-color: var(--backgroundColor);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+.collectionh1{
+    color: var(--textColor);
+    margin-left: 10%;
+    margin-top: 3%;
+    font-size: 22px;
+}
+
+.collectionarth2 {
+    color: var(--textColor);
+    margin-left: 13%;
+    margin-top: 1%;
+    font-size: 18px;
+}
+
+.museumicon {
+    border-radius: 50%;
+    position: absolute;
+    top:0px;
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 8%;
+    border: 5px solid var(--borderColor);
+    z-index: 3;
+    box-shadow: 5px 5px 15px rgb(29, 29, 29);
+}
+
+.museumicon:hover {
+    cursor: pointer;
+}
+
+.backgroundbar2, .backgroundbar3 {
+    position: absolute;
+    background-color: rgb(83, 9, 9);
+    width: 32%;
+    height: 125%;
+    top: 0px;
+    margin-left: 2%;
+    border-left: 20px solid rgb(126, 38, 7);
+    border-right: 20px solid rgb(126, 38, 7);
+    box-shadow: 10px 10px 15px black;
+    z-index: -1;
+}
+
+.backgroundbar3 {
+    width: 63.3%;
+    margin-left: -9.9%;
+    margin-top: -60%;
+    height: 170vh;
+}
+
+
+.timelinebarhoriz, .timelinebarhoriz2, .timelinebarhoriz3{
+    position: absolute;
+    margin-top: -10%;
+    margin-left: 5.3%;
+    width: 7%;
+    height: 5%;
+    border-bottom: 5px solid var(--borderColor);
+    box-shadow: 5px 5px 8px rgb(29, 29, 29);
+    z-index: 1;
+}
+
+.timelinebar2, .timelinebar3 {
+    position: absolute;
+    height: 90vh;
+    margin-left: 5%;
+    margin-top: 8%;
+    border-right: 5px solid var(--borderColor);
+    box-shadow: 5px 0px 8px rgb(29, 29, 29);
+}
+
+.timelinebar3 {
+    margin-left: -4%;
+
+}
+
+.timelinebarhoriz2, .timelinebarhoriz3 {
+    margin-top: -10%;
+}
+
+.sculptures, .jewelry, .architecture {
+    width: 30%;
+    height: 20%;
+    position: relative;
+    margin-top: 4%;
+    margin-left: 12%;
+    border: 5px solid var(--borderColor);
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgb(29, 29, 29);
+    z-index: 2;
+}
+
+.jewelry, .architecture {
+    margin-top: 2%;
+}
+
+.sculptures:hover, .jewelry:hover, .architecture:hover {
+    cursor: pointer;
+}
+
+.yellowbar, .yellowbar2, .yellowbar3 {
+    position: absolute;
+    width: 30%;
+    height: 2.5vw;
+    margin-top: -4%;
+    margin-left: 12%;
+    background-color: var(--borderColor);
+    z-index: 3;
+    border-top: 1px solid rgb(143, 130, 18);
+    border-left: 1px solid rgb(139, 127, 19);
+    box-shadow: 0px 5px 10px rgb(53, 53, 53);
+    display: flex;
+    justify-content: end;
+    padding-right: 15px;
+    align-items: center;
+    color: black;
+    opacity: 95%;
+}
+
+h4 {
+    font-size: 100%;
+}
+
+#galleryslide, #galleryslide2, #galleryslide3{
+    width: 40%;
+    height: 40%;
+}
+
+/* .content {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-top: -15%;
+    margin-left: 42%;     
+    align-items: start;
+    color: var(--textColor);
+    text-align: center;
+    line-height: 1.5em;
+    font-size: small;
+}
+
+.genart {
+    width: 25%;
+}
+
+.articon {
+    width: 70%;
+    border-radius: 5px;
+    background-color: var(--hoverbackground);
+    border: 2px solid var(--borderColor);
+    padding: 7%;
+    margin-top: 5%;
+} */
+
+/* .content {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 50vw;
+    margin-top: 2%;
+    margin-left: 5%;
+    padding: 1% 2% 1% 2%;
+    justify-items: flex-start;
+    align-items: start;
+}
+
+.articon {
+    width: 20%;
+    height: 20%;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: var(--backgroundColor);
+    border: 2px solid var(--borderColor);
+    padding: 2%;
+} */
