@@ -1,5 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
+const bcrypt = require("bcrypt");
 
 class Museum extends Model {}
 
@@ -19,7 +20,14 @@ Museum.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'museum'
+        modelName: 'museum',
+        hooks:{
+            beforeCreate: musObj=>{
+                console.log(musObj)
+                musObj.password = bcrypt.hashSync(musObj.password,3);
+                return musObj;
+            }
+        }
     }
 );
 

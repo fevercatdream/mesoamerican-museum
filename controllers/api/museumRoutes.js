@@ -16,10 +16,6 @@ router.get("/", (req, res) => {
 
   router.post("/",(req,res)=>{
     Museum.create({
-        name:req.body.name,
-        address:req.body.address,
-        phone:req.body.phone,
-        email:req.body.email,
         username:req.body.username,
         password: req.body.password
     }).then(mus=>{
@@ -44,8 +40,7 @@ router.post("/login", (req, res) => {
           return res.status(401).json({msg:"invalid username/password"})
         }
         //compare provided password with database password
-        // if(bcrypt.compareSync(req.body.password,foundMus.password)){
-        if(req.body.password===foundMus.password){
+        if(bcrypt.compareSync(req.body.password,foundMus.password)){
           req.session.userId = foundMus.id;
           req.session.musName=foundMus.name;
           return res.json(foundMus);
