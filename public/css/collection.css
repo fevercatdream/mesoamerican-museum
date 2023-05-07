@@ -139,6 +139,11 @@ h4 {
     height: 40%;
 }
 
+.splide {
+    margin-left: 45%;
+    width: 50%;
+}
+
 /* .content {
     display: flex;
     flex-direction:row;
