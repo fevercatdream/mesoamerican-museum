@@ -11,42 +11,81 @@
 </head>
 <body>
     <header>
-        <img class="headerimage" src="../assets/icons/tenochtitlan2.jpg" alt="arial view of the Palenque ruins">
-        <img class="museumicon" src="../assets/icons/MAMicon.jpeg" alt="icon of the museum">
+        <img class="headerimage" src="./icons/tenochtitlan2.jpg" alt="arial view of the Palenque ruins">
+        <img class="museumicon" src="./icons/MAMicon.jpeg" alt="icon of the museum">
         <div class="headbar"></div>
         <div class="backgroundbar"></div>
     </header>
     <main>
         <div class="timeline">
             <h1>Mesoamerican History Museum</h1>
-            <div class="navbar"><a class="navlink">Olmec</a><a class="navlink">Maya</a><a class="navlink">Inca</a><a class="navlink">Aztec</a><a class="login">Login</a></div>
+            <nav class="navbar">
+                <ul id="nav-ul">
+                    <li><a class="navlink">Olmec</a></li>
+                    <li><a class="navlink">Maya</a></li>
+                    <li><a class="navlink">Inca</a></li>
+                    <li><a class="navlink">Aztec</a></li>
+                    <li><a id="modal-login-link" class="login">Login</a></li>
+                </ul>
+            </nav>
+            <dialog class="modal">
+                <form id="modal-body-id" class="loginmodal modal-card-body">
+                    <label class="username" for="username">Enter your Username:</label>
+                    <input title="username" type="text" name="username" placeholder="Username"><br>
+                    <label class="password" for="password">Enter your Password:</label>
+                    <input title="password" type="text" name="password" placeholder="Password">
+                    <button type="submit" id="modal-create-account-btn" class="createbutton">Create Account</button>
+                    <button type="submit" id="modal-submit-btn" class="submitbutton">Submit</button>
+                </form>
+            </dialog>
             <div class="timelinebar"></div>
             <div class="timelinebarvertical"></div>
             <div class="timelinebarvertical2"></div>
             <div class="timelinebarvertical3"></div>
             <div class="timelinebarvertical4"></div>
-            <img class="olmecicon" src="../assets/icons/Olmec_icon.jpg" alt="cropped image of an Olmec carved head">
-                <div class="theolmecs"><h3>The Olmecs</h3><p>The earliest known major Mesoamerican civilization formed in the area that is now known as Veracruz, Mexico.<br><br>They are most well known for their colossal heads which can be as tall as 10ft.
-                </p></div>
-                <p class="time">1600 - 400 BCE</p>
-            <img class="mayaicon" src="../assets/icons/maya_icon.jpg" alt="cropped image of a Mayan face">
-                <div class="themayans"><h3>The Mayans</h3><p>A group of civilizations that formed in an area that comprises southeastern Mexico, Guatemala, Belize, Honduras, and El Salvador.<br><br>They are most well known for their architecture, mathmatics, calendar, and astronomical system.
-                </p></div>
-                <p class="time2">250 - 1697 CE</p>
-            <img class="incaicon" src="../assets/icons/Inca_icon.jpg" alt="cropped image of an Incan Preist">
-                <div class="theincans"><h3>The Inca Empire</h3><p>The largest empire in pre-Columbian America including areas of Peru, Ecuador, Bolivia, Argentina, Columbia, and Chile.<br><br>They are most well known for their monumental stone architecture, road networks, textiles, and agriculture.
-                </p></div>
-                <p class="time3">1438 - 1533 CE</p>
-            <img class="aztecicon" src="../assets/icons/Aztec_icon.jpg" alt="cropped image of an Aztec Dancer">
-                <div class="theaztecs"><h3>The Aztec Empire</h3><p>This was a cultural alliance of three Nahua city-states: Mexico-Tenochtitlan, Tetzcoco, and Tlacopan that formed in central Mexico.<br><br>They are most well known for their complex traditions (philosophical, mythological, and relion), architecture, and art.
-                </p></div>
-                <p class="time4">1428 - 1521 CE</p>
+            <img class="olmecicon" src="./icons/Olmec_icon.jpg" alt="cropped image of an Olmec carved head">
+            <div class="theolmecs">
+                <h3>The Olmecs</h3>
+                <p>
+                    The earliest known major Mesoamerican civilization formed in the area that is now known as Veracruz, Mexico.
+                    <br><br>They are most well known for their colossal heads which can be as tall as 10ft.
+                </p>
+            </div>
+            <p class="time">1600 - 400 BCE</p>
+            <img class="mayaicon" src="./icons/maya_icon.jpg" alt="cropped image of a Mayan face">
+            <div class="themayans">
+                <h3>The Mayans</h3>
+                <p>
+                    A group of civilizations that formed in an area that comprises southeastern Mexico, Guatemala, Belize, Honduras, and El Salvador.
+                    <br><br>They are most well known for their architecture, mathmatics, calendar, and astronomical system.
+                </p>
+            </div>
+            <p class="time2">250 - 1697 CE</p>
+            <img class="incaicon" src="./icons/Inca_icon.jpg" alt="cropped image of an Incan Preist">
+            <div class="theincans">
+                <h3>The Inca Empire</h3>
+                <p>
+                    The largest empire in pre-Columbian America including areas of Peru, Ecuador, Bolivia, Argentina, Columbia, and Chile.
+                    <br><br>They are most well known for their monumental stone architecture, road networks, textiles, and agriculture.
+                </p>
+            </div>
+            <p class="time3">1438 - 1533 CE</p>
+            <img class="aztecicon" src="./icons/Aztec_icon.jpg" alt="cropped image of an Aztec Dancer">
+            <div class="theaztecs">
+                <h3>The Aztec Empire</h3>
+                <p>
+                    This was a cultural alliance of three Nahua city-states: Mexico-Tenochtitlan, Tetzcoco, and Tlacopan that formed in central Mexico.
+                    <br><br>They are most well known for their complex traditions (philosophical, mythological, and relion), architecture, and art.
+                </p>
+            </div>
+            <p class="time4">1428 - 1521 CE</p>
             <div class="museumdesc">
                 <h2 class="about">About the Museum</h2>
-                <p class="museumtext">Established in 2023, The Mesoamerican History Museum seeks to share knowledge about the history of south America between the rise of the Olmec Civilization and the end of the Aztec Empire through preserved objects and art. You can view our collection by clicking any of the icons on the timeline above organized by Culture.</p>
+                <p class="museumtext">
+                    Established in 2023, The Mesoamerican History Museum seeks to share knowledge about the history of south America between the rise of the Olmec Civilization and the end of the Aztec Empire through preserved objects and art. You can view our collection by clicking any of the icons on the timeline above organized by Culture.
+                </p>
             </div>
         </div>
-        <div class="footer"></dvi>
     </main>
     <footer class="footer">
         <ul class="footerlist">
@@ -59,5 +98,6 @@
         </ul>
     </footer>
     <script src="./js/index.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>
