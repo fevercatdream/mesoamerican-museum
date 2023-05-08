@@ -10,6 +10,10 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    height: fit-content;
+}
+
 .collectionh1{
     color: var(--textColor);
     margin-left: 10%;
@@ -44,7 +48,7 @@ html {
     position: absolute;
     background-color: rgb(83, 9, 9);
     width: 40%;
-    height: 115ch;
+    min-height: 150vh;
     top: 0px;
     margin-left: 3%;
     border-left: 20px solid rgb(126, 38, 7);
@@ -159,4 +163,40 @@ h4 {
 .icontitle {
     color: var(--textColor);
     padding: 8px;
+}
+
+.footer {
+    position: relative;
+    margin-top: 5%;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    padding-right: 2%;
+}
+
+.footerlist {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.footerlinks {
+    margin: 1%;
+    margin-top: -1%;
+}
+
+.footerlinks:hover {
+    cursor: pointer;
+}
+
+.contact {
+    background-color: var(--backgroundColor);
+    padding-inline: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
