@@ -1,4 +1,3 @@
-// Attach an event listener to the logout button
 const logoutButton = document.getElementById('logout-button');
 if (logoutButton) {
   logoutButton.addEventListener('click', async () => {
