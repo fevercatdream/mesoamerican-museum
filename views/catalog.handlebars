@@ -17,7 +17,7 @@
     <header>
         <img class="museumicon" src="./icons/MAMicon.jpeg" alt="icon of the museum">
         <h1 class="collectionh1">Mesoamerican History Museum</h1>
-        <h2 class="collectionarth2">Civilization Art</h2>
+        <h2 class="collectionarth2">{{civilationName}}</h2>
     </header>
             <div>
                 <div><img  class="sculptures" src="./icons/sculpture.jpg" alt="a monkey vessel carved from smooth white stone"></div>
@@ -25,12 +25,15 @@
                 <div id="splide" class="splide" role="group" aria-label="Splide Basic HTML Example">
                     <div class="splide__track">
                           <ul class="splide__list">
+                            {{#each image as |image|}}
+                                {{> carosel}}
+                            {{/each}}
+                              {{!-- <li class="splide__slide"><img class="slideicon" src="http://placekitten.com/200/200"><p class="icontitle">Name</p></li> --}}
+                              {{!-- <li class="splide__slide"><img class="slideicon" src="http://placekitten.com/200/200"><p class="icontitle">Name</p></li>
                               <li class="splide__slide"><img class="slideicon" src="http://placekitten.com/200/200"><p class="icontitle">Name</p></li>
                               <li class="splide__slide"><img class="slideicon" src="http://placekitten.com/200/200"><p class="icontitle">Name</p></li>
                               <li class="splide__slide"><img class="slideicon" src="http://placekitten.com/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="http://placekitten.com/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="http://placekitten.com/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="http://placekitten.com/200/200"><p class="icontitle">Name</p></li>
+                              <li class="splide__slide"><img class="slideicon" src="http://placekitten.com/200/200"><p class="icontitle">Name</p></li> --}}
                           </ul>
                     </div>
                 </div>
@@ -81,4 +84,5 @@
             <li class="footerlinks"><i class="bi bi-youtube" style="font-size: 1.2rem; color: white;"></i></li>
         </ul>
     </footer>
+      <script src="./js/catalog.js"></script>
 </html>
