@@ -14,11 +14,11 @@ function getMayaCatalog(){
 };
 
 function getOlmecCatalog(){
-    window.location.href = '/catalog/2';
+    window.location.href = '/catalog/3';
 };
 
 function getIncaCatalog(){
-    window.location.href = '/catalog/3';
+    window.location.href = '/catalog/2';
 };
 
 function getAztecCatalog(){

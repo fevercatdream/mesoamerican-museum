@@ -2,13 +2,13 @@ const express = require('express');
 const router = express.Router();
 
 const artWorkRoutes = require("./artWorkRoutes");
-const museumRoutes = require("./museumRoutes")
+const employeeRoutes = require("./employeeRoutes")
 const artTypeRoutes = require("./artTypeRoutes")
 const civRoutes = require("./civRoutes")
-const userRoutes = require("./userRoutes")
+const userRoutes = require("./visitorRoutes")
 
 router.use("/artWorks",artWorkRoutes)
-router.use("/museum",museumRoutes)
+router.use("/employee",employeeRoutes)
 router.use('/artTypes',artTypeRoutes)
 router.use('/civ',civRoutes)
 router.use('/user',userRoutes)

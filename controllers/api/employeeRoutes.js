@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
-const { Museum, Civ, ArtType, ArtWork, User } = require('../../models');
+const { Employee, Civ, ArtType, ArtWork, Visitor } = require('../../models');
 const bcrypt = require("bcrypt");
 
 router.get("/", (req, res) => {
-    Museum.findAll()
+    Employee.findAll()
       .then((mus) => {
         res.json(mus);
       })
@@ -15,7 +15,7 @@ router.get("/", (req, res) => {
   });
 
   router.post("/",(req,res)=>{
-    Museum.create({
+    Employee.create({
         username:req.body.username,
         password: req.body.password
     }).then(mus=>{
@@ -29,7 +29,7 @@ router.get("/", (req, res) => {
 router.post("/login", (req, res) => {
     //collect unique user login info and password, req.body
     //find the matching record in the database
-    Museum.findOne({
+    Employee.findOne({
       where: {
         username: req.body.username,
       },
@@ -61,7 +61,7 @@ router.post("/login", (req, res) => {
   })
   
   router.get("/:id", (req, res) => {
-    Museum.findByPk(req.params.id)
+    Employee.findByPk(req.params.id)
       .then((musData) => {
         res.json(musData);
       })

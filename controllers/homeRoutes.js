@@ -1,18 +1,18 @@
 const router = require('express').Router();
-const { Museum, Civ, ArtType, ArtWork, User } = require('../models')
+const { Employee, Civ, ArtType, ArtWork, User } = require('../models')
 
 router.get('/', async (req, res) => {
   
     res.render('index', {layout:false});
   });
 
-  router.get('/catalog/', async (req, res) => {
+  router.get('/catalog/:id', async (req, res) => {
     try{
-      const dbArtbyType = await Civ.findByPk(1,{
+      const dbArtbyType = await Civ.findByPk(req.params.id,{
         include:[
           {
             model:ArtType,
-            attributes:['name'],
+            attributes:['id','name'],
             include:[
               {
                 model:ArtWork,
