@@ -8,7 +8,12 @@ router.get('/', async (req, res) => {
 
   router.get('/catalog', async (req, res) => {
     //change this res.send to be res.render and then the name of the views file
-    res.render('catalog', {layout:false});
+    res.render('catalog', {
+      layout:false,
+      civilationName:'Testing',
+      image: ['name1','name2','name3']
+      
+    });
   });
 
   router.get('/civart', async (req, res) => {
@@ -37,9 +42,9 @@ router.get('/', async (req, res) => {
     //change this res.send to be res.render and then the name of the views file
     res.render('additem', {layout:false});
   });
-  router.get('/olmac', async (req, res) => {
+  router.get('/olmec', async (req, res) => {
     //change this res.send to be res.render and then the name of the views file
-    res.render('olmac', {layout:false});
+    res.render('olmec', {layout:false});
   });
   router.get('/maya', async (req, res) => {
     //change this res.send to be res.render and then the name of the views file

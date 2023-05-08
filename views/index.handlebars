@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mesoamerican Museum</title>
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/index.css" />
 </head>
 <body>
@@ -20,10 +21,10 @@
             <h1>Mesoamerican History Museum</h1>
             <nav class="navbar">
                 <ul id="nav-ul">
-                    <li><a class="navlink">Olmec</a></li>
-                    <li><a class="navlink">Maya</a></li>
-                    <li><a class="navlink">Inca</a></li>
-                    <li><a class="navlink">Aztec</a></li>
+                    <li><a id="olmecnav" class="navlink">Olmec</a></li>
+                    <li><a id="mayanav" class="navlink">Maya</a></li>
+                    <li><a id="incanav" class="navlink">Inca</a></li>
+                    <li><a id="aztecnav" class="navlink">Aztec</a></li>
                     <li><a id="modal-login-link" class="login">Login</a></li>
                 </ul>
             </nav>
@@ -42,7 +43,7 @@
             <div class="timelinebarvertical2"></div>
             <div class="timelinebarvertical3"></div>
             <div class="timelinebarvertical4"></div>
-            <img class="olmecicon" src="./icons/Olmec_icon.jpg" alt="cropped image of an Olmec carved head">
+            <img id="olmecicon" class="olmecicon" src="./icons/Olmec_icon.jpg" alt="cropped image of an Olmec carved head">
             <div class="theolmecs">
                 <h3>The Olmecs</h3>
                 <p>
@@ -51,7 +52,7 @@
                 </p>
             </div>
             <p class="time">1600 - 400 BCE</p>
-            <img class="mayaicon" src="./icons/maya_icon.jpg" alt="cropped image of a Mayan face">
+            <img id="mayaicon" class="mayaicon" src="./icons/maya_icon.jpg" alt="cropped image of a Mayan face">
             <div class="themayans">
                 <h3>The Mayans</h3>
                 <p>
@@ -60,7 +61,7 @@
                 </p>
             </div>
             <p class="time2">250 - 1697 CE</p>
-            <img class="incaicon" src="./icons/Inca_icon.jpg" alt="cropped image of an Incan Preist">
+            <img id="incaicon" class="incaicon" src="./icons/Inca_icon.jpg" alt="cropped image of an Incan Preist">
             <div class="theincans">
                 <h3>The Inca Empire</h3>
                 <p>
@@ -69,7 +70,7 @@
                 </p>
             </div>
             <p class="time3">1438 - 1533 CE</p>
-            <img class="aztecicon" src="./icons/Aztec_icon.jpg" alt="cropped image of an Aztec Dancer">
+            <img id="aztecicon" class="aztecicon" src="./icons/Aztec_icon.jpg" alt="cropped image of an Aztec Dancer">
             <div class="theaztecs">
                 <h3>The Aztec Empire</h3>
                 <p>
@@ -87,8 +88,17 @@
         </div>
     </main>
     <footer class="footer">
-
+        <ul class="footerlist">
+            <li id="modal-em-login-link" class="footerlinks">Employee Login</li>
+            <li class="footerlinks"><a class="contact" target="_blank" href="https://github.com/fevercatdream/mesoamerican-museum">Contact Us</a></li>
+            <li class="footerlinks"><i class="bi bi-facebook" style="font-size: 1.2rem; color: white;"></i></li>
+            <li class="footerlinks"><i class="bi bi-instagram" style="font-size: 1.2rem; color: white;"></i></li>
+            <li class="footerlinks"><i class="bi bi-twitter" style="font-size: 1.2rem; color: white;"></i></li>
+            <li class="footerlinks"><i class="bi bi-youtube" style="font-size: 1.2rem; color: white;"></i></li>
+        </ul>
     </footer>
     <script src="./js/index.js"></script>
+    <script src="./js/indextocatalog.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>

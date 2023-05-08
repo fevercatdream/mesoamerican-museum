@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 :root {
     --backgroundColor: rgb(29, 29, 32);
     --borderColor: rgb(168, 154, 22);
@@ -8,6 +10,7 @@
 html {
     background-color: var(--backgroundColor);
     font-family: Arial, Helvetica, sans-serif;
+    height: 70vw;
 }
 
 h1 {
@@ -128,10 +131,9 @@ input {
     cursor: pointer;
 }
 
-a:hover {
+.navlink:hover, .login:hover {
     cursor: pointer;
     background-color: rgb(51, 51, 51);
-    padding-inline: 20px;
 }
 
 .timeline {
@@ -309,14 +311,6 @@ h3 {
     padding-right: 15px;
 }
 
-.footer {
-    position: absolute;
-    bottom: -35%;
-    left: 0px;
-    height: 40px;
-    width: 100%;
-}
-
 .time, .time2, .time3, .time4 {
     position: absolute;
     color: var(--textColor);
@@ -336,6 +330,41 @@ h3 {
 .time4 {
     margin-left: 61%;
     margin-top: 1%;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    padding-right: 2%;
+}
+
+.footerlist {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.footerlinks {
+    margin: 1%;
+    margin-top: -2%;
+}
+
+.footerlinks:hover {
+    cursor: pointer;
+}
+
+.contact {
+    background-color: var(--backgroundColor);
+    padding-inline: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 320px) {

@@ -1,0 +1,175 @@
+:root {
+    --backgroundColor: rgb(29, 29, 32);
+    --borderColor: rgb(168, 154, 22);
+    --textColor: rgb(238, 238, 238);
+    --hoverbackground: rgb(48, 48, 53);
+}
+
+html {
+    background-color: var(--backgroundColor);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.collectionh1{
+    color: var(--textColor);
+    margin-left: 11%;
+    margin-top: 3%;
+    font-size: 1.8vw;
+}
+
+.collectionarth2 {
+    color: var(--textColor);
+    margin-left: 13%;
+    margin-top: -.5%;
+    font-size: 1.3vw;
+}
+
+.museumicon {
+    border-radius: 50%;
+    position: absolute;
+    top:0px;
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 8%;
+    border: 5px solid var(--borderColor);
+    z-index: 3;
+    box-shadow: 5px 5px 15px rgb(29, 29, 29);
+}
+
+.museumicon:hover {
+    cursor: pointer;
+}
+
+.backgroundbar2 {
+    position: absolute;
+    background-color: rgb(83, 9, 9);
+    width: 40%;
+    height: 110vh;
+    top: 0px;
+    margin-left: 3%;
+    border-left: 20px solid rgb(126, 38, 7);
+    border-right: 20px solid rgb(126, 38, 7);
+    box-shadow: 10px 10px 15px black;
+    z-index: -1;
+}
+
+.mainimagebox {
+    position: absolute;
+    width: 33vw;
+    height: 67vh;
+    margin-top: 3%;
+    margin-left: 6%;
+    overflow: hidden;
+    border-radius: 3px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.mainimage {
+    width: 100%;
+}
+
+.iteminfo {
+    position: absolute;
+    right: 0px;
+    margin-left: 4%;
+    margin-right: 5%;
+    margin-top: 7%;
+    width: 45%;
+    height: fit-content;
+    color: var(--textColor);
+}
+
+h2 {
+    font-style: italic;
+}
+
+h3{
+    margin-left: 8%;
+}
+
+.itemtext {
+    margin-left: 8%;
+    text-align: justify;
+}
+
+.likebox {
+    justify-content: end;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+}
+
+.likeicon {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.likeicon:hover {
+    cursor: pointer;
+}
+
+.likecounter {
+    margin: 0px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    height: 10px;
+    width: 99%;
+    padding-right: 2%;
+}
+
+.footerlist {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.footerlinks {
+    margin: 1%;
+}
+
+.footerlinks:hover {
+    cursor: pointer;
+}
+
+.contact {
+    background-color: var(--backgroundColor);
+    padding-inline: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 320px) {
+    .top-header nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .top-header nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (min-width:992px){
+    .top-header nav ul {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}

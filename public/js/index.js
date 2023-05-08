@@ -1,8 +1,15 @@
 // modal
 var modalEl = document.querySelector(".modal");
 var modalLoginLink = document.querySelector("#modal-login-link");
+var modalEmLoginLink = document.querySelector("#modal-em-login-link");
 var modalCreateAccountBtn = document.querySelector("#modal-create-account-btn");
 var modalSubmitBtn = document.querySelector("#modal-submit-btn");
+var olmecIcon = document.querySelector('.olmecicon')
+var mayaIcon = document.querySelector('.mayaicon')
+var incaIcon = document.querySelector('.incaicon')
+var aztecIcon = document.querySelector('.aztecicon')
+
+
 
 // function to show modal
 function openModal() {
@@ -22,18 +29,8 @@ function closeModal(event) {
 
 // open modal
 modalLoginLink.addEventListener("click", openModal);
+modalEmLoginLink.addEventListener("click", openModal);
 
 // close modal
 modalEl.addEventListener("click", closeModal);
 
-// submit button
-modalSubmitBtn.addEventListener("click", function (event) {
-  event.preventDefault();
-
-});
-
-// create account button
-modalCreateAccountBtn.addEventListener("click", function (event) {
-  event.preventDefault();
-  
-});
