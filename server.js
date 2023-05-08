@@ -42,7 +42,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(session(sess))
 
 const allRoutes = require("./controllers")
-const { Museum, Civ, ArtType, ArtWork, User} = require('./models')
+const { Employee, Civ, ArtType, ArtWork, Visitor} = require('./models')
 
 app.use(allRoutes)
 
