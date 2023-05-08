@@ -1,6 +1,7 @@
 // modal
 var modalEl = document.querySelector(".modal");
 var modalLoginLink = document.querySelector("#modal-login-link");
+var modalEmLoginLink = document.querySelector("#modal-em-login-link");
 var modalCreateAccountBtn = document.querySelector("#modal-create-account-btn");
 var modalSubmitBtn = document.querySelector("#modal-submit-btn");
 
@@ -22,6 +23,7 @@ function closeModal(event) {
 
 // open modal
 modalLoginLink.addEventListener("click", openModal);
+modalEmLoginLink.addEventListener("click", openModal);
 
 // close modal
 modalEl.addEventListener("click", closeModal);
