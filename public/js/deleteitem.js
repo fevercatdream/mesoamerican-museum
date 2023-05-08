@@ -1,19 +1,16 @@
-// Define the route for deleting an artwork
-app.delete('/artworks/:id', async (req, res) => {
-    try {
-      // Find the artwork by ID
-      const artwork = await Artwork.findByPk(req.params.id);
-  
-      // If artwork exists, delete it
-      if (artwork) {
-        await artwork.destroy();
-        res.status(204).send();
-      } else {
-        res.status(404).send({ message: 'Artwork not found' });
-      }
-    } catch (error) {
-      console.error(error);
-      res.status(500).send({ message: 'Error deleting artwork' });
+const deleteForm = document.getElementById('delete-form');
+if (deleteForm) {
+  deleteForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const artwork_id = document.getElementById('artwork_id').value;
+    const response = await fetch(`/api/artwork/${artwork_id}`, {
+      method: 'DELETE',
+    });
+    if (response.ok) {
+      window.location.href = '/success'; // or any other success page
+    } else {
+      const error = await response.json();
+      alert(error.message);
     }
   });
-  
+}

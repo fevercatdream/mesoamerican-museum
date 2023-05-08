@@ -82,7 +82,7 @@ This application uses the following:
 To maintain a museum collection of artifacts in a database using a CRUD (create, read, update and delete) application. To view artifacts organized by civilization.
 
 ### Deployed Site
-
+https://mysterious-stream-19343.herokuapp.com/
 
 ### ERD
 ![ERD](./assets/images/erd.png)
