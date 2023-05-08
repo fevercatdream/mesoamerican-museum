@@ -4,7 +4,7 @@ const ArtType = require('./artType');
 const ArtWork = require('./artWork');
 const Visitor = require('./visitor');
 
-Museum.hasMany(Civ, {
+Employee.hasMany(Civ, {
     Key: 'id',
     onDelete: 'CASCADE'
   });
@@ -31,7 +31,7 @@ ArtWork.belongsTo(ArtType, {
   Key: 'id'
 });
 
-User.belongsToMany(ArtWork, {through: 'favorites'});
+Visitor.belongsToMany(ArtWork, {through: 'favorites'});
 ArtWork.belongsToMany(Visitor, {through: 'favorites'});
 
 module.exports = { Employee, Civ, ArtType, ArtWork, Visitor };
