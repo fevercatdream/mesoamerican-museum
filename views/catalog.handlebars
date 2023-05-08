@@ -19,22 +19,9 @@
         <h1 class="collectionh1">Mesoamerican History Museum</h1>
         <h2 class="collectionarth2">{{civs.name}}</h2>
     </header>
-            {{!-- <div>
-                <div><img  class="sculptures" src="./icons/sculpture.jpg" alt="a monkey vessel carved from smooth white stone"></div>
-                <div class="yellowbar"><h4>{{civs.art_types.[0].name}}</h4></div>
-                <div id="splide1" class="splide" role="group" aria-label="Splide Basic HTML Example">
-                    <div class="splide__track">
-                          <ul class="splide__list">
-                                {{#each civs.art_types.[0].artworks as |image|}}
-                                    {{> carosel}}
-                                {{/each}}
-                          </ul>
-                    </div>
-                </div>
-            </div> --}}
             {{#each civs.art_types as |type|}}
                 <div>
-                <div><img  class="sculptures" src="/icons/sculpture.jpg" alt="a monkey vessel carved from smooth white stone"></div>
+                <div><img id='typeImage' class="sculptures" src="/icons/sculpture.jpg" alt="a monkey vessel carved from smooth white stone"></div>
                 <div class="yellowbar"><h4>{{name}}</h4></div>
                 <div id="splide{{id}}" class="splide" role="group" aria-label="Splide Basic HTML Example">
                     <div class="splide__track">
@@ -47,47 +34,9 @@
                 </div>
             </div>
             {{/each}}
-              {{!-- <div>
-                <div><img class="jewelry" src="./icons/jewelry.png" alt="a jade pendant with gold accents"></div>
-                <div class="yellowbar"><h4>Jewelry</h4></div>
-                <div id="splide2" class="splide" role="group" aria-label="Splide Basic HTML Example">
-                    <div class="splide__track">
-                          <ul class="splide__list">
-                                {{#each civs.art_types.[1].artworks as |image|}}
-                                    {{> carosel}}
-                                {{/each}}
-                          </ul>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div> 
-                <div><img class="architecture" src="./icons/architecture.jpg" alt="the Palenque ruins"></div>
-                <div class="yellowbar"><h4>Architecture</h4></div>
-                <div id="splide3" class="splide" role="group" aria-label="Splide Basic HTML Example">
-                    <div class="splide__track">
-                          <ul class="splide__list">
-                                {{#each civs.art_types.[2].artworks as |image|}}
-                                    {{> carosel}}
-                                {{/each}}
-                          </ul>
-                    </div>
-                </div>
-            </div>
-            </div>
-    </div>  --}}
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="/js/catalog.js"></script>
 </body>
-    <footer class="footer">
-        <ul class="footerlist">
-            <li class="footerlinks">Employee Login</li>
-            <li class="footerlinks"><a class="contact" target="_blank" href="https://github.com/fevercatdream/mesoamerican-museum">Contact Us</a></li>
-            <li class="footerlinks"><i class="bi bi-facebook" style="font-size: 1.2rem; color: white;"></i></li>
-            <li class="footerlinks"><i class="bi bi-instagram" style="font-size: 1.2rem; color: white;"></i></li>
-            <li class="footerlinks"><i class="bi bi-twitter" style="font-size: 1.2rem; color: white;"></i></li>
-            <li class="footerlinks"><i class="bi bi-youtube" style="font-size: 1.2rem; color: white;"></i></li>
-        </ul>
-    </footer>
+    {{> footer}}
 </html>
