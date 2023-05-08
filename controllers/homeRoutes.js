@@ -37,9 +37,9 @@ router.get('/', async (req, res) => {
     //change this res.send to be res.render and then the name of the views file
     res.render('additem', {layout:false});
   });
-  router.get('/olmac', async (req, res) => {
+  router.get('/olmec', async (req, res) => {
     //change this res.send to be res.render and then the name of the views file
-    res.render('olmac', {layout:false});
+    res.render('olmec', {layout:false});
   });
   router.get('/maya', async (req, res) => {
     //change this res.send to be res.render and then the name of the views file
