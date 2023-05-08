@@ -1,8 +1,8 @@
-const Museum = require('./museum');
+const Employee = require('./employee');
 const Civ = require('./civ');
 const ArtType = require('./artType');
 const ArtWork = require('./artWork');
-const User = require('./user');
+const Visitor = require('./visitor');
 
 Museum.hasMany(Civ, {
     Key: 'id',
@@ -19,7 +19,7 @@ ArtType.hasMany(ArtWork, {
     onDelete: 'CASCADE'
   });
 
-Civ.belongsTo(Museum, {
+Civ.belongsTo(Employee, {
   Key: 'id'
 });
 
@@ -32,6 +32,6 @@ ArtWork.belongsTo(ArtType, {
 });
 
 User.belongsToMany(ArtWork, {through: 'favorites'});
-ArtWork.belongsToMany(User, {through: 'favorites'});
+ArtWork.belongsToMany(Visitor, {through: 'favorites'});
 
-module.exports = { Museum, Civ, ArtType, ArtWork, User };
+module.exports = { Employee, Civ, ArtType, ArtWork, Visitor };

@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 const bcrypt = require("bcrypt");
 
-class Museum extends Model {}
+class Employee extends Model {}
 
-Museum.init(
+Employee.init(
     {
         username: {
             type: DataTypes.STRING,
@@ -31,6 +31,6 @@ Museum.init(
     }
 );
 
-// Museum.sync({ force: false });
+// Employee.sync({ force: false });
 
-module.exports = Museum;
+module.exports = Employee;

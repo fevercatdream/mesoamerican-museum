@@ -1,4 +1,3 @@
-// Attach an event listener to the login form
 const loginForm = document.getElementById('login-form');
 var modalCreateAccountBtn = document.querySelector("#modal-create-account-btn");
 var modalCreateMusAccountBtn = document.querySelector("#modal-em-login-link");

@@ -12,7 +12,7 @@ Provide a short description explaining the what, why, and how of your project. U
 ### User Story
 
 ```
-AS AN employee at a mesoamerican museum
+AS AN employee at a Mesoamerican museum
 I WANT a website with a secure login where I can add, update, or remove artifacts from the museum collection
 SO THAT the museum can maintain and organize its collection of artifacts
 AS A visitor to the museum
@@ -128,6 +128,8 @@ Insomnia: https://insomnia.rest/
 Bcrypt: https://www.npmjs.com/package/bcrypt
 
 Cloudinary Upload Widget: https://cloudinary.com/documentation/upload_widget
+<br />
+- an image uploading tool, the linked widget here will handle the image uploading and hosting, and it will return a hosted url link for you to save in your database
 
 Connect Session Sequelize: https://www.npmjs.com/package/connect-session-sequelize
 
@@ -146,7 +148,8 @@ Sequelize: https://sequelize.org/docs/v6/
 UUID: https://www.npmjs.com/package/uuid
 
 Splide: https://splidejs.com/
-slider/carousel written in TypeScript
+<br />
+- slider/carousel written in TypeScript
 
 Splide Getting Started: https://splidejs.com/guides/getting-started/
 
@@ -154,25 +157,51 @@ How To Integrate Cloudinary: https://cloudinary.com/documentation/how_to_integra
 
 Cloudinary node integration: https://cloudinary.com/documentation/node_integration
 
+Introduction to Cloudinary for Node.js Developers: https://training.cloudinary.com/learn/course/introduction-for-api-users-developers/before-the-lessons/what-to-expect
+
+cloudinary-training GitHub: https://github.com/cloudinary-training/cld-intro-nodejs
+
 Handlebars: https://handlebarsjs.com/
 
 A Step By Step Guide To Using Handlebars With Your Node js App: https://waelyasmina.medium.com/a-guide-into-using-handlebars-with-your-express-js-application-22b944443b65
 
 Express Session Cookie: https://github.com/expressjs/session#cookie
 
+Canva: https://www.canva.com/
+<br />
+- Canva is a free-to-use online graphic design tool
+
+https://favicon.io/
+<br />
+- favicon generator / converter
+
+Image Online: https://crop-circle.imageonline.co/
+<br />
+- crop a circle in image online
+
 Wikimedia: https://commons.wikimedia.org/wiki/Main_Page
-images
+<br />
+- images
 
 Open Access at the National Gallery of Art: https://www.nga.gov/open-access-images.html
-images
+<br />
+- images
 
 Getty Museum Collection: https://www.getty.edu/art/collection/
-images
+<br />
+- images
 
 Museum of Indian Arts + Culture: https://www.indianartsandculture.org/collections
-reference material
+<br />
+- reference material
+
+National Museum of the American Indian: https://americanindian.si.edu/
+<br />
+- reference material
 
 "The Art of MesoAmerica" Thames & Hudson world of art, sixth edition, Author: Mary Ellen Miller
+<br />
+- reference material
 
 
 ## License
@@ -189,10 +218,3 @@ Please refer to the LICENSE in the repo.
 
 If your project has a lot of features, list them here.
 
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
