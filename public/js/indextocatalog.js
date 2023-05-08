@@ -10,19 +10,19 @@ const aztecNav = document.getElementById("aztecnav");
 
 
 function getMayaCatalog(){
-    window.location.href = '/catalog';
+    window.location.href = '/catalog/1';
 };
 
 function getOlmecCatalog(){
-    window.location.href = '/catalog';
+    window.location.href = '/catalog/2';
 };
 
 function getIncaCatalog(){
-    window.location.href = '/catalog';
+    window.location.href = '/catalog/3';
 };
 
 function getAztecCatalog(){
-    window.location.href = '/catalog';
+    window.location.href = '/catalog/4';
 };
 
 mayaBtn.addEventListener('click', getMayaCatalog)

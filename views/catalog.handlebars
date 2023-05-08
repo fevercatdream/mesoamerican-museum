@@ -17,7 +17,7 @@
     <header>
         <img class="museumicon" src="./icons/MAMicon.jpeg" alt="icon of the museum">
         <h1 class="collectionh1">Mesoamerican History Museum</h1>
-        <h2 class="collectionarth2">{{civilationName}}</h2>
+        <h2 class="collectionarth2">{{civs.name}}</h2>
     </header>
             <div>
                 <div><img  class="sculptures" src="./icons/sculpture.jpg" alt="a monkey vessel carved from smooth white stone"></div>
@@ -25,15 +25,9 @@
                 <div id="splide" class="splide" role="group" aria-label="Splide Basic HTML Example">
                     <div class="splide__track">
                           <ul class="splide__list">
-                            {{#each image as |image|}}
-                                {{> carosel}}
-                            {{/each}}
-                              {{!-- <li class="splide__slide"><img class="slideicon" src="http://placekitten.com/200/200"><p class="icontitle">Name</p></li> --}}
-                              {{!-- <li class="splide__slide"><img class="slideicon" src="http://placekitten.com/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="http://placekitten.com/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="http://placekitten.com/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="http://placekitten.com/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="http://placekitten.com/200/200"><p class="icontitle">Name</p></li> --}}
+                                {{#each civs.art_types.[0].artworks as |image|}}
+                                    {{> carosel}}
+                                {{/each}}
                           </ul>
                     </div>
                 </div>
@@ -44,9 +38,9 @@
                 <div id="splide2" class="splide" role="group" aria-label="Splide Basic HTML Example">
                     <div class="splide__track">
                           <ul class="splide__list">
-                              <li class="splide__slide"><img class="slideicon" src="https://placebear.com/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="https://placebear.com/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="https://placebear.com/200/200"><p class="icontitle">Name</p></li>
+                                {{#each civs.art_types.[1].artworks as |image|}}
+                                    {{> carosel}}
+                                {{/each}}
                           </ul>
                     </div>
                 </div>
@@ -58,12 +52,9 @@
                 <div id="splide3" class="splide" role="group" aria-label="Splide Basic HTML Example">
                     <div class="splide__track">
                           <ul class="splide__list">
-                              <li class="splide__slide"><img class="slideicon" src="https://picsum.photos/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="https://picsum.photos/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="https://picsum.photos/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="https://picsum.photos/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="https://picsum.photos/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="https://picsum.photos/200/200"><p class="icontitle">Name</p></li>
+                                {{#each civs.art_types.[2].artworks as |image|}}
+                                    {{> carosel}}
+                                {{/each}}
                           </ul>
                     </div>
                 </div>
