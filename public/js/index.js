@@ -27,13 +27,43 @@ modalLoginLink.addEventListener("click", openModal);
 modalEl.addEventListener("click", closeModal);
 
 // submit button
-modalSubmitBtn.addEventListener("click", function (event) {
+modalSubmitBtn.addEventListener("click", async function (event) {
   event.preventDefault();
+  console.log('pressed submit button')
+  const username = document.getElementById('modal-body-id').elements["username"].value
+  const password = document.getElementById('modal-body-id').elements["password"].value
+  const response = await fetch('/api/user/login', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json' },
+    body: JSON.stringify({username, password }),
+  })
+  if (response.ok) {
+    window.location.href = '/additem';
+  } else {
+    const error = await response.json();
+    alert(error.message);
+  }
+
 
 });
 
 // create account button
-modalCreateAccountBtn.addEventListener("click", function (event) {
+modalCreateAccountBtn.addEventListener("click", async function (event) {
   event.preventDefault();
+  console.log('pressed create account btn')
+  const username = document.getElementById('modal-body-id').elements["username"].value
+  const password = document.getElementById('modal-body-id').elements["password"].value
+  const response = await fetch('/api/user/', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json' },
+    body: JSON.stringify({username, password }),
+  })
+  if (response.ok) {
+   console.log('created user')
+  } else {
+    const error = await response.json();
+    alert(error.message);
+  }
+
   
 });
