@@ -4,7 +4,15 @@ const session = require('express-session');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const exphbs = require('express-handlebars');
 const path = require('path');
-const hbs = exphbs.create({});
+const hbs = exphbs.create({
+    helpers: {
+        sculpFinder: function(obj){
+            if(obj.art_types[0].name === 'sculptures'){
+                return true
+            }
+        }
+    }
+});
 const { uploadImage } = require('./utils/cloudinary'); // Import the uploadImage function
 
 
