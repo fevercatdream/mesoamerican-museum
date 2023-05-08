@@ -44,7 +44,7 @@ html {
     position: absolute;
     background-color: rgb(83, 9, 9);
     width: 40%;
-    height: 115ch;
+    height: 110vh;
     top: 0px;
     margin-left: 3%;
     border-left: 20px solid rgb(126, 38, 7);
@@ -117,6 +117,40 @@ h3{
 
 .likecounter {
     margin: 0px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    height: 10px;
+    width: 99%;
+    padding-right: 2%;
+}
+
+.footerlist {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.footerlinks {
+    margin: 1%;
+}
+
+.footerlinks:hover {
+    cursor: pointer;
+}
+
+.contact {
+    background-color: var(--backgroundColor);
+    padding-inline: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 320px) {
