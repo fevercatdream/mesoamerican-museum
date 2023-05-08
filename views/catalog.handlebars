@@ -5,74 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mesoamerican Catalog</title>
-    <link rel="icon" type="image/x-icon" href="./icons/favicon.png">
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
-    <link rel="stylesheet" href="url-to-cdn/splide.min.css" />
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.png">
+    <link rel="stylesheet" type= 'text/css' href="/css/reset.css" />
+    <link rel="stylesheet" type= 'text/css' href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+    <link rel="stylesheet" type= 'text/css' href="url-to-cdn/splide.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/catalog.css" />
+    <link rel="stylesheet" type= 'text/css' href="/css/catalog.css" />
 </head>
 <body>
     <div class="backgroundbar2"></div>
     <header>
-        <img class="museumicon" src="./icons/MAMicon.jpeg" alt="icon of the museum">
+        <img class="museumicon" src="/icons/MAMicon.jpeg" alt="icon of the museum">
         <h1 class="collectionh1">Mesoamerican History Museum</h1>
-        <h2 class="collectionarth2">{{civilationName}}</h2>
+        <h2 class="collectionarth2">{{civs.name}}</h2>
     </header>
-            <div>
+            {{!-- <div>
                 <div><img  class="sculptures" src="./icons/sculpture.jpg" alt="a monkey vessel carved from smooth white stone"></div>
-                <div class="yellowbar"><h4>Sculptures</h4></div>
-                <div id="splide" class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="yellowbar"><h4>{{civs.art_types.[0].name}}</h4></div>
+                <div id="splide1" class="splide" role="group" aria-label="Splide Basic HTML Example">
                     <div class="splide__track">
                           <ul class="splide__list">
-                            {{#each image as |image|}}
-                                {{> carosel}}
-                            {{/each}}
-                              {{!-- <li class="splide__slide"><img class="slideicon" src="http://placekitten.com/200/200"><p class="icontitle">Name</p></li> --}}
-                              {{!-- <li class="splide__slide"><img class="slideicon" src="http://placekitten.com/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="http://placekitten.com/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="http://placekitten.com/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="http://placekitten.com/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="http://placekitten.com/200/200"><p class="icontitle">Name</p></li> --}}
+                                {{#each civs.art_types.[0].artworks as |image|}}
+                                    {{> carosel}}
+                                {{/each}}
+                          </ul>
+                    </div>
+                </div>
+            </div> --}}
+            {{#each civs.art_types as |type|}}
+                <div>
+                <div><img  class="sculptures" src="/icons/sculpture.jpg" alt="a monkey vessel carved from smooth white stone"></div>
+                <div class="yellowbar"><h4>{{name}}</h4></div>
+                <div id="splide{{id}}" class="splide" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                                {{#each artworks as |image|}}
+                                    {{> carosel}}
+                                {{/each}}
                           </ul>
                     </div>
                 </div>
             </div>
-            <div>
+            {{/each}}
+              {{!-- <div>
                 <div><img class="jewelry" src="./icons/jewelry.png" alt="a jade pendant with gold accents"></div>
-                <div class="yellowbar2"><h4>Jewelry</h4></div>
+                <div class="yellowbar"><h4>Jewelry</h4></div>
                 <div id="splide2" class="splide" role="group" aria-label="Splide Basic HTML Example">
                     <div class="splide__track">
                           <ul class="splide__list">
-                              <li class="splide__slide"><img class="slideicon" src="https://placebear.com/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="https://placebear.com/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="https://placebear.com/200/200"><p class="icontitle">Name</p></li>
+                                {{#each civs.art_types.[1].artworks as |image|}}
+                                    {{> carosel}}
+                                {{/each}}
                           </ul>
                     </div>
                 </div>
             </div>
             </div>
-            <div>
+            <div> 
                 <div><img class="architecture" src="./icons/architecture.jpg" alt="the Palenque ruins"></div>
-                <div class="yellowbar3"><h4>Architecture</h4></div>
+                <div class="yellowbar"><h4>Architecture</h4></div>
                 <div id="splide3" class="splide" role="group" aria-label="Splide Basic HTML Example">
                     <div class="splide__track">
                           <ul class="splide__list">
-                              <li class="splide__slide"><img class="slideicon" src="https://picsum.photos/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="https://picsum.photos/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="https://picsum.photos/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="https://picsum.photos/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="https://picsum.photos/200/200"><p class="icontitle">Name</p></li>
-                              <li class="splide__slide"><img class="slideicon" src="https://picsum.photos/200/200"><p class="icontitle">Name</p></li>
+                                {{#each civs.art_types.[2].artworks as |image|}}
+                                    {{> carosel}}
+                                {{/each}}
                           </ul>
                     </div>
                 </div>
             </div>
             </div>
-    </div>
+    </div>  --}}
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script src="./js/catalog.js"></script>
+    <script src="/js/catalog.js"></script>
 </body>
     <footer class="footer">
         <ul class="footerlist">
@@ -84,5 +90,4 @@
             <li class="footerlinks"><i class="bi bi-youtube" style="font-size: 1.2rem; color: white;"></i></li>
         </ul>
     </footer>
-      <script src="./js/catalog.js"></script>
 </html>

@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 const bcrypt = require("bcrypt");
 
-class User extends Model {}
+class Visitor extends Model {}
 
-User.init(
+Visitor.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -41,6 +41,6 @@ User.init(
   }
 );
 
-// User.sync({ force: false });
+// Visitor.sync({ force: false });
 
-module.exports = User;
+module.exports = Visitor;
