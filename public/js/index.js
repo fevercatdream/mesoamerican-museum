@@ -4,6 +4,12 @@ var modalLoginLink = document.querySelector("#modal-login-link");
 var modalEmLoginLink = document.querySelector("#modal-em-login-link");
 var modalCreateAccountBtn = document.querySelector("#modal-create-account-btn");
 var modalSubmitBtn = document.querySelector("#modal-submit-btn");
+var olmecIcon = document.querySelector('.olmecicon')
+var mayaIcon = document.querySelector('.mayaicon')
+var incaIcon = document.querySelector('.incaicon')
+var aztecIcon = document.querySelector('.aztecicon')
+
+
 
 // function to show modal
 function openModal() {
@@ -28,44 +34,3 @@ modalEmLoginLink.addEventListener("click", openModal);
 // close modal
 modalEl.addEventListener("click", closeModal);
 
-// submit button
-modalSubmitBtn.addEventListener("click", async function (event) {
-  event.preventDefault();
-  console.log('pressed submit button')
-  const username = document.getElementById('modal-body-id').elements["username"].value
-  const password = document.getElementById('modal-body-id').elements["password"].value
-  const response = await fetch('/api/user/login', {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json' },
-    body: JSON.stringify({username, password }),
-  })
-  if (response.ok) {
-    window.location.href = '/additem';
-  } else {
-    const error = await response.json();
-    alert(error.message);
-  }
-
-
-});
-
-// create account button
-modalCreateAccountBtn.addEventListener("click", async function (event) {
-  event.preventDefault();
-  console.log('pressed create account btn')
-  const username = document.getElementById('modal-body-id').elements["username"].value
-  const password = document.getElementById('modal-body-id').elements["password"].value
-  const response = await fetch('/api/user/', {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json' },
-    body: JSON.stringify({username, password}),
-  })
-  if (response.ok) {
-   console.log('created user')
-  } else {
-    const error = await response.json();
-    alert(error.message);
-  }
-
-  
-});
