@@ -34,6 +34,10 @@ h1 {
     z-index: 1;
 }
 
+.headermobile {
+    display: none;
+}
+
 .museumicon {
     border-radius: 50%;
     position: absolute;
@@ -300,32 +304,6 @@ h3 {
     padding-top: 3%;
 }
 
-.museumdesc {
-    display: none;
-    position: absolute;
-    background-color: var(--backgroundColor);
-    border: 2px solid var(--borderColor);
-    border-radius: 5px;
-    margin-left: 6%;
-    margin-top: 3%;
-    width: 40%;
-    height: fit-content;
-    color: var(--textColor);
-    padding: 0px 20px 5px 20px;
-    font-size: 14px;
-    box-shadow: 5px 5px 10px black;
-}
-
-/* .museumtext {
-    padding-left: 20px;
-    text-align: justify;
-    padding-right: 15px;
-}
-
-.museumpara {
-    display: none;
-} */
-
 .time, .time2, .time3, .time4 {
     position: absolute;
     color: var(--textColor);
@@ -420,6 +398,10 @@ and (min-width: 650px)
 .top-header nav ul {
     flex-direction: column;
     align-items: flex-end;
+}
+
+.headermobile {
+    display: none;
 }
 
 .museumicon {
@@ -526,10 +508,6 @@ h1 {
     margin-top: 157vh;
 }
 
-.museumdesc {
-    display: none;
-}
-
 .time, .time2, .time3, .time4 {
     margin-left: 61vw;
     margin-top: 31vh;
@@ -620,9 +598,235 @@ h3 {
 
 }
 
-@media screen and (max-width: 525px) {
-    .top-header nav ul {
-        flex-direction: column;
-        align-items: flex-end;
-    }
+@media screen and (max-width: 649px) {
+
+.top-header nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.museumicon {
+    position: relative;
+    width: 15;
+}
+
+.timeline  {
+    margin-top: 25vw;
+}
+
+h1 {
+position: absolute;
+right: 0px;
+margin-top: -6.5vh;
+background-color: rgba(168, 153, 22, 0.788);
+padding: 5px;
+color: black;
+font-weight: bolder;
+border-radius: 10px 0px 0px 0px;
+font-size: 12px;
+}
+
+.headerimage {
+    display: none;
+}
+
+.headermobile {
+    position: absolute;
+    display: block;
+    right:0px;
+    width: 90vw;
+    border-top: 5px solid var(--borderColor);
+    border-left: 5px solid var(--borderColor);
+    border-radius: 10px 0px 0px 0px;
+}
+
+.navbar {
+    height: 5vh;
+}
+
+.navlink, .login {
+    font-size: 14px;
+    padding: 0px;
+    padding-right: 3vw;
+    margin: 0px;
+}
+
+.museumpara {
+    padding: 0px 20px 10px 20px;
+    font-size: 12px;
+}
+
+.timelinebar {
+    position: absolute;
+    background-color: rgb(83, 9, 9);
+    margin-top: 60vh;
+    margin-left: 15%;
+    height: 365vh;
+    width: 10px;
+    border-top: none;
+    border-right: 5px solid var(--borderColor);
+    box-shadow: 5px 0px 0px 0px rgba(0, 0, 0, 0.315);
+}
+
+.backgroundbar {
+    display: none;
+}
+
+.backgroundbar2 {
+    display: block;
+    position: absolute;
+    background-color: rgb(83, 9, 9);
+    width: 60%;
+    height: 540vh;
+    top: 0px;
+    margin-left: 3%;
+    border-left: 10px solid rgb(126, 38, 7);
+    border-right: 10px solid rgb(126, 38, 7);
+    box-shadow: 10px 10px 15px black;
+    z-index: -1;
+}
+
+.timelinebarvertical, .timelinebarvertical2, .timelinebarvertical3, .timelinebarvertical4 {
+    position: absolute;
+    margin-top: 78vh;
+    margin-left: 16%;
+    width: 30vw;
+    height: 10px;
+    border-right: none;
+    border-bottom: 5px solid var(--borderColor);
+    box-shadow: 5px 5px 10px rgb(29, 29, 29);
+    z-index: -1;
+}
+
+
+.timelinebarvertical2 {
+    margin-top: 180vh;
+}
+
+.timelinebarvertical3 {
+    margin-top: 290vh;
+}
+
+.timelinebarvertical4 {
+    margin-top: 403vh;
+}
+
+.olmecicon, .mayaicon, .incaicon, .aztecicon {
+    margin-top: 67vh;
+    margin-left: 45vw;
+    border-radius: 50%;
+    width: 30vh;
+}
+
+.mayaicon {
+    margin-top: 170vh;
+}
+
+.incaicon {
+    margin-top: 283vh;
+}
+
+.aztecicon {
+    margin-top: 395vh;
+}
+
+.time, .time2, .time3, .time4 {
+    margin-left: 19vw;
+    margin-top: 75vh;
+    font-size: 9px;
+    z-index: 4;
+}
+
+.time2 {
+    margin-top: 177vh;
+}
+
+.time3 {
+    margin-top: 287vh;
+}
+
+.time4 {
+    margin-top: 400vh;
+}
+
+.name, .name2, .name3, .name4 {
+    display: block;
+    position: absolute;
+    color: var(--textColor);
+    font-weight: bold;
+    margin-left: 67vw;
+    margin-top: 41.5vh;
+    font-size: 1.8vw;
+}
+
+.name2 {
+    margin-top: 88.5vh;
+    margin-left: 67vw;
+}
+
+.name3 {
+    margin-top: 135.5vh;
+    margin-left: 69.5vw;
+}
+
+.name4 {
+    margin-top: 182.5vh;
+    margin-left: 68vw;
+}
+
+.footer {
+    margin-top: 510vh;
+    position: static;
+    height: 20px;
+}
+
+.footerlist {
+    padding: 0px;
+}
+
+.footerlinks {
+    padding: 2%;
+}
+
+.contact {
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.modal[open] {
+    margin-top: 33vw;
+}
+
+
+.theolmecs, .themayans, .theincans, .theaztecs {
+    width: 65vw;
+    background-color: rgb(24, 24, 24);
+    height: fit-content;
+    margin-left: 25vw;
+    margin-top: 100vh;
+    padding: 5px 5px 0px 20px;
+    display: block;
+    font-size: 12px;
+    overflow: scroll;
+    border: 5px solid var(--borderColor);
+    box-shadow: 0px 10px 10px rgb(15, 15, 15);
+}
+
+.themayans {
+    margin-top: 205vh;
+}
+
+.theincans {
+    margin-top: 316vh;
+}
+
+.theaztecs {
+    margin-top: 430vh;
+}
+
+h3 {
+    font-size: 12px;
+    line-height: 1em;
+}
+
 }
