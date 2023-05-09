@@ -20,7 +20,7 @@
         <h2 class="collectionarth2">{{civs.name}}</h2>
     </header>
             {{#each civs.art_types as |type|}}
-                <div>
+                <div id = 'splideDiv' data-splideNum = {{id}}>
                 <div><img id='typeImage' class="sculptures" src="/icons/sculpture.jpg" alt="a monkey vessel carved from smooth white stone"></div>
                 <div class="yellowbar"><h4>{{name}}</h4></div>
                 <div id="splide{{id}}" class="splide" role="group" aria-label="Splide Basic HTML Example">
@@ -33,7 +33,8 @@
                     </div>
                 </div>
             </div>
-            {{/each}}
+            {{/each}} 
+        
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="/js/catalog.js"></script>
