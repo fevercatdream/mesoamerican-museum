@@ -9,21 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" />    
     <link rel="stylesheet" href="./css/additem.css"/>
-    <title>Update Item</title>
+    <title>Add Item</title>
     <link rel="icon" type="image/x-icon" href="./icons/favicon.png">
 </head>
 <body>
     <div class="pagebox">
     <form class="catalogmodal">
         <h1 class="options">Add an Item</h1>
-        <label class="label" for="itemcategory">Item Category:</label>
             <select title="itemcategory" class="dropdown" name="item" id="item" required>
-                <option class="menuoptions" value="itemselection" selected disabled>Item Selection</option>
+                <option class="menuoptions" value="itemselection" selected disabled>Item Category</option>
                 <option class="menuoptions" value="sculpturesandcarvings">Sculptures and Carvings</option>
                 <option class="menuoptions" value="jewelry">Jewelry</option>
                 <option class="menuoptions" value="architecture">Architecture</option>
             </select>
-        <label class="label" for="civilizationcategory">Civilization Category:</label>
             <select title="civilizationcategory" class="dropdown" name="civilization" id="civilization" required>
                 <option class="menuoptions" value="civilizationselection" selected disabled>Civilization Selection</option>
                 <option class="menuoptions" value="olmec">Olmec</option>
@@ -31,8 +29,15 @@
                 <option class="menuoptions" value="inca">Inca</option>
                 <option class="menuoptions" value="aztec">Aztec</option>
             </select>
-        <label class="label" for="timeperiod">Time Period:</label>
-        <input class="timeinput" placeholder="Time Period"> 
+
+        <input class="nameinput" placeholder="Art Name">
+
+        <input class="artistinput" placeholder="Artist Name">  
+
+        <input class="timeinput" placeholder="Time Period">
+
+        <textarea class="itemdesc" placeholder="Item Description"></textarea> 
+
         <button class="catalogbutton2 menuoptions"type="submit" class="homebutton">Home</button>
         <button class="catalogbutton2 menuoptions"type="submit" class="logoutbutton">Logout</button>
         <button class="catalogbutton2 menuoptions"type="submit" class="addbutton">Add</button>
