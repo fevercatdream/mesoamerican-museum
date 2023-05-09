@@ -29,18 +29,20 @@ body{
 }
 
 .catalogmodal {
-    position: relative;
+    position: absolute;
     background-color: rgb(46, 46, 53);
     border: 3px solid var(--borderColor);
     width: 500px;
-    height: 500px;
+    height: 600px;
     border-radius: 10px;
+    top: 0px;
+    margin-top: 5%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     color: var(--textColor);
     box-shadow: 8px 8px 20px rgb(15, 15, 15);
-    padding: 10px 20px 30px 20px;
+    padding: 10px 20px 20px 20px;
     font-size: large;
     align-items: center;
     justify-content: center;
@@ -51,7 +53,7 @@ body{
 }
 
 .options {
-    font-size: 35px;
+    font-size: 25px;
     line-height: 1em;
     font-weight: 400;
     width: 90%;
@@ -62,22 +64,29 @@ body{
     font-size: 16px;
 }
 
-.catalogbutton, .catalogbutton2, .dropdown, .timeinput {
+.catalogbutton, .catalogbutton2, .dropdown, .timeinput, .nameinput, .artistinput, .itemdesc {
     width: 90%;
-    height: 9%;
+    height: 6%;
     border-radius: 5px;
     box-shadow: 8px 8px 20px rgb(15, 15, 15);
     text-align: center;
+    margin-bottom: 4%;
+    background-color: whitesmoke;
 }
 
 .timeinput {
-    height: 9%;
     width: 89%;
+}
+
+.itemdesc {
+    height: 20%;
+    text-align: start;
+    padding: 5px;
 }
 
 .catalogbutton2 {
     width: 20%;
-    height: 10%;
+    height: 6%;
     margin-right: 5%;
     margin-left: 5%;
     margin-top: 3%;
