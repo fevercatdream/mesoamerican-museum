@@ -24,28 +24,31 @@ const updateBtn = document.querySelector('#update')
     }
   });
 
-const logoutButton = document.getElementById('logout-button');
-if (logoutButton) {
-  logoutButton.addEventListener('click', async () => {
-    const response = await fetch('/api/logout', { method: 'POST' });
-    if (response.ok) {
-      window.location.href = '/';
-    } else {
-      const error = await response.json();
-      alert(error.message);
-    }
-  });
-}
-const homeButton = document.getElementById('home-button');
+  const logoutButton = document.getElementById('logout');
+  if (logoutButton) {
+    logoutButton.addEventListener('click', async (event) => {
+      event.preventDefault()
+      const response = await fetch('/api/employee/logout', {});
+      if (response.ok) {
+        window.location.href = '/';
+      } else {
+        const error = await response.json();
+        alert(error.message);
+      }
+    });
+  }
+const homeButton = document.getElementById('home');
 if (homeButton) {
-  logoutButton.addEventListener('click', async () => {
-    const response = await fetch('/api/logout', { method: 'POST' });
-    if (response.ok) {
-      window.location.href = '/';
-    } else {
-      const error = await response.json();
-      alert(error.message);
-    }
+  homeButton.addEventListener('click', async (event) => {
+    event.preventDefault()
+  //   const response = await fetch('/api/logout', { method: 'POST' });
+  //   if (response.ok) {
+  //     window.location.href = '/';
+  //   } else {
+  //     const error = await response.json();
+  //     alert(error.message);
+  //   }
+  window.location.href = '/';
   });
 }
 // const updateButton = document.getElementById('update-button');

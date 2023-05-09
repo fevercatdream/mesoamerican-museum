@@ -14,10 +14,11 @@ if (deleteForm) {
     }
   });
 }
-const logoutButton = document.getElementById('logout-button');
+const logoutButton = document.getElementById('logout');
 if (logoutButton) {
-  logoutButton.addEventListener('click', async () => {
-    const response = await fetch('/api/logout', { method: 'POST' });
+  logoutButton.addEventListener('click', async (event) => {
+    event.preventDefault()
+    const response = await fetch('/api/employee/logout', {});
     if (response.ok) {
       window.location.href = '/';
     } else {
@@ -26,27 +27,11 @@ if (logoutButton) {
     }
   });
 }
-const homeButton = document.getElementById('home-button');
+
+const homeButton = document.getElementById('home');
 if (homeButton) {
-  homeButton.addEventListener('click', async () => {
-    const response = await fetch('/api/logout', { method: 'POST' });
-    if (response.ok) {
-      window.location.href = '/';
-    } else {
-      const error = await response.json();
-      alert(error.message);
-    }
-  });
-}
-const deleteButton = document.getElementById('delete-button');
-if (logoutButton) {
-  logoutButton.addEventListener('click', async () => {
-    const response = await fetch('/api/logout', { method: 'POST' });
-    if (response.ok) {
-      window.location.href = '/';
-    } else {
-      const error = await response.json();
-      alert(error.message);
-    }
+  homeButton.addEventListener('click', async (event) => {
+    event.preventDefault()
+  window.location.href = '/';
   });
 }
