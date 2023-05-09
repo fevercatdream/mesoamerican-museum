@@ -40,7 +40,7 @@ const types = [
         civId:1
     },
     {
-        name: "Jewery",
+        name: "Jewelry",
         civId:1
     },
     {
@@ -52,7 +52,7 @@ const types = [
         civId:2
     },
     {
-        name: "Jewery",
+        name: "Jewelry",
         civId:2
     },
     {
@@ -64,7 +64,7 @@ const types = [
         civId:3
     },
     {
-        name: "Jewery",
+        name: "Jewelry",
         civId:3
     },
     {
@@ -103,7 +103,7 @@ const works = [
         "artTypeId": 1
     },
     {  
-        "name": "Jewery 1",
+        "name": "Jewelry 1",
         "artist": "test artist",
         "image_url": "http://placekitten.com/200/300",
         "description": "this is a test art post route",
@@ -112,7 +112,7 @@ const works = [
         "artTypeId": 2
     },
     {  
-        "name": "Jewery 2",
+        "name": "Jewelry 2",
         "artist": "test artist",
         "image_url": "http://placekitten.com/200/300",
         "description": "this is a test art post route",
@@ -121,7 +121,7 @@ const works = [
         "artTypeId": 2
     },
     {  
-        "name": "Jewery 3",
+        "name": "Jewelry 3",
         "artist": "test artist",
         "image_url": "http://placekitten.com/200/300",
         "description": "this is a test art post route",
@@ -184,7 +184,7 @@ const works = [
         "artTypeId": 4
     },
     {  
-        "name": "Jewery 1",
+        "name": "Jewelry 1",
         "artist": "test artist",
         "image_url": "http://placekitten.com/200/300",
         "description": "this is a test art post route",
@@ -193,7 +193,7 @@ const works = [
         "artTypeId": 5
     },
     {  
-        "name": "Jewery 2",
+        "name": "Jewelry 2",
         "artist": "test artist",
         "image_url": "http://placekitten.com/200/300",
         "description": "this is a test art post route",
@@ -202,7 +202,7 @@ const works = [
         "artTypeId": 5
     },
     {  
-        "name": "Jewery 3",
+        "name": "Jewelry 3",
         "artist": "test artist",
         "image_url": "http://placekitten.com/200/300",
         "description": "this is a test art post route",
@@ -265,7 +265,7 @@ const works = [
         "artTypeId": 7
     },
     {  
-        "name": "Jewery 1",
+        "name": "Jewelry 1",
         "artist": "test artist",
         "image_url": "http://placekitten.com/200/300",
         "description": "this is a test art post route",
@@ -274,7 +274,7 @@ const works = [
         "artTypeId": 8
     },
     {  
-        "name": "Jewery 2",
+        "name": "Jewelry 2",
         "artist": "test artist",
         "image_url": "http://placekitten.com/200/300",
         "description": "this is a test art post route",
@@ -283,7 +283,7 @@ const works = [
         "artTypeId": 8
     },
     {  
-        "name": "Jewery 3",
+        "name": "Jewelry 3",
         "artist": "test artist",
         "image_url": "http://placekitten.com/200/300",
         "description": "this is a test art post route",
