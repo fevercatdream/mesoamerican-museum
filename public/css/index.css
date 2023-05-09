@@ -4,13 +4,13 @@
     --backgroundColor: rgb(29, 29, 32);
     --borderColor: rgb(168, 154, 22);
     --textColor: rgb(247, 247, 247);
-    --hoverbackground: rgb(48, 48, 53);
+    --hoverbackground: rgb(41, 41, 46);
 }
 
 html {
     background-color: var(--backgroundColor);
     font-family: Arial, Helvetica, sans-serif;
-    height: 70vw;
+    height: 75vw;
 }
 
 h1 {
@@ -38,10 +38,10 @@ h1 {
     border-radius: 50%;
     position: absolute;
     margin-top: 5%;
-    width: 10%;
     border: 10px solid var(--borderColor);
     z-index: 3;
-    box-shadow: 10px 10px 15px black;
+    width: 15vw;
+    border: 5px solid var(--borderColor);
 }
 
 .navbar {
@@ -136,6 +136,20 @@ input {
     background-color: rgb(51, 51, 51);
 }
 
+.museumpara {
+    display: block;
+    position: absolute;
+    background-color: var(--hoverbackground);
+    padding: 0px 80px 10px 80px;
+    color: var(--textColor);
+    margin-top: -2%;
+    z-index: -1;
+    text-align: justify;
+    font-size: 14px;
+    border-bottom: 3px solid var(--borderColor);
+    box-shadow: 0px 5px 15px black;
+}
+
 .timeline {
     position: absolute;
     top: 0px;
@@ -150,10 +164,10 @@ input {
     position: absolute;
     background-color: rgb(83, 9, 9);
     width: 100%;
-    height: 20vw;
+    height: 42vh;
     left: 0px;
     top: 0px;
-    margin-top: 37%;
+    margin-top: 44%;
     z-index: 2;
     border-top: 20px solid rgb(126, 38, 7);
     border-bottom: 20px solid rgb(126, 38, 7);
@@ -162,7 +176,7 @@ input {
 
 .timelinebar {
     position: relative;
-    margin-top: 19.6%;
+    margin-top: 57vh;
     margin-left: 10%;
     width: 80%;
     border-top: 5px solid var(--borderColor);
@@ -171,60 +185,57 @@ input {
 
 .timelinebarvertical, .timelinebarvertical2, .timelinebarvertical3, .timelinebarvertical4 {
     position: absolute;
-    margin-top: -4.4%;
-    margin-left: 19.5%;
-    width: .5%;
-    height: 18%;
+    margin-top: -15vh;
+    margin-left: 19vw;
+    width: 2vw;
+    height: 24%;
     border-right: 5px solid var(--borderColor);
-    box-shadow: 5px -5px 10px rgb(29, 29, 29);
+    box-shadow: 5px -5px 5px rgb(29, 29, 29);
 }
 
 
 .timelinebarvertical2 {
-    margin-left: 39.5%;
+    margin-left: 40vw;
 }
 
 .timelinebarvertical3 {
     margin-top: 0%;
-    margin-left: 59.5%;
-    box-shadow: 5px 5px 10px rgb(29, 29, 29);
+    margin-left: 60vw;
+    box-shadow: 5px 5px 5px rgb(29, 29, 29);
 }
 
 .timelinebarvertical4 {
-    margin-left: 79.5%;
+    margin-left: 78vw;
 }
 
 .olmecicon, .mayaicon, .incaicon, .aztecicon {
     position: absolute;
     top: 0px;
     left: 0px;
-    margin-top: 8%;
-    margin-left: 15%;
+    margin-top: 30vh;
+    margin-left: 16vw;
     border-radius: 50%;
-    opacity: 80%;
-    width: 10%;
+    width: 20vh;
     border: 5px solid var(--borderColor);
     box-shadow: 10px 10px 15px rgb(20, 20, 20);
 }
 
 .mayaicon {
-    margin-left: 35%;
-
+    margin-left: 37vw;
 }
 
 .incaicon {
-    margin-top: 26%;
-    margin-left: 55%;
+    margin-top: 73vh;
+    margin-left: 57vw;
 }
 
 .aztecicon {
-    margin-left: 75%;
+    margin-left: 75vw;
 }
 
 
 .olmecicon:hover, .mayaicon:hover, .incaicon:hover, .aztecicon:hover {
     cursor: pointer;
-    opacity: 100%;
     box-shadow: 0px 0px 5px var(--borderColor);
 }
 
@@ -290,13 +301,13 @@ h3 {
 }
 
 .museumdesc {
+    display: none;
     position: absolute;
     background-color: var(--backgroundColor);
     border: 2px solid var(--borderColor);
     border-radius: 5px;
     margin-left: 6%;
     margin-top: 3%;
-    margin-bottom: 40%;
     width: 40%;
     height: fit-content;
     color: var(--textColor);
@@ -305,37 +316,45 @@ h3 {
     box-shadow: 5px 5px 10px black;
 }
 
-.museumtext {
+/* .museumtext {
     padding-left: 20px;
     text-align: justify;
     padding-right: 15px;
 }
 
+.museumpara {
+    display: none;
+} */
+
 .time, .time2, .time3, .time4 {
     position: absolute;
     color: var(--textColor);
     font-weight: bold;
-    margin-left: 21%;
-    margin-top: -2%;
+    margin-left: 23%;
+    margin-top: -2.4%;
 }
 
 .time2 {
-    margin-left: 41%;
+    margin-left: 44%;
 }
 
 .time3 {
-    margin-left: 81%;
+    margin-left: 82%;
 }
 
 .time4 {
-    margin-left: 61%;
+    margin-left: 64%;
     margin-top: 1%;
+}
+
+.name, .name2, .name3, .name4 {
+    display: none;
 }
 
 .footer {
     position: fixed;
-    bottom: 0px;
-    height: 40px;
+    bottom: -40px;
+    height: 70px;
     width: 100%;
     padding-right: 2%;
 }
@@ -367,23 +386,243 @@ a {
     text-decoration: none;
 }
 
-@media screen and (min-width: 320px) {
-    .top-header nav ul {
-        flex-direction: column;
-        align-items: flex-end;
-    }
+.backgroundbar2 {
+    display: none;
 }
 
-@media screen and (min-width: 768px) {
-    .top-header nav ul {
-        flex-direction: column;
-        align-items: flex-end;
-    }
+::-webkit-scrollbar {
+    width: 10px;
+    background: transparent; /* make scrollbar transparent */
 }
 
-@media screen and (min-width:992px){
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    width: 10px;
+    background-color: rgb(68, 68, 68);
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+@media screen and (min-width: 990px) {
     .top-header nav ul {
         flex-direction: row;
+        align-items: flex-end;
+    }
+}
+
+
+@media screen and (max-width: 989px) 
+and (min-width: 650px) 
+{
+
+.top-header nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.museumicon {
+    position: relative;
+}
+
+h1 {
+    font-size: 2vw;
+}
+
+.navbar {
+    height: 5vh;
+}
+
+.navlink, .login {
+    font-size: 1.8vw;
+}
+
+.museumpara {
+    display: block;
+    position: absolute;
+    background-color: var(--hoverbackground);
+    padding: 0px 40px 10px 40px;
+    color: var(--textColor);
+    margin-top: -2%;
+    z-index: -1;
+    text-align: justify;
+    font-size: 14px;
+    border-bottom: 3px solid var(--borderColor);
+    box-shadow: 0px 5px 15px black;
+}
+
+.timelinebar {
+    position: absolute;
+    background-color: rgb(83, 9, 9);
+    margin-top: 30vh;
+    margin-left: 9%;
+    height: 140vh;
+    width: 20px;
+    border-top: none;
+    border-right: 5px solid var(--borderColor);
+    box-shadow: 5px 0px 0px 0px rgba(0, 0, 0, 0.315);
+}
+
+.backgroundbar {
+    display: none;
+}
+
+.backgroundbar2 {
+    display: block;
+    position: absolute;
+    background-color: rgb(83, 9, 9);
+    width: 40%;
+    height: 245vh;
+    top: 0px;
+    margin-left: 3%;
+    border-left: 20px solid rgb(126, 38, 7);
+    border-right: 20px solid rgb(126, 38, 7);
+    box-shadow: 10px 10px 15px black;
+    z-index: -1;
+}
+
+.timelinebarvertical, .timelinebarvertical2, .timelinebarvertical3, .timelinebarvertical4 {
+    position: absolute;
+    margin-top: 39vh;
+    margin-left: 11%;
+    width: 70vw;
+    height: 10px;
+    border-right: none;
+    border-bottom: 5px solid var(--borderColor);
+    box-shadow: 5px 5px 10px rgb(29, 29, 29);
+    z-index: -1;
+}
+
+
+.timelinebarvertical2 {
+    margin-top: 78vh;
+}
+
+.timelinebarvertical3 {
+    margin-top: 120vh;
+}
+
+.timelinebarvertical4 {
+    margin-top: 160vh;
+}
+
+.olmecicon, .mayaicon, .incaicon, .aztecicon {
+    margin-top: 36vh;
+    margin-left: 80vw;
+    border-radius: 50%;
+    width: 17vh;
+}
+
+.mayaicon {
+    margin-top: 75vh;
+}
+
+.incaicon {
+    margin-top: 117vh;
+}
+
+.aztecicon {
+    margin-top: 157vh;
+}
+
+.museumdesc {
+    display: none;
+}
+
+.time, .time2, .time3, .time4 {
+    margin-left: 61vw;
+    margin-top: 31vh;
+    font-size: 1.8vw;
+    z-index: 4;
+}
+
+.time2 {
+    margin-left: 62vw;
+    margin-top: 70vh;
+}
+
+.time3 {
+    margin-top: 112vh;
+}
+
+.time4 {
+    margin-top: 152vh;
+}
+
+.name, .name2, .name3, .name4 {
+    display: block;
+    position: absolute;
+    color: var(--textColor);
+    font-weight: bold;
+    margin-left: 67vw;
+    margin-top: 41.5vh;
+    font-size: 1.8vw;
+}
+
+.name2 {
+    margin-top: 88.5vh;
+    margin-left: 67vw;
+}
+
+.name3 {
+    margin-top: 135.5vh;
+    margin-left: 69.5vw;
+}
+
+.name4 {
+    margin-top: 182.5vh;
+    margin-left: 68vw;
+}
+
+.footer {
+    margin-top: 205vh;
+    position: static;
+    height: 20px;
+}
+
+.modal[open] {
+    margin-top: 33vw;
+}
+
+
+.theolmecs, .themayans, .theincans, .theaztecs {
+    width: 60vw;
+    background-color: rgb(24, 24, 24);
+    height: fit-content;
+    margin-left: 17vw;
+    margin-top: 27vh;
+    padding: 5px 5px 0px 20px;
+    display: block;
+    font-size: 1.8vw;
+    overflow: scroll;
+    border: 5px solid var(--borderColor);
+    box-shadow: 0px 10px 10px rgb(15, 15, 15);
+}
+
+.themayans {
+    margin-top: 66vh;
+}
+
+.theincans {
+    margin-top: 108vh;
+}
+
+.theaztecs {
+    margin-top: 148vh;
+}
+
+h3 {
+    font-size: 2.1vw;
+    line-height: 1em;
+}
+
+
+}
+
+@media screen and (max-width: 525px) {
+    .top-header nav ul {
+        flex-direction: column;
         align-items: flex-end;
     }
 }
