@@ -19,18 +19,23 @@ addbtn.addEventListener('click', async (event) => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, artist, image_url, description, date_created, civ, typeName }),
     });
+    console.log(response)
     if (response.ok) {
       window.location.href = '/catalogoptions'; // or any other success page
-    } else {
+    }else if (response.status === 403){
+      alert('You must be logged in to add an art work to the musuem')
+    } 
+    else {
       const error = await response.json();
       alert(error.message);
     }
   });
 
-const logoutButton = document.getElementById('logout-button');
+const logoutButton = document.getElementById('logout');
 if (logoutButton) {
-  logoutButton.addEventListener('click', async () => {
-    const response = await fetch('/api/logout', { method: 'POST' });
+  logoutButton.addEventListener('click', async (event) => {
+    event.preventDefault()
+    const response = await fetch('/api/employee/logout', {});
     if (response.ok) {
       window.location.href = '/';
     } else {
@@ -39,27 +44,17 @@ if (logoutButton) {
     }
   });
 }
-const homeButton = document.getElementById('home-button');
+const homeButton = document.getElementById('home');
 if (homeButton) {
-  homeButton.addEventListener('click', async () => {
-    const response = await fetch('/api/logout', { method: 'POST' });
-    if (response.ok) {
-      window.location.href = '/';
-    } else {
-      const error = await response.json();
-      alert(error.message);
-    }
+  homeButton.addEventListener('click', async (event) => {
+    event.preventDefault()
+  //   const response = await fetch('/api/logout', { method: 'POST' });
+  //   if (response.ok) {
+  //     window.location.href = '/';
+  //   } else {
+  //     const error = await response.json();
+  //     alert(error.message);
+  //   }
+  window.location.href = '/';
   });
 }
-// const addButton = document.getElementById('add-button');
-// if (addButton) {
-//   addButton.addEventListener('click', async () => {
-//     const response = await fetch('/api/logout', { method: 'POST' });
-//     if (response.ok) {
-//       window.location.href = '/';
-//     } else {
-//       const error = await response.json();
-//       alert(error.message);
-//     }
-//   });
-// }
