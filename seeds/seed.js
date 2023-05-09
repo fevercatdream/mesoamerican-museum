@@ -78,7 +78,7 @@ const works = [
     {  
         "name": "sculpture 1",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 1,
@@ -87,7 +87,7 @@ const works = [
     {  
         "name": "sculpture 2",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 1,
@@ -96,7 +96,7 @@ const works = [
     {  
         "name": "sculpture 3",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 1,
@@ -105,7 +105,7 @@ const works = [
     {  
         "name": "Jewelry 1",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 2,
@@ -114,7 +114,7 @@ const works = [
     {  
         "name": "Jewelry 2",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 2,
@@ -123,7 +123,7 @@ const works = [
     {  
         "name": "Jewelry 3",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 2,
@@ -132,7 +132,7 @@ const works = [
     {  
         "name": "Architecture 1",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 3,
@@ -141,7 +141,7 @@ const works = [
     {  
         "name": "Architecture 2",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 3,
@@ -150,7 +150,7 @@ const works = [
     {  
         "name": "Architecture 3",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 3,
@@ -159,7 +159,7 @@ const works = [
     {  
         "name": "sculpture 1",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 4,
@@ -168,7 +168,7 @@ const works = [
     {  
         "name": "sculpture 2",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 4,
@@ -177,7 +177,7 @@ const works = [
     {  
         "name": "sculpture 3",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 4,
@@ -186,7 +186,7 @@ const works = [
     {  
         "name": "Jewelry 1",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 5,
@@ -195,7 +195,7 @@ const works = [
     {  
         "name": "Jewelry 2",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 5,
@@ -204,7 +204,7 @@ const works = [
     {  
         "name": "Jewelry 3",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 5,
@@ -213,7 +213,7 @@ const works = [
     {  
         "name": "Architecture 1",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 6,
@@ -222,7 +222,7 @@ const works = [
     {  
         "name": "Architecture 2",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 6,
@@ -231,7 +231,7 @@ const works = [
     {  
         "name": "Architecture 3",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 6,
@@ -240,7 +240,7 @@ const works = [
     {  
         "name": "sculpture 1",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 7,
@@ -249,7 +249,7 @@ const works = [
     {  
         "name": "sculpture 2",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 7,
@@ -258,7 +258,7 @@ const works = [
     {  
         "name": "sculpture 3",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 7,
@@ -267,7 +267,7 @@ const works = [
     {  
         "name": "Jewelry 1",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 8,
@@ -276,7 +276,7 @@ const works = [
     {  
         "name": "Jewelry 2",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 8,
@@ -285,7 +285,7 @@ const works = [
     {  
         "name": "Jewelry 3",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 8,
@@ -294,7 +294,7 @@ const works = [
     {  
         "name": "Architecture 1",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 9,
@@ -303,7 +303,7 @@ const works = [
     {  
         "name": "Architecture 2",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 9,
@@ -312,7 +312,7 @@ const works = [
     {  
         "name": "Architecture 3",
         "artist": "test artist",
-        "image_url": "http://placekitten.com/200/300",
+        "image_url": "http://placekitten.com/200/200",
         "description": "this is a test art post route",
         "date_created": "12-02-2023",
         "type_id": 9,
