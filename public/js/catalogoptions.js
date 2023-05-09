@@ -17,12 +17,11 @@ if (homeButton) {
 if (logoutButton) {
   logoutButton.addEventListener('click', async (event) => {
     event.preventDefault()
-    const response = await fetch('/api/museum/logout', {
-      method: 'POST',
+    const response = await fetch('/api/employee/logout', {
       headers: { 'Content-Type': 'application/json' },
     });
     if (response.ok) {
-      window.location.href = '/login';
+      window.location.href = '/';
     } else {
       const error = await response.json();
       alert(error.message);

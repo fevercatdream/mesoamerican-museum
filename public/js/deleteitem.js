@@ -14,3 +14,24 @@ if (deleteForm) {
     }
   });
 }
+const logoutButton = document.getElementById('logout');
+if (logoutButton) {
+  logoutButton.addEventListener('click', async (event) => {
+    event.preventDefault()
+    const response = await fetch('/api/employee/logout', {});
+    if (response.ok) {
+      window.location.href = '/';
+    } else {
+      const error = await response.json();
+      alert(error.message);
+    }
+  });
+}
+
+const homeButton = document.getElementById('home');
+if (homeButton) {
+  homeButton.addEventListener('click', async (event) => {
+    event.preventDefault()
+  window.location.href = '/';
+  });
+}

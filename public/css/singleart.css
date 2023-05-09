@@ -12,14 +12,14 @@ html {
 
 .collectionh1{
     color: var(--textColor);
-    margin-left: 11%;
+    margin-left: 14%;
     margin-top: 3%;
     font-size: 1.8vw;
 }
 
 .collectionarth2 {
     color: var(--textColor);
-    margin-left: 13%;
+    margin-left: 18%;
     margin-top: -.5%;
     font-size: 1.3vw;
 }
@@ -30,7 +30,7 @@ html {
     top:0px;
     margin-top: 1%;
     margin-left: 1%;
-    width: 8%;
+    width: 12%;
     border: 5px solid var(--borderColor);
     z-index: 3;
     box-shadow: 5px 5px 15px rgb(29, 29, 29);
@@ -44,20 +44,21 @@ html {
     position: absolute;
     background-color: rgb(83, 9, 9);
     width: 40%;
-    height: 110vh;
+    height: 90vh;
     top: 0px;
     margin-left: 3%;
     border-left: 20px solid rgb(126, 38, 7);
     border-right: 20px solid rgb(126, 38, 7);
     box-shadow: 10px 10px 15px black;
     z-index: -1;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .mainimagebox {
     position: absolute;
     width: 33vw;
-    height: 67vh;
-    margin-top: 3%;
+    height: 40vw;
+    margin-top: 2vw;
     margin-left: 6%;
     overflow: hidden;
     border-radius: 3px;
@@ -168,23 +169,192 @@ a {
     background: transparent;
 }
 
-@media screen and (min-width: 320px) {
-    .top-header nav ul {
-        flex-direction: column;
-        align-items: flex-end;
+
+@media screen and (max-width: 800px) 
+and (min-width: 451px) 
+{
+
+    .backgroundbar2 {
+        height: 270vw;
     }
+    
+    .museumicon {
+        margin-top: 3%;
+        width: 15vw;
+    }
+    
+    .collectionh1{
+        color: var(--textColor);
+        margin-left: 18vw;
+        margin-top: 8%;
+        font-size: 20px;
+    }
+    
+    .collectionarth2 {
+        color: var(--textColor);
+        margin-left: 22vw;
+        margin-top: -.5%;
+        font-size: 16px;
+    }
+
+    .backgroundbar2 {
+        display: block;
+        position: absolute;
+        background-color: rgb(83, 9, 9);
+        width: 60%;
+        height: 220vw;
+        top: 0px;
+        margin-left: 3%;
+        border-left: 10px solid rgb(126, 38, 7);
+        border-right: 10px solid rgb(126, 38, 7);
+        box-shadow: 10px 10px 15px black;
+        z-index: -1;
+        border-radius: 0px 0px 10px 10px;
+    }
+        
+    .mainimagebox {
+        position: absolute;
+        width: 80vw;
+        height: 67vw;
+        margin-top: 7%;
+        margin-left: 10%;
+        overflow: hidden;
+        border-radius: 3px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        overflow: hidden;
+        background-color: var(--hoverbackground);
+        border: 3px solid var(--borderColor);
+        border-radius: 10px;
+    }
+
+    .iteminfo {
+        position: absolute;
+        left: 0px;
+        margin-left: 12%;
+        margin-top: 85vw;
+        width: 80%;
+        height: fit-content;
+        color: var(--textColor);
+        background-color: var(--hoverbackground);
+        padding: 20px 50px 20px 20px;
+        border: 3px solid var(--borderColor);
+        border-radius: 10px;
+    }
+    
+    .footer {
+        position: relative;
+        margin-top: 170vh;
+        height: 40px;
+    }
+    
+    .footerlist {
+        padding: 0px;
+    }
+    
+    .footerlinks {
+        padding: 2%;
+    }
+    
+    .contact {
+        padding: 2px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
 }
 
-@media screen and (min-width: 768px) {
-    .top-header nav ul {
-        flex-direction: column;
-        align-items: flex-end;
-    }
+@media screen and (max-width: 450px) {
+
+.backgroundbar2 {
+    height: 270vw;
 }
 
-@media screen and (min-width:992px){
-    .top-header nav ul {
-        flex-direction: row;
-        align-items: flex-end;
-    }
+.museumicon {
+    margin-top: 3%;
+    width: 20vw;
+}
+
+.collectionh1{
+    color: var(--textColor);
+    margin-left: 24vw;
+    margin-top: 3%;
+    font-size: 5vw;
+}
+
+.collectionarth2 {
+    color: var(--textColor);
+    margin-left: 26vw;
+    margin-top: -.5%;
+    font-size: 4vw;
+}
+
+.backgroundbar2 {
+    display: block;
+    position: absolute;
+    background-color: rgb(83, 9, 9);
+    width: 60%;
+    height: 210vh;
+    top: 0px;
+    margin-left: 3%;
+    border-left: 10px solid rgb(126, 38, 7);
+    border-right: 10px solid rgb(126, 38, 7);
+    box-shadow: 10px 10px 15px black;
+    z-index: -1;
+    border-radius: 0px 0px 10px 10px;
+}
+    
+.mainimagebox {
+    position: absolute;
+    width: 78vw;
+    height: 67vw;
+    margin-top: 7%;
+    margin-left: 10%;
+    overflow: hidden;
+    border-radius: 3px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    background-color: var(--hoverbackground);
+    border: 3px solid var(--borderColor);
+    border-radius: 10px;
+}
+
+.iteminfo {
+    position: absolute;
+    left: 0px;
+    margin-left: 12%;
+    margin-top: 85vw;
+    width: 80%;
+    height: fit-content;
+    color: var(--textColor);
+    background-color: var(--hoverbackground);
+    padding: 10px 25px 10px 10px;
+    border: 3px solid var(--borderColor);
+    border-radius: 10px;
+}
+
+.footer {
+    position: relative;
+    margin-top: 200vh;
+    height: 40px;
+}
+
+.footerlist {
+    padding: 0px;
+}
+
+.footerlinks {
+    padding: 2%;
+}
+
+.contact {
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
 }

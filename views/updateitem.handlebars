@@ -4,51 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" />    
-    <link rel="stylesheet" href="./css/updateitem.css"/>
+    <link rel="stylesheet" href="/css/updateitem.css"/>
     <title>Update Item</title>
-    <link rel="icon" type="image/x-icon" href="./icons/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.png">
 </head>
 <body>
     <div class="pagebox">
     <form class="catalogmodal">
         <h1 class="options">Update an Item</h1>
-        <label class="label" for="itemsearch">Select item by ID #:</label>
-        <input class="searchinput" placeholder="Item ID #"> 
-        <label class="label" for="itemcategory">Change Item Category:</label>
+        <input class="searchinput" placeholder="Select item by ID #:"> 
             <select title="itemcategory" class="dropdown" name="language" id="item">
                 <option class="menuoptions" value="itemselection" selected disabled>Change Item Category</option>
-                <option class="menuoptions" value="sculpturesandcarvings">Sculptures and Carvings</option>
-                <option class="menuoptions" value="jewelry">Jewelry</option>
-                <option class="menuoptions" value="architecture">Architecture</option>
+                <option class="menuoptions" value="Sculptures">Sculptures and Carvings</option>
+                <option class="menuoptions" value="Jewelry">Jewelry</option>
+                <option class="menuoptions" value="Architecture">Architecture</option>
             </select>
-        <label class="label" for="civilizationcategory">Change Civilization Category:</label>
             <select title="civilizationcategory" class="dropdown" name="language" id="civilization" required>
                 <option class="menuoptions" value="civilizationselection" selected disabled>Civilization Selection</option>
-                <option class="menuoptions" value="olmec">Olmec</option>
-                <option class="menuoptions" value="maya">Maya</option>
-                <option class="menuoptions" value="inca">Inca</option>
-                <option class="menuoptions" value="aztec">Aztec</option>
+                <option class="menuoptions" value="Olmec">Olmec</option>
+                <option class="menuoptions" value="Mayan">Maya</option>
+                <option class="menuoptions" value="Inca">Inca</option>
+                <option class="menuoptions" value="Aztec">Aztec</option>
             </select>
-        <label class="label" for="timeperiod">Change Time Period:</label>
+
+        <input class="nameinput" placeholder="Art Name">
+
+        <input class="artistinput" placeholder="Artist Name">  
+
         <input class="timeinput" placeholder="Time Period"> 
-        <button class="catalogbutton2 menuoptions"type="submit" class="homebutton">Home</button>
-        <button class="catalogbutton2 menuoptions"type="submit" class="logoutbutton">Logout</button>
-        <button class="catalogbutton2 menuoptions"type="submit" class="updatebutton">Update</button>
+
+        <textarea class="itemdesc" placeholder="Item Description"></textarea> 
+
+
+        <button id = 'home' class="catalogbutton2 menuoptions"type="submit" class="homebutton">Home</button>
+        <button id = 'logout' class="catalogbutton2 menuoptions"type="submit" class="logoutbutton">Logout</button>
+        <button id = 'update' class="catalogbutton2 menuoptions"type="submit" class="updatebutton">Update</button>
     </form>
     </div>
-    <footer class="footer">
-        <ul class="footerlist">
-            <li class="footerlinks">Employee Login</li>
-            <li class="footerlinks"><a class="contact" target="_blank" href="https://github.com/fevercatdream/mesoamerican-museum">Contact Us</a></li>
-            <li class="footerlinks"><i class="bi bi-facebook" style="font-size: 1.2rem; color: white;"></i></li>
-            <li class="footerlinks"><i class="bi bi-instagram" style="font-size: 1.2rem; color: white;"></i></li>
-            <li class="footerlinks"><i class="bi bi-twitter" style="font-size: 1.2rem; color: white;"></i></li>
-            <li class="footerlinks"><i class="bi bi-youtube" style="font-size: 1.2rem; color: white;"></i></li>
-        </ul>
-    </footer>
 </body>
+ <script src="/js/updateitem.js"></script>
 </html>

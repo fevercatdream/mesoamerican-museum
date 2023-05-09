@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Employee, Civ, ArtType, ArtWork, User } = require('../models')
+const { Employee, Civ, ArtType, ArtWork, Visitor } = require('../models')
 
 router.get('/', async (req, res) => {
   
@@ -66,7 +66,9 @@ router.get('/', async (req, res) => {
   });
 
   router.get('/updateitem', async (req, res) => {
-  
+    if(!req.session.userId){
+      return res.status(403).json({msg:"you need to log in first to access the update item page"})
+  } 
     res.render('updateitem', {layout:false});
   });
   router.get('/deleteitem', async (req, res) => {
@@ -78,7 +80,9 @@ router.get('/', async (req, res) => {
     res.render('usercollection', {layout:false});
   });
   router.get('/additem', async (req, res) => {
-  
+    if(!req.session.userId){
+      return res.status(403).json({msg:"you need to log in first to access the add item page"})
+  } 
     res.render('additem', {layout:false});
   });
   router.get('/olmec', async (req, res) => {
@@ -98,15 +102,11 @@ router.get('/', async (req, res) => {
     res.render('aztec', {layout:false});
   });
   router.get('/catalogoptions', async (req, res) => {
-  
+    if(!req.session.userId){
+      return res.status(403).json({msg:"you need to log in first to access the catalog options"})
+  } 
     res.render('catalogoptions', {layout:false});
   });
-
-
-
-
-
-
 
 
 module.exports = router;
