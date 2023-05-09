@@ -22,7 +22,7 @@ Artwork.init(
       allowNull: false,
     },
     date_created: {
-      type: DataTypes.DATEONLY,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     type_id: {

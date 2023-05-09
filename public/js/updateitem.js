@@ -22,3 +22,39 @@ if (artworkForm) {
     }
   });
 }
+const logoutButton = document.getElementById('logout-button');
+if (logoutButton) {
+  logoutButton.addEventListener('click', async () => {
+    const response = await fetch('/api/logout', { method: 'POST' });
+    if (response.ok) {
+      window.location.href = '/';
+    } else {
+      const error = await response.json();
+      alert(error.message);
+    }
+  });
+}
+const homeButton = document.getElementById('home-button');
+if (homeButton) {
+  logoutButton.addEventListener('click', async () => {
+    const response = await fetch('/api/logout', { method: 'POST' });
+    if (response.ok) {
+      window.location.href = '/';
+    } else {
+      const error = await response.json();
+      alert(error.message);
+    }
+  });
+}
+const updateButton = document.getElementById('update-button');
+if (updateButton) {
+  updateButton.addEventListener('click', async () => {
+    const response = await fetch('/api/logout', { method: 'POST' });
+    if (response.ok) {
+      window.location.href = '/';
+    } else {
+      const error = await response.json();
+      alert(error.message);
+    }
+  });
+}
