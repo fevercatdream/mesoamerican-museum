@@ -29,7 +29,7 @@ function closeModal(event) {
 
 // open modal
 modalLoginLink.addEventListener("click", openModal);
-modalEmLoginLink.addEventListener("click", openModal);
+// modalEmLoginLink.addEventListener("click", openModal);
 
 // close modal
 modalEl.addEventListener("click", closeModal);
