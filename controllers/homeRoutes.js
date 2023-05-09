@@ -38,9 +38,31 @@ router.get('/', async (req, res) => {
     res.render('civart', {layout:false});
   });
 
-  router.get('/singleart', async (req, res) => {
-  
-    res.render('singleart', {layout:false});
+  router.get('/singleart/:id', async (req, res) => {
+    try{
+      const dbArtWork = await ArtWork.findByPk(req.params.id,{
+        include:[
+          {
+            model:ArtType,
+            attributes:['id','name'],
+            include:[
+              {
+                model:Civ,
+                attributes:['name']
+              }
+            ]
+          }
+        ]
+      })
+    
+      const work = dbArtWork.get({plain:true})
+      console.log(work)
+      res.render('singleart', {layout:false,work})
+    }catch(err){
+      console.log(err)
+      res.status(500).json(err)
+    }
+   
   });
 
   router.get('/updateitem', async (req, res) => {
