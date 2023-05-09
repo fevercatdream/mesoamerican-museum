@@ -1,7 +1,8 @@
 const artworkForm = document.getElementById('artwork-form');
-if (artworkForm) {
-  artworkForm.addEventListener('submit', async (event) => {
-    event.preventDefault();
+const addbtn = document.querySelector('.addbuton')
+if (addbtn) {
+  addbtn.addEventListener('click', async (event) => {
+    // event.preventDefault();
     const name = document.getElementById('name').value;
     const artist = document.getElementById('artist').value;
     const image_url = document.getElementById('image_url').value;

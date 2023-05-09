@@ -27,25 +27,50 @@ router.get("/:id",(req,res)=>{
     })
 })
 
-router.post("/",(req,res)=>{
+router.post("/",async(req,res)=>{
     if(!req.session.userId){
         return res.status(403).json({msg:"you need to log in first to post an artwork"})
     } 
-    ArtWork.create({
-        name:req.body.name,
-        artist:req.body.artist,
-        image_url:req.body.image_url,
-        description:req.body.description,
-        date_created:req.body.date_created,
-        type_id: req.body.type_id,
-        artTypeId: req.body.artTypeId
-    }).then(newWork=>{
-        res.json(newWork)
-    }).catch(err=>{
+    try{
+        const civ = await Civ.findOne({
+            where: {name:req.body.civ}, 
+            include:[
+                {
+                  model:ArtType,
+                  attributes:['id','name']
+                }
+              ]
+        })
+       const civType = civ.get({plain:true})
+       async function findType (civ2Find){
+            typeArry = civ2Find.art_types
+            for (let i = 0; i < typeArry.length; i++) {
+             const type = typeArry[i];
+             if (type.name === req.body.typeName){
+                const typeID = type.id
+                return typeID
+             }
+        }
+        }
+        const foundType = await findType(civType)
+        console.log(foundType)
+        const art2Create = await ArtWork.create({
+             name:req.body.name,
+             artist:req.body.artist,
+             image_url:req.body.image_url,
+             description:req.body.description,
+             date_created:req.body.date_created,
+             type_id: foundType,
+             artTypeId: foundType
+         })
+         res.json(art2Create)
+    }catch(err){
         console.log(err);
         res.status(500).json({msg:"error occurred",err})
-    })
+    }
+
 })
+
 
 router.delete("/:id",(req,res)=>{
     ArtWork.destroy({
