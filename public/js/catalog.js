@@ -1,6 +1,16 @@
-var splide = new Splide( '.splide', {perPage: 4,perMove: 2,rewind : true,} );splide.mount();
-new Splide( '#splide2', {perPage: 4, perMove: 2, rewind : true,}).mount();
-new Splide( '#splide3', {perPage: 4, perMove: 2, rewind : true,}).mount();
+const splides= document.querySelectorAll('#splideDiv')
+for (let i = 0; i < splides.length; i++) {
+  const element = splides[i];
+  console.log('element', element)
+  const splideNum = element.getAttribute('data-splideNum')
+  console.log('splideNum', splideNum)
+  const splide = new Splide( `#splide${splideNum}`, {perPage: 4,perMove: 2,rewind : true,}).mount()
+  
+}
+
+// new Splide( '#splide1', {perPage: 4,perMove: 2,rewind : true,} ).mount();
+// new Splide( '#splide2', {perPage: 4, perMove: 2, rewind : true,}).mount();
+// new Splide( '#splide3', {perPage: 4, perMove: 2, rewind : true,}).mount();
 
 var homeIcon = document.querySelector(".museumicon");
 const singleArt = document.querySelectorAll('.slideicon')
