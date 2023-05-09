@@ -31,6 +31,7 @@ router.post("/",async(req,res)=>{
     if(!req.session.userId){
         return res.status(403).json({msg:"you need to log in first to post an artwork"})
     } 
+    console.log(req.body)
     try{
         const civ = await Civ.findOne({
             where: {name:req.body.civ}, 
@@ -42,10 +43,13 @@ router.post("/",async(req,res)=>{
               ]
         })
        const civType = civ.get({plain:true})
+       console.log(civType)
        async function findType (civ2Find){
             typeArry = civ2Find.art_types
+            console.log('type Array', typeArry)
             for (let i = 0; i < typeArry.length; i++) {
              const type = typeArry[i];
+             console.log('type', type)
              if (type.name === req.body.typeName){
                 const typeID = type.id
                 return typeID
@@ -53,7 +57,7 @@ router.post("/",async(req,res)=>{
         }
         }
         const foundType = await findType(civType)
-        console.log(foundType)
+        console.log('found type',foundType)
         const art2Create = await ArtWork.create({
              name:req.body.name,
              artist:req.body.artist,
