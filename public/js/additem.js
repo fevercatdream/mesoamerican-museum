@@ -14,7 +14,7 @@ if (artworkForm) {
       body: JSON.stringify({ name, artist, image_url, description, date_created, type_id }),
     });
     if (response.ok) {
-      window.location.href = '/success'; // or any other success page
+      window.location.href = '/success';
     } else {
       const error = await response.json();
       alert(error.message);
