@@ -48,7 +48,7 @@ body {
     position: absolute;
     background-color: rgb(83, 9, 9);
     width: 40%;
-    min-height: 150vh;
+    height: 75vw;
     top: 0px;
     margin-left: 3%;
     border-left: 20px solid rgb(126, 38, 7);
@@ -57,37 +57,8 @@ body {
     z-index: -1;
 }
 
-.timelinebarhoriz, .timelinebarhoriz2, .timelinebarhoriz3{
-    position: absolute;
-    margin-top: -10%;
-    margin-left: 5.3%;
-    width: 7%;
-    height: 5%;
-    border-bottom: 5px solid var(--borderColor);
-    box-shadow: 5px 5px 8px rgb(29, 29, 29);
-    z-index: 1;
-}
-
-.timelinebar2, .timelinebar3 {
-    position: absolute;
-    height: 90vh;
-    margin-left: 5%;
-    margin-top: 8%;
-    border-right: 5px solid var(--borderColor);
-    box-shadow: 5px 0px 8px rgb(29, 29, 29);
-}
-
-.timelinebar3 {
-    margin-left: -4%;
-
-}
-
-.timelinebarhoriz2, .timelinebarhoriz3 {
-    margin-top: -10%;
-}
-
 .sculptures, .jewelry, .architecture {
-    width: 30%;
+    width: 30vw;
     height: 20%;
     position: relative;
     margin-top: 4%;
@@ -104,10 +75,10 @@ body {
 
 .yellowbar, .yellowbar2, .yellowbar3 {
     position: absolute;
-    width: 29.5%;
+    width: 29vw;
     height: 2.5vw;
-    margin-top: -4%;
-    margin-left: 7.9%;
+    margin-top: 15%;
+    margin-left: 8.3vw;
     background-color: var(--backgroundColor);
     z-index: 3;
     border-top: 2px solid var(--borderColor);
@@ -131,9 +102,6 @@ h4 {
     margin-top: -15.5%;
     width: 50vw;
     height: 15vw;
-    border: 2px solid rgb(77, 75, 58);
-    background-color: var(--hoverbackground);
-    border-radius: 10px;
 }
 
 .splide__slide {
@@ -149,6 +117,8 @@ h4 {
 
 .slideicon {
     border-radius: 50%;
+    margin-top: 2vw;
+    margin-left: 5vh;
     width: 60%;
     height: 60%;
     box-shadow: 10px 10px 10px rgb(22, 22, 22);
@@ -214,4 +184,109 @@ a {
 
 ::-webkit-scrollbar-corner {
     background: transparent;
+}
+
+@media screen and (max-width: 989px) 
+and (min-width: 650px) 
+{
+
+.backgroundbar2 {
+    height: 110vh;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+.backgroundbar2 {
+    height: 110vh;
+}
+
+.museumicon {
+    margin-top: 3%;
+    width: 20vw;
+}
+
+.collectionh1{
+    color: var(--textColor);
+    margin-left: 24vw;
+    margin-top: 3%;
+    font-size: 5vw;
+}
+
+.collectionarth2 {
+    color: var(--textColor);
+    margin-left: 26vw;
+    margin-top: -.5%;
+    font-size: 4vw;
+}
+
+.backgroundbar2 {
+    display: block;
+    position: absolute;
+    background-color: rgb(83, 9, 9);
+    width: 60%;
+    height: 285vw;
+    top: 0px;
+    margin-left: 3%;
+    border-left: 10px solid rgb(126, 38, 7);
+    border-right: 10px solid rgb(126, 38, 7);
+    box-shadow: 10px 10px 15px black;
+    z-index: -1;
+}
+
+.sculptures, .jewelry, .architecture {
+    margin-top: 8vw;
+    margin-bottom: 24%;
+    width: 80vw;
+}
+
+.yellowbar, .yellowbar2, .yellowbar3 {
+    width: 78vw;
+    height: 6vw;
+    margin-top: 40%;
+    margin-left: 8.6%;
+    font-size: 4vw;
+}
+
+.splide{
+    position: absolute;
+    margin-left: 2%;
+    margin-top: -19.5%;
+    width: 80vw;
+    height: 23vw;
+    margin-left: 8%;
+}
+
+.slideicon {
+    margin-left: 8vh;
+    box-shadow: 5px 5px 5px rgb(22, 22, 22);
+}
+
+.splide__arrow {
+    height: 7vw;
+    width: 7vw;
+}
+
+.footer {
+    margin-top: 10vh;
+    height: 20px;
+}
+
+.footerlist {
+    padding: 0px;
+}
+
+.footerlinks {
+    padding: 2%;
+}
+
+.contact {
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
 }
