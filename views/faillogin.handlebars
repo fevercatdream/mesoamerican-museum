@@ -16,8 +16,15 @@
     <div class="pagebox">
     <form class="catalogmodal">
         <h1 class="options">You must login to view this page</h1>
+                <button id ='home' class="catalogbutton2 menuoptions"type="submit" class="homebutton">Home</button>
     </form>
     </div>
 </body>
- <script src="./js/catalogoptions.js"></script>
+ <script>const homeButton = document.getElementById('home');
+if (homeButton) {
+  homeButton.addEventListener('click', async (event) => {
+    event.preventDefault()
+  window.location.href = '/';
+  });
+}</script>
 </html>
