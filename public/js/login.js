@@ -36,6 +36,9 @@ modalCreateAccountBtn.addEventListener("click", async function (event) {
   })
   if (response.ok) {
    console.log('created user')
+   const successMessage = document.createElement('div');
+    successMessage.textContent = 'Account created successfully!';
+    successMessage.style.color = 'green';
   } else {
     const error = await response.json();
     alert(error.message);
