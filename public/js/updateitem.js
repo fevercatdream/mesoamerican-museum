@@ -1,4 +1,7 @@
 // const artworkForm = document.getElementById('artwork-form');
+const success = document.querySelector("#successMsg")
+success.style.display = "none"
+
 let url
 var myWidget = cloudinary.createUploadWidget(
   {
@@ -33,16 +36,31 @@ const updateBtn = document.querySelector('#update')
     const date_created = document.querySelector('.timeinput').value;
     const typeName = document.querySelector('#item').value;
     const civ = document.querySelector('#civilization').value;
-    const response = await fetch(`/api/artWorks/${artworkId}`, {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, artist, image_url, description, date_created, civ, typeName }),
-    });
-    if (response.ok) {
-      window.location.href = '/catalogoptions'; // or any other success page
-    } else {
-      const error = await response.json();
-      alert(error.message);
+
+    try{
+      const response = await fetch(`/api/artWorks/${artworkId}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, artist, image_url, description, date_created, civ, typeName }),
+      });
+      success.innerText = "successfully updated item!"
+      success.style.display = "block"
+
+
+    }catch(err){
+      success.innerText = "couldnt find that item"
+      success.style.display = "block"
+
+      // if (response.ok) {
+      //   success.style.display = "block"
+      //   // window.location.href = '/catalogoptions'; // or any other success page
+      // } else {
+      //   const error = await response.json();
+      //   alert(error.message);
+      // }
+      console.log(err)
+
+
     }
   });
 
