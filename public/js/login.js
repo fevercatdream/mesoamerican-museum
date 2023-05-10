@@ -5,13 +5,9 @@ var modalCreateMusAccountBtn = document.querySelector("#modal-em-login-link");
 
 modalSubmitBtn.addEventListener("click", async function (event) {
   event.preventDefault();
-  console.log('pressed submit button')
   const username = document.getElementById('modal-body-id').elements["username"].value
   const password = document.getElementById('modal-body-id').elements["password"].value
   const isEmployee = document.querySelector('#employeeLogin').checked
-  console.log(isEmployee)
-  console.log(username)
-  console.log(password)
   if(isEmployee){
     const response = await fetch('/api/employee/login', {
       method: 'POST',
@@ -32,7 +28,6 @@ modalSubmitBtn.addEventListener("click", async function (event) {
     })
     if (response.ok) { 
       // window.location.href = '/catalogoptions';
-      alert('you are logged in as a user')
     } else {
       const error = await response.json();
       alert(error.message);
@@ -41,12 +36,9 @@ modalSubmitBtn.addEventListener("click", async function (event) {
 })
 modalCreateAccountBtn.addEventListener("click", async function (event) {
   event.preventDefault();
-  console.log('pressed create account btn')
   const username = document.getElementById('modal-body-id').elements["username"].value
   const password = document.getElementById('modal-body-id').elements["password"].value
   const isEmployee = document.querySelector('#employeeLogin').checked
-  console.log(username)
-  console.log(password)
   if(isEmployee){
   const response = await fetch('/api/employee/', {
     method: 'POST',
@@ -56,8 +48,8 @@ modalCreateAccountBtn.addEventListener("click", async function (event) {
   if (response.ok) {
    console.log('created user')
    const successMessage = document.createElement('div');
-    successMessage.textContent = 'Account created successfully!';
-    successMessage.style.color = 'green';
+   successMessage.textContent = 'Account created successfully!';
+   successMessage.style.color = 'green';
   } else {
     const error = await response.json();
     alert(error.message);
