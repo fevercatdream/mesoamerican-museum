@@ -2,12 +2,9 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+Visitors to the Mesoamerican museum can view the museum collection images with descriptive information about the artifacts.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+Employees to the Mesoamerican museum can manage the museum collect by adding, updating, or removing items from the museum collection.
 
 ### User Story
 
@@ -48,6 +45,12 @@ Install the database by running the following command in the mysql terminal
 SOURCE: schema.sql
 ```
 
+Run the seed file with the following command to seed the database
+
+```
+npm run seed
+```
+
 Use the following command to install the necessary packages
 
 ```
@@ -82,7 +85,7 @@ This application uses the following:
 To maintain a museum collection of artifacts in a database using a CRUD (create, read, update and delete) application. To view artifacts organized by civilization.
 
 ### Deployed Site
-https://mysterious-stream-19343.herokuapp.com/
+https://mysterious-stream-999999.herokuapp.com/
 
 ### ERD
 ![ERD](./assets/images/erd.png)
@@ -153,13 +156,21 @@ Splide: https://splidejs.com/
 
 Splide Getting Started: https://splidejs.com/guides/getting-started/
 
+Splide Image Carousel: https://splidejs.com/tutorials/image-carousel/
+
+Getting Started with Cloudinary: https://console.cloudinary.com/console/c-5f93c188309708e5da132ef338c9d4/getting-started
+
 How To Integrate Cloudinary: https://cloudinary.com/documentation/how_to_integrate_cloudinary
 
 Cloudinary node integration: https://cloudinary.com/documentation/node_integration
 
+Cloudinary upload presets: https://cloudinary.com/documentation/upload_presets
+
 Introduction to Cloudinary for Node.js Developers: https://training.cloudinary.com/learn/course/introduction-for-api-users-developers/before-the-lessons/what-to-expect
 
 cloudinary-training GitHub: https://github.com/cloudinary-training/cld-intro-nodejs
+
+Cloudinary cld-intro-nodejs/manage.js: https://github.com/cloudinary-training/cld-intro-nodejs/blob/main/manage.js
 
 Handlebars: https://handlebarsjs.com/
 
@@ -216,5 +227,5 @@ Please refer to the LICENSE in the repo.
 
 ## Features
 
-If your project has a lot of features, list them here.
+Image carousel for museum visitor to view museum collection items. Cloudinary upload widget for museum employees to upload images of artifacts.
 
