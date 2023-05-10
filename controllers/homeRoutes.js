@@ -67,7 +67,8 @@ router.get('/', async (req, res) => {
 
   router.get('/updateitem', async (req, res) => {
     if(!req.session.isEmployee){
-      return res.status(403).json({msg:"you need to log in first to access the update item page"})
+      res.status(403)
+      res.render('faillogin', {layout:false});
   } 
     res.render('updateitem', {layout:false});
   });
@@ -75,7 +76,8 @@ router.get('/', async (req, res) => {
   
     res.render('deleteitem', {layout:false});
     if(!req.session.isEmployee){
-      return res.status(403).json({msg:"you need to log in first to access the add item page"})
+      res.status(403)
+      res.render('faillogin', {layout:false});
   } 
   });
   router.get('/usercollection', async (req, res) => {
@@ -84,7 +86,8 @@ router.get('/', async (req, res) => {
   });
   router.get('/additem', async (req, res) => {
     if(!req.session.isEmployee){
-      return res.status(403).json({msg:"you need to log in first to access the add item page"})
+      res.status(403)
+      res.render('faillogin', {layout:false});
   } 
     res.render('additem', {layout:false});
   });
@@ -104,9 +107,9 @@ router.get('/', async (req, res) => {
     res.render('aztec', {layout:false});
   });
   router.get('/catalogoptions', async (req, res) => {
-    console.log(req.session.isEmployee)
     if(!req.session.isEmployee){
-      return res.status(403).json({msg:"you need to log in first to access the catalog options"})
+       res.status(403)
+       res.render('faillogin', {layout:false});
   } 
     res.render('catalogoptions', {layout:false});
   });
