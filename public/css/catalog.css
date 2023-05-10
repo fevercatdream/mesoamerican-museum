@@ -55,6 +55,7 @@ body {
     border-right: 20px solid rgb(126, 38, 7);
     box-shadow: 10px 10px 15px black;
     z-index: -1;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .sculptures, .jewelry, .architecture {

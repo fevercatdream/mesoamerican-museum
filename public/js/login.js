@@ -8,18 +8,35 @@ modalSubmitBtn.addEventListener("click", async function (event) {
   console.log('pressed submit button')
   const username = document.getElementById('modal-body-id').elements["username"].value
   const password = document.getElementById('modal-body-id').elements["password"].value
+  const isEmployee = document.querySelector('#employeeLogin').checked
+  console.log(isEmployee)
   console.log(username)
   console.log(password)
-  const response = await fetch('/api/employee/login', {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json' },
-    body: JSON.stringify({username, password }),
-  })
-  if (response.ok) { 
-    window.location.href = '/catalogoptions';
-  } else {
-    const error = await response.json();
-    alert(error.message);
+  if(isEmployee){
+    const response = await fetch('/api/employee/login', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json' },
+      body: JSON.stringify({username, password }),
+    })
+    if (response.ok) { 
+      window.location.href = '/catalogoptions';
+    } else {
+      const error = await response.json();
+      alert(error.message);
+    }
+  }else{
+    const response = await fetch('/api/visitor/login', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json' },
+      body: JSON.stringify({username, password }),
+    })
+    if (response.ok) { 
+      // window.location.href = '/catalogoptions';
+      alert('you are logged in as a user')
+    } else {
+      const error = await response.json();
+      alert(error.message);
+    }
   }
 })
 modalCreateAccountBtn.addEventListener("click", async function (event) {
@@ -27,8 +44,10 @@ modalCreateAccountBtn.addEventListener("click", async function (event) {
   console.log('pressed create account btn')
   const username = document.getElementById('modal-body-id').elements["username"].value
   const password = document.getElementById('modal-body-id').elements["password"].value
+  const isEmployee = document.querySelector('#employeeLogin').checked
   console.log(username)
   console.log(password)
+  if(isEmployee){
   const response = await fetch('/api/employee/', {
     method: 'POST',
     headers: {'Content-Type': 'application/json' },
@@ -36,11 +55,26 @@ modalCreateAccountBtn.addEventListener("click", async function (event) {
   })
   if (response.ok) {
    console.log('created user')
+   const successMessage = document.createElement('div');
+    successMessage.textContent = 'Account created successfully!';
+    successMessage.style.color = 'green';
   } else {
     const error = await response.json();
     alert(error.message);
   }
-
+  }else{
+    const response = await fetch('/api/visitor/', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json' },
+      body: JSON.stringify({username, password}),
+    })
+    if (response.ok) {
+     console.log('created user')
+    } else {
+      const error = await response.json();
+      alert(error.message);
+    }
+  }
   
 });
 

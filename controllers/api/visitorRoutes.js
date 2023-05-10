@@ -1,12 +1,12 @@
 const express = require("express");
 const router = express.Router();
 
-const { Employee, Civ, ArtType, ArtWork, Visitor,favorites } = require('../../models');
+const {Employee, Civ, ArtType, ArtWork, Visitor,favorites } = require('../../models');
 
 const bcrypt = require("bcrypt");
 
 router.get("/", (req, res) => {
-    User.findAll({include:favorites})
+    Visitor.findAll({include:favorites})
       .then((use) => {
         res.json(use);
       })
@@ -17,7 +17,7 @@ router.get("/", (req, res) => {
   });
 
   router.post("/",(req,res)=>{
-    User.create({
+    Visitor.create({
         username:req.body.username,
         password: req.body.password,
         artwork_id: req.body.artwork_id
@@ -32,7 +32,7 @@ router.get("/", (req, res) => {
 router.post("/login", (req, res) => {
     //collect unique user login info and password, req.body
     //find the matching record in the database
-    User.findOne({
+    Visitor.findOne({
       where: {
         username: req.body.username,
       },
@@ -44,6 +44,7 @@ router.post("/login", (req, res) => {
         if(bcrypt.compareSync(req.body.password,foundUse.password)){
           req.session.userId = foundUse.id;
           req.session.username=foundUse.name;
+          req.session.isEmployee = false;
           return res.json(foundUse);
         } else {
           return res.status(401).json({msg:"invalid username/password"})
@@ -62,7 +63,7 @@ router.post("/login", (req, res) => {
   })
   
   router.get("/:id", (req, res) => {
-    User.findByPk(req.params.id)
+    Visitor.findByPk(req.params.id)
       .then((useData) => {
         res.json(useData);
       })
@@ -76,7 +77,7 @@ router.post("/login", (req, res) => {
     if(!req.session.userId){
         return res.status(403).json({msg:"you need to log in first to update a user"})
     } 
-    User.update({
+    Visitor.update({
         username:req.body.username,
         password: req.body.password,
         liked_subject_id: req.body.liked_subject_id,
