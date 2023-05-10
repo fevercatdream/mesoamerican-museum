@@ -437,9 +437,9 @@ h1 {
 .timelinebar {
     position: absolute;
     background-color: rgb(83, 9, 9);
-    margin-top: 30vh;
+    margin-top: 20vh;
     margin-left: 9%;
-    height: 140vh;
+    height: 101vh;
     width: 20px;
     border-top: none;
     border-right: 5px solid var(--borderColor);
@@ -455,18 +455,19 @@ h1 {
     position: absolute;
     background-color: rgb(83, 9, 9);
     width: 40%;
-    height: 245vh;
+    height: 148vh;
     top: 0px;
     margin-left: 3%;
     border-left: 20px solid rgb(126, 38, 7);
     border-right: 20px solid rgb(126, 38, 7);
     box-shadow: 10px 10px 15px black;
     z-index: -1;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .timelinebarvertical, .timelinebarvertical2, .timelinebarvertical3, .timelinebarvertical4 {
     position: absolute;
-    margin-top: 39vh;
+    margin-top: 28vh;
     margin-left: 11%;
     width: 70vw;
     height: 10px;
@@ -478,98 +479,63 @@ h1 {
 
 
 .timelinebarvertical2 {
-    margin-top: 78vh;
+    margin-top: 55vh;
 }
 
 .timelinebarvertical3 {
-    margin-top: 120vh;
+    margin-top: 83vh;
 }
 
 .timelinebarvertical4 {
-    margin-top: 160vh;
+    margin-top: 111vh;
 }
 
 .olmecicon, .mayaicon, .incaicon, .aztecicon {
-    margin-top: 36vh;
-    margin-left: 80vw;
+    margin-top: 26vh;
+    margin-left: 72vw;
     border-radius: 50%;
-    width: 17vh;
+    width: 15vh;
 }
 
 .mayaicon {
-    margin-top: 75vh;
+    margin-top: 53vh;
 }
 
 .incaicon {
-    margin-top: 117vh;
+    margin-top: 81vh;
 }
 
 .aztecicon {
-    margin-top: 157vh;
+    margin-top: 109vh;
 }
 
 .time, .time2, .time3, .time4 {
-    margin-left: 61vw;
-    margin-top: 31vh;
+    margin-left: 50vw;
+    margin-top: 22.4vh;
     font-size: 1.8vw;
     z-index: 4;
 }
 
 .time2 {
-    margin-left: 62vw;
-    margin-top: 70vh;
+    margin-left: 51vw;
+    margin-top: 50.2vh;
 }
 
 .time3 {
-    margin-top: 112vh;
+    margin-top: 78.3vh;
 }
 
 .time4 {
-    margin-top: 152vh;
-}
-
-.name, .name2, .name3, .name4 {
-    display: block;
-    position: absolute;
-    color: var(--textColor);
-    font-weight: bold;
-    margin-left: 67vw;
-    margin-top: 41.5vh;
-    font-size: 1.8vw;
-}
-
-.name2 {
-    margin-top: 88.5vh;
-    margin-left: 67vw;
-}
-
-.name3 {
-    margin-top: 135.5vh;
-    margin-left: 69.5vw;
-}
-
-.name4 {
-    margin-top: 182.5vh;
-    margin-left: 68vw;
-}
-
-.footer {
-    margin-top: 205vh;
-    position: static;
-    height: 20px;
-}
-
-.modal[open] {
-    margin-top: 33vw;
+    margin-top: 105.2vh;
 }
 
 
 .theolmecs, .themayans, .theincans, .theaztecs {
-    width: 60vw;
+    width: 50vw;
     background-color: rgb(24, 24, 24);
     height: fit-content;
     margin-left: 17vw;
-    margin-top: 27vh;
+    margin-top: 20vh;
     padding: 5px 5px 0px 20px;
     display: block;
     font-size: 1.8vw;
@@ -579,20 +545,30 @@ h1 {
 }
 
 .themayans {
-    margin-top: 66vh;
+    margin-top: 48vh;
 }
 
 .theincans {
-    margin-top: 108vh;
+    margin-top: 76vh;
 }
 
 .theaztecs {
-    margin-top: 148vh;
+    margin-top: 103vh;
 }
 
 h3 {
     font-size: 2.1vw;
     line-height: 1em;
+}
+
+.footer {
+    margin-top: 135vh;
+    position: static;
+    height: 20px;
+}
+
+.modal[open] {
+    margin-top: 33vw;
 }
 
 
@@ -617,7 +593,7 @@ h3 {
 h1 {
 position: absolute;
 right: 0px;
-margin-top: -6.5vh;
+margin-top: -3.5vh;
 background-color: rgba(168, 153, 22, 0.842);
 padding: 5px;
 color: black;
@@ -658,9 +634,9 @@ font-size: 12px;
 .timelinebar {
     position: absolute;
     background-color: rgb(83, 9, 9);
-    margin-top: 60vh;
+    margin-top: 35vh;
     margin-left: 15%;
-    height: 365vh;
+    height: 240vh;
     width: 10px;
     border-top: none;
     border-right: 5px solid var(--borderColor);
@@ -676,18 +652,19 @@ font-size: 12px;
     position: absolute;
     background-color: rgb(83, 9, 9);
     width: 60%;
-    height: 540vh;
+    height: 320vh;
     top: 0px;
     margin-left: 3%;
     border-left: 10px solid rgb(126, 38, 7);
     border-right: 10px solid rgb(126, 38, 7);
     box-shadow: 10px 10px 15px black;
     z-index: -1;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .timelinebarvertical, .timelinebarvertical2, .timelinebarvertical3, .timelinebarvertical4 {
     position: absolute;
-    margin-top: 78vh;
+    margin-top: 45vh;
     margin-left: 16%;
     width: 30vw;
     height: 10px;
@@ -699,84 +676,92 @@ font-size: 12px;
 
 
 .timelinebarvertical2 {
-    margin-top: 180vh;
+    margin-top: 110vh;
 }
 
 .timelinebarvertical3 {
-    margin-top: 290vh;
+    margin-top: 176vh;
 }
 
 .timelinebarvertical4 {
-    margin-top: 403vh;
+    margin-top: 243vh;
 }
 
 .olmecicon, .mayaicon, .incaicon, .aztecicon {
-    margin-top: 67vh;
+    margin-top: 41vh;
     margin-left: 45vw;
     border-radius: 50%;
-    width: 30vh;
+    width: 20vh;
 }
 
 .mayaicon {
-    margin-top: 170vh;
+    margin-top: 106vh;
 }
 
 .incaicon {
-    margin-top: 283vh;
+    margin-top: 172vh;
 }
 
 .aztecicon {
-    margin-top: 395vh;
+    margin-top: 239vh;
 }
 
 .time, .time2, .time3, .time4 {
-    margin-left: 19vw;
-    margin-top: 75vh;
-    font-size: 9px;
+    margin-left: 20vw;
+    margin-top: 43vh;
+    font-size: 12px;
     z-index: 4;
 }
 
 .time2 {
-    margin-top: 177vh;
+    margin-top: 108vh;
 }
 
 .time3 {
-    margin-top: 287vh;
+    margin-top: 174vh;
 }
 
 .time4 {
-    margin-top: 400vh;
+    margin-top: 241vh;
 }
 
-.name, .name2, .name3, .name4 {
+.theolmecs, .themayans, .theincans, .theaztecs {
+    width: 65vw;
+    background-color: rgb(24, 24, 24);
+    height: fit-content;
+    margin-left: 25vw;
+    margin-top: 62vh;
+    padding: 5px 5px 0px 20px;
     display: block;
-    position: absolute;
-    color: var(--textColor);
-    font-weight: bold;
-    margin-left: 67vw;
-    margin-top: 41.5vh;
-    font-size: 1.8vw;
+    font-size: 12px;
+    overflow: scroll;
+    border: 5px solid var(--borderColor);
+    box-shadow: 0px 10px 10px rgb(15, 15, 15);
 }
 
-.name2 {
-    margin-top: 88.5vh;
-    margin-left: 67vw;
+.themayans {
+    margin-top: 127vh;
 }
 
-.name3 {
-    margin-top: 135.5vh;
-    margin-left: 69.5vw;
+.theincans {
+    margin-top: 194vh;
 }
 
-.name4 {
-    margin-top: 182.5vh;
-    margin-left: 68vw;
+.theaztecs {
+    margin-top: 262vh;
 }
+
+h3 {
+    font-size: 12px;
+    line-height: 1em;
+}
+
 
 .footer {
-    margin-top: 510vh;
+    margin-top: 310vh;
     position: static;
     height: 20px;
+    margin-bottom: 40px;
 }
 
 .footerlist {
@@ -794,38 +779,6 @@ font-size: 12px;
 
 .modal[open] {
     margin-top: 33vw;
-}
-
-
-.theolmecs, .themayans, .theincans, .theaztecs {
-    width: 65vw;
-    background-color: rgb(24, 24, 24);
-    height: fit-content;
-    margin-left: 25vw;
-    margin-top: 100vh;
-    padding: 5px 5px 0px 20px;
-    display: block;
-    font-size: 12px;
-    overflow: scroll;
-    border: 5px solid var(--borderColor);
-    box-shadow: 0px 10px 10px rgb(15, 15, 15);
-}
-
-.themayans {
-    margin-top: 205vh;
-}
-
-.theincans {
-    margin-top: 316vh;
-}
-
-.theaztecs {
-    margin-top: 430vh;
-}
-
-h3 {
-    font-size: 12px;
-    line-height: 1em;
 }
 
 }
