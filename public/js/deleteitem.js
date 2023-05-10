@@ -23,7 +23,7 @@ if (deleteForm) {
       method: 'DELETE',
     });
     if (response.ok) {
-      // window.location.href = '/'; // or any other success page
+      window.location.href = '/catalogoptions'; // or any other success page
     } else {
       const error = await response.json();
       alert(error.message);

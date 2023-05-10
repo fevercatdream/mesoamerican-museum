@@ -1,5 +1,4 @@
 // const artworkForm = document.getElementById('artwork-form');
-
 const addbtn = document.querySelector('#add')
 // const addbtn = document.querySelector('.addbutton')
 console.log(addbtn)
