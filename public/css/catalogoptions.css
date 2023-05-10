@@ -60,8 +60,26 @@ body{
     height: 10%;
     margin-right: 5%;
     margin-left: 5%;
+    padding: 0px;
 }
 
 .catalogbutton:hover, .catalogbutton2:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width: 450px) { 
+
+.catalogmodal {
+    width: 300px;
+    font-size: 14px;
+}
+
+.options {
+    font-size: 20px;
+}
+
+.catalogbutton2 {
+    font-size: 12px;
+}
+
 }
