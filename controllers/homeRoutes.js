@@ -74,6 +74,9 @@ router.get('/', async (req, res) => {
   router.get('/deleteitem', async (req, res) => {
   
     res.render('deleteitem', {layout:false});
+    if(!req.session.userId){
+      return res.status(403).json({msg:"you need to log in first to access the add item page"})
+  } 
   });
   router.get('/usercollection', async (req, res) => {
   

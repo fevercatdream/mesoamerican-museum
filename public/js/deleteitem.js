@@ -1,13 +1,29 @@
-const deleteForm = document.getElementById('delete-form');
+const deleteForm = document.querySelector('#delete');
+const searchInput = document.querySelector('.searchinput')
+console.log(searchInput)
+
+searchInput.addEventListener('change',async(event)=>{
+  event.preventDefault();
+  const inputVal = searchInput.value
+  const response = await fetch(`/api/artWorks/${inputVal}`, {});
+  const artwork = await response.json()
+  console.log(artwork)
+  document.querySelector('.itemname').innerText = 'Name: '+ artwork.name
+  document.querySelector('.itemtype').innerText = 'Type: '+ artwork.art_type.name
+  document.querySelector('.itemciv').innerText = 'Civilization: '+ artwork.art_type.civ.name
+  document.querySelector('.imgicon').src = artwork.image_url
+})
+
+
 if (deleteForm) {
-  deleteForm.addEventListener('submit', async (event) => {
+  deleteForm.addEventListener('click', async (event) => {
     event.preventDefault();
-    const artwork_id = document.getElementById('artwork_id').value;
-    const response = await fetch(`/api/artwork/${artwork_id}`, {
+    const input2Del = searchInput.value
+    const response = await fetch(`/api/artWorks/${input2Del}`, {
       method: 'DELETE',
     });
     if (response.ok) {
-      window.location.href = '/success'; // or any other success page
+      // window.location.href = '/'; // or any other success page
     } else {
       const error = await response.json();
       alert(error.message);

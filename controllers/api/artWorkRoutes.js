@@ -16,7 +16,19 @@ router.get("/", async(req,res)=>{
 })
 
 router.get("/:id",(req,res)=>{
-    ArtWork.findByPk(req.params.id).then(work=>{
+    ArtWork.findByPk(req.params.id,{  
+        include:[
+        {
+          model:ArtType,
+          attributes:['id','name'],
+          include:[
+            {
+              model:Civ,
+              attributes:['name']
+            }
+          ]
+        }
+      ]}).then(work=>{
         if(!work){
             return res.status(404).json({msg:"no art work with that id in database!"})
         }
