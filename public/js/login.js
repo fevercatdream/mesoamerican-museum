@@ -32,7 +32,6 @@ modalSubmitBtn.addEventListener("click", async function (event) {
     })
     if (response.ok) { 
       // window.location.href = '/catalogoptions';
-      alert('you are logged in as a user')
     } else {
       const error = await response.json();
       alert(error.message);
