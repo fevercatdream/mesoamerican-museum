@@ -88,6 +88,7 @@ body{
     margin-right: 5%;
     margin-left: 5%;
     margin-top: 3%;
+    padding: 0px;
 }
 
 .catalogbutton:hover, .catalogbutton2:hover {
@@ -96,4 +97,21 @@ body{
 
 .dropdown:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width: 450px) { 
+
+.catalogmodal {
+    width: 300px;
+    font-size: 14px;
+}
+
+.options {
+    font-size: 20px;
+}
+
+.catalogbutton2 {
+    font-size: 12px;
+}
+
 }
