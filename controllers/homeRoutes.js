@@ -2,8 +2,7 @@ const router = require('express').Router();
 const { Employee, Civ, ArtType, ArtWork, Visitor } = require('../models')
 
 router.get('/', async (req, res) => {
-  
-    res.render('index', {layout:false});
+    res.render('index', {layout:false,logged_in:req.session.logged_in});
   });
 
   router.get('/catalog/:id', async (req, res) => {
@@ -68,17 +67,17 @@ router.get('/', async (req, res) => {
   router.get('/updateitem', async (req, res) => {
     if(!req.session.isEmployee){
       res.status(403)
-      res.render('faillogin', {layout:false});
+      return res.render('faillogin', {layout:false});
   } 
     res.render('updateitem', {layout:false});
   });
   router.get('/deleteitem', async (req, res) => {
   
-    res.render('deleteitem', {layout:false});
     if(!req.session.isEmployee){
       res.status(403)
-      res.render('faillogin', {layout:false});
+      return res.render('faillogin', {layout:false});
   } 
+    res.render('deleteitem', {layout:false});
   });
   router.get('/usercollection', async (req, res) => {
   
@@ -87,32 +86,24 @@ router.get('/', async (req, res) => {
   router.get('/additem', async (req, res) => {
     if(!req.session.isEmployee){
       res.status(403)
-      res.render('faillogin', {layout:false});
+      return res.render('faillogin', {layout:false});
   } 
     res.render('additem', {layout:false});
   });
-  router.get('/olmec', async (req, res) => {
-    res.render('olmec', {layout:false});
-  });
-  router.get('/maya', async (req, res) => {
-  
-    res.render('maya', {layout:false});
-  });
-  router.get('/inca', async (req, res) => {
-  
-    res.render('inca', {layout:false});
-  });
-  router.get('/aztec', async (req, res) => {
-  
-    res.render('aztec', {layout:false});
-  });
   router.get('/catalogoptions', async (req, res) => {
     if(!req.session.isEmployee){
-       res.status(403)
-       res.render('faillogin', {layout:false});
+      res.status(403)
+      return res.render('faillogin', {layout:false});
   } 
     res.render('catalogoptions', {layout:false});
   });
+
+  router.get('/notloggedin', async (req, res) => {
+    res.render('faillogin', {layout:false});
+  });
+
+
+
 
 
 module.exports = router;
