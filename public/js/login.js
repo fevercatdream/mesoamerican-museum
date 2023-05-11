@@ -86,4 +86,5 @@ modalCreateAccountBtn.addEventListener("click", async function (event) {
       alert(error.message);
     }
   }
-});
+})
+}
