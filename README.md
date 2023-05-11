@@ -101,17 +101,29 @@ https://mysterious-stream-999999.herokuapp.com/
 ![Desktop View Index](./assets/images/desktop-index.png)
 ![Desktop View Civ](./assets/images/desktop-civ.png)
 ![Desktop View Single Art](./assets/images/desktop-singleart.png)
+![Desktop View Catalogoptions](./assets/images/desktop-catalogoptions.png)
+![Desktop View Add](./assets/images/desktop-additem.png)
+![Desktop View Update](./assets/images/desktop-updateitem.png)
+![Desktop View Delete](./assets/images/desktop-deleteitem.png)
 
 
 ### Screenshot Tablet View
 ![Tablet View Index](./assets/images/tablet-index.png)
 ![Tablet View Civ](./assets/images/tablet-civ.png)
 ![Tablet View Single Art](./assets/images/tablet-singleart.png)
+![Tablet View Catalogoptions](./assets/images/tablet-catalogoptions.png)
+![Tablet View Add](./assets/images/tablet-additem.png)
+![Tablet View Update](./assets/images/tablet-updateitem.png)
+![Tablet View Delete](./assets/images/tablet-deleteitem.png)
 
 ### Screenshot Mobile View
 ![Mobile View Index](./assets/images/mobile-index.png)
 ![Mobile View Civ](./assets/images/mobile-civ.png)
 ![Mobile View Single Art](./assets/images/mobile-singleart.png)
+![Mobile View Catalogoptions](./assets/images/mobile-catalogoptions.png)
+![Mobile View Add](./assets/images/mobile-additem.png)
+![Mobile View Update](./assets/images/mobile-updateitem.png)
+![Mobile View Delete](./assets/images/mobile-deleteitem.png)
 
 
 ## Credits
