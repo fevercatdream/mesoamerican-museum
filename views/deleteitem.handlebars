@@ -14,14 +14,15 @@
 </head>
 <body>
     <div class="pagebox">
-    <form class="catalogmodal">
+    <div class="catalogmodal">
         <h1 class="options">Delete an Item</h1>
         <label class="label" for="itemsearch">Select item by ID #:</label>
         <input class="searchinput" placeholder="Item ID #">
         <label class="label" for="itemicon">Are you sure you want to delete:</label>
         <div class="yellowborder">
         <div class="itemicon">
-            <img class="imgicon" src="http://placekitten.com/200/200" alt="icon of selected item">
+            <img class="imgicon" src="" alt="No item selected">
+            <p id = 'hidden'>No item selected</p>
         </div>
         <div class="itemvalues">
             <p class="itemname">Name</p>
@@ -29,10 +30,10 @@
             <p class="itemciv">Civilization</p>
         </div> 
         </div>
-        <button id ='home' class="catalogbutton2 menuoptions"type="submit" class="homebutton">Catalog</button>
-        <button id ='delete' class="catalogbutton2 menuoptions"type="submit" class="deletebutton">Delete</button>
+        <button id ='catalog' class="catalogbutton2 menuoptions"type="button" class="homebutton">Catalog</button>
+        <button id ='delete' class="catalogbutton2 menuoptions"type="button" class="deletebutton">Delete</button>
          <p id = 'successMsg' class="success">Successfully Deleted Item!</p>
-    </form>
+    </div>
     </div>
 </body>
   <script src="/js/deleteitem.js"></script>
