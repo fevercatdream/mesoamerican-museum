@@ -16,7 +16,7 @@ searchInput.addEventListener('change',async(event)=>{
     document.querySelector('.imgicon').src = artwork.image_url
   }catch(err){
     console.log(err)
-    success.innerText = "couldnt find that item"
+    success.innerText = "Couldn't Find That Item"
     success.style.display = "block"
   }
 })

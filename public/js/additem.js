@@ -44,7 +44,7 @@ addbtn.addEventListener('click', async (event) => {
       success.style.display = "block"
       // window.location.href = '/catalogoptions'; // or any other success page
     }else if (response.status === 403){
-      alert('You must be logged in to add an art work to the musuem')
+      alert('You must be an employee to make changes to the museum')
     } 
     else {
       const error = await response.json();
