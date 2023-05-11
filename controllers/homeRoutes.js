@@ -2,8 +2,7 @@ const router = require('express').Router();
 const { Employee, Civ, ArtType, ArtWork, Visitor } = require('../models')
 
 router.get('/', async (req, res) => {
-  
-    res.render('index', {layout:false});
+    res.render('index', {layout:false,logged_in:req.session.logged_in});
   });
 
   router.get('/catalog/:id', async (req, res) => {

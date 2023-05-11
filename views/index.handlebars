@@ -28,9 +28,15 @@
                     <li><a id="mayanav" class="navlink">Maya</a></li>
                     <li><a id="incanav" class="navlink">Inca</a></li>
                     <li><a id="aztecnav" class="navlink">Aztec</a></li>
+                    {{#if logged_in}}
+                    {{!-- <li><a id="modal-login-link" class="login">Login</a></li> --}}
+                    <li><a id="modal-login-link" class="login">Logout</a></li>
+                    {{else}}
                     <li><a id="modal-login-link" class="login">Login</a></li>
+                    {{/if}}
                 </ul>
             </nav>
+            {{#unless logged_in}}
             <dialog class="modal">
                 <form id="modal-body-id" class="loginmodal modal-card-body">
                     <label class="username" for="username">Enter your Username:</label>
@@ -43,6 +49,7 @@
                     <button type="submit" id="modal-submit-btn" class="submitbutton">Login</button>
                 </form>
             </dialog>
+            {{/unless}}
             <div class="museumpara">
                 <h2 class="about">About the Museum</h2>
                 <p class="museumtext">
