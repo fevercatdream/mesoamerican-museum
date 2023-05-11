@@ -105,29 +105,6 @@ router.delete("/:id",(req,res)=>{
 })
 
 router.put("/:id",async(req,res)=>{
-    // if(!req.session.userId){
-    //     return res.status(403).json({msg:"you need to log in first to update an artwork"})
-    // } 
-    // ArtWork.update({
-    //     name:req.body.name,
-    //     artist:req.body.artist,
-    //     image_url:req.body.image_url,
-    //     description:req.body.description,
-    //     date_created:req.body.date_created,
-    //     type_id: req.body.type_id
-    // },{
-    //     where:{
-    //         id:req.params.id
-    //     }
-    // }).then(editWork=>{
-    //     if(!editWork[0]){
-    //         return res.status(404).json({msg:"no art work with this id in database!"})
-    //     }
-    //     res.json(editWork)
-    // }).catch(err=>{
-    //     console.log(err);
-    //     res.status(500).json({msg:"error occurred",err})
-    // })
     if(!req.session.userId){
         return res.status(403).json({msg:"you need to log in first to update an artwork"})
     } 
@@ -173,6 +150,10 @@ router.put("/:id",async(req,res)=>{
           
          }
         )
+        console.log(art2Update[0])
+        if(art2Update[0] == 0){
+            return res.status(404).json({msg:"no art work with this id in database!"})
+        }
          res.json(art2Update)
     }catch(err){
         console.log(err);

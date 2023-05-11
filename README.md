@@ -2,14 +2,14 @@
 
 ## Description
 
-Visitors to the Mesoamerican museum can view the museum collection images with descriptive information about the artifacts.
+Visitors to the Mesoamerican Museum can view the museum collection images with descriptive information about the artifacts.
 
-Employees to the Mesoamerican museum can manage the museum collect by adding, updating, or removing items from the museum collection.
+Employees to the Mesoamerican Museum can manage the museum collection by adding, updating, or removing items from the museum collection.
 
 ### User Story
 
 ```
-AS AN employee at a Mesoamerican museum
+AS AN employee at a Mesoamerican Museum
 I WANT a website with a secure login where I can add, update, or remove artifacts from the museum collection
 SO THAT the museum can maintain and organize its collection of artifacts
 AS A visitor to the museum
@@ -77,8 +77,6 @@ This application uses the following:
 
 [Sequelize](https://sequelize.org/docs/v6/) as a promise-based Node.js ORM tool for MySQL.
 
-[UUID](https://www.npmjs.com/package/uuid) for generating an Universal Unique Identifier.
-
 
 ## Usage
 
@@ -100,13 +98,32 @@ https://mysterious-stream-999999.herokuapp.com/
 
 
 ### Screenshot Desktop View
+![Desktop View Index](./assets/images/desktop-index.png)
+![Desktop View Civ](./assets/images/desktop-civ.png)
+![Desktop View Single Art](./assets/images/desktop-singleart.png)
+![Desktop View Catalogoptions](./assets/images/desktop-catalogoptions.png)
+![Desktop View Add](./assets/images/desktop-additem.png)
+![Desktop View Update](./assets/images/desktop-updateitem.png)
+![Desktop View Delete](./assets/images/desktop-deleteitem.png)
 
 
 ### Screenshot Tablet View
-
+![Tablet View Index](./assets/images/tablet-index.png)
+![Tablet View Civ](./assets/images/tablet-civ.png)
+![Tablet View Single Art](./assets/images/tablet-singleart.png)
+![Tablet View Catalogoptions](./assets/images/tablet-catalogoptions.png)
+![Tablet View Add](./assets/images/tablet-additem.png)
+![Tablet View Update](./assets/images/tablet-updateitem.png)
+![Tablet View Delete](./assets/images/tablet-deleteitem.png)
 
 ### Screenshot Mobile View
-
+![Mobile View Index](./assets/images/mobile-index.png)
+![Mobile View Civ](./assets/images/mobile-civ.png)
+![Mobile View Single Art](./assets/images/mobile-singleart.png)
+![Mobile View Catalogoptions](./assets/images/mobile-catalogoptions.png)
+![Mobile View Add](./assets/images/mobile-additem.png)
+![Mobile View Update](./assets/images/mobile-updateitem.png)
+![Mobile View Delete](./assets/images/mobile-deleteitem.png)
 
 
 ## Credits
@@ -148,8 +165,6 @@ MySQL2: https://www.npmjs.com/package/mysql2
 
 Sequelize: https://sequelize.org/docs/v6/
 
-UUID: https://www.npmjs.com/package/uuid
-
 Splide: https://splidejs.com/
 <br />
 - slider/carousel written in TypeScript
@@ -178,11 +193,15 @@ A Step By Step Guide To Using Handlebars With Your Node js App: https://waelyasm
 
 Express Session Cookie: https://github.com/expressjs/session#cookie
 
+Bootstrap: https://getbootstrap.com/
+<br />
+- social media icons
+
 Canva: https://www.canva.com/
 <br />
 - Canva is a free-to-use online graphic design tool
 
-https://favicon.io/
+Favicon I/O: https://favicon.io/
 <br />
 - favicon generator / converter
 
