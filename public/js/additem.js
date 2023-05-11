@@ -34,6 +34,14 @@ addbtn.addEventListener('click', async (event) => {
   const date_created = document.querySelector('.timeinput').value;
   const typeName = document.querySelector('#item').value;
   const civ = document.querySelector('#civilization').value;
+  console.log(civ)
+  if(!name || !artist || !description || !date_created || typeName==='itemselection' || civ === 'civilizationselection'){
+    success.innerText = "Please fill out the whole form"
+    success.style.display = "block"
+  }else if (!image_url){
+    success.innerText = "Please upload an image"
+    success.style.display = "block"
+  }else{
   const response = await fetch('/api/artWorks', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -41,6 +49,7 @@ addbtn.addEventListener('click', async (event) => {
     });
     console.log(response)
     if (response.ok) {
+      success.innerText = "Successfully added Item!"
       success.style.display = "block"
       // window.location.href = '/catalogoptions'; // or any other success page
     }else if (response.status === 403){
@@ -50,6 +59,7 @@ addbtn.addEventListener('click', async (event) => {
       const error = await response.json();
       alert(error.message);
     }
+  }
   });
 
 const logoutButton = document.getElementById('logout');
@@ -69,13 +79,6 @@ const homeButton = document.getElementById('catalog');
 if (homeButton) {
   homeButton.addEventListener('click', async (event) => {
     event.preventDefault()
-  //   const response = await fetch('/api/logout', { method: 'POST' });
-  //   if (response.ok) {
-  //     window.location.href = '/';
-  //   } else {
-  //     const error = await response.json();
-  //     alert(error.message);
-  //   }
   window.location.href = '/catalogoptions';
   });
 }
