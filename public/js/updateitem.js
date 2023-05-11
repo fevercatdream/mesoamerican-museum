@@ -77,7 +77,7 @@ const updateBtn = document.querySelector('#update')
       }
     });
   }
-const homeButton = document.getElementById('home');
+const homeButton = document.getElementById('catalog');
 if (homeButton) {
   homeButton.addEventListener('click', async (event) => {
     event.preventDefault()
@@ -88,7 +88,7 @@ if (homeButton) {
   //     const error = await response.json();
   //     alert(error.message);
   //   }
-  window.location.href = '/';
+  window.location.href = '/catalogoptions';
   });
 }
 // const updateButton = document.getElementById('update-button');
