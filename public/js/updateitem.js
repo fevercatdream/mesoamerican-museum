@@ -43,12 +43,12 @@ const updateBtn = document.querySelector('#update')
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, artist, image_url, description, date_created, civ, typeName }),
       });
-      success.innerText = "successfully updated item!"
+      success.innerText = "Successfully Updated Item!"
       success.style.display = "block"
 
 
     }catch(err){
-      success.innerText = "couldnt find that item"
+      success.innerText = "Couldn't Find That Item"
       success.style.display = "block"
 
       // if (response.ok) {
