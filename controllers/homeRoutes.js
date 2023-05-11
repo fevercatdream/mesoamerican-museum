@@ -91,21 +91,6 @@ router.get('/', async (req, res) => {
   } 
     res.render('additem', {layout:false});
   });
-  router.get('/olmec', async (req, res) => {
-    res.render('olmec', {layout:false});
-  });
-  router.get('/maya', async (req, res) => {
-  
-    res.render('maya', {layout:false});
-  });
-  router.get('/inca', async (req, res) => {
-  
-    res.render('inca', {layout:false});
-  });
-  router.get('/aztec', async (req, res) => {
-  
-    res.render('aztec', {layout:false});
-  });
   router.get('/catalogoptions', async (req, res) => {
     if(!req.session.isEmployee){
       res.status(403)

@@ -1,5 +1,7 @@
 
 const addbtn = document.querySelector('#add')
+const success = document.querySelector("#successMsg")
+success.style.display = "none"
 let url
 var myWidget = cloudinary.createUploadWidget(
   {
@@ -39,7 +41,8 @@ addbtn.addEventListener('click', async (event) => {
     });
     console.log(response)
     if (response.ok) {
-      window.location.href = '/catalogoptions'; // or any other success page
+      success.style.display = "block"
+      // window.location.href = '/catalogoptions'; // or any other success page
     }else if (response.status === 403){
       alert('You must be logged in to add an art work to the musuem')
     } 
