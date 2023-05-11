@@ -2,8 +2,7 @@ const router = require('express').Router();
 const { Employee, Civ, ArtType, ArtWork, Visitor } = require('../models')
 
 router.get('/', async (req, res) => {
-  
-    res.render('index', {layout:false});
+    res.render('index', {layout:false,logged_in:req.session.logged_in});
   });
 
   router.get('/catalog/:id', async (req, res) => {
@@ -90,21 +89,6 @@ router.get('/', async (req, res) => {
       return res.render('faillogin', {layout:false});
   } 
     res.render('additem', {layout:false});
-  });
-  router.get('/olmec', async (req, res) => {
-    res.render('olmec', {layout:false});
-  });
-  router.get('/maya', async (req, res) => {
-  
-    res.render('maya', {layout:false});
-  });
-  router.get('/inca', async (req, res) => {
-  
-    res.render('inca', {layout:false});
-  });
-  router.get('/aztec', async (req, res) => {
-  
-    res.render('aztec', {layout:false});
   });
   router.get('/catalogoptions', async (req, res) => {
     if(!req.session.isEmployee){

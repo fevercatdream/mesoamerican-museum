@@ -45,6 +45,7 @@ router.post("/login", (req, res) => {
           req.session.userId = foundUse.id;
           req.session.username=foundUse.name;
           req.session.isEmployee = false;
+          req.session.logged_in = true
           return res.json(foundUse);
         } else {
           return res.status(401).json({msg:"invalid username/password"})
