@@ -66,16 +66,18 @@ router.get('/', async (req, res) => {
   });
 
   router.get('/updateitem', async (req, res) => {
-    if(!req.session.userId){
-      return res.status(403).json({msg:"you need to log in first to access the update item page"})
+    if(!req.session.isEmployee){
+      res.status(403)
+      res.render('faillogin', {layout:false});
   } 
     res.render('updateitem', {layout:false});
   });
   router.get('/deleteitem', async (req, res) => {
   
     res.render('deleteitem', {layout:false});
-    if(!req.session.userId){
-      return res.status(403).json({msg:"you need to log in first to access the add item page"})
+    if(!req.session.isEmployee){
+      res.status(403)
+      res.render('faillogin', {layout:false});
   } 
   });
   router.get('/usercollection', async (req, res) => {
@@ -83,13 +85,13 @@ router.get('/', async (req, res) => {
     res.render('usercollection', {layout:false});
   });
   router.get('/additem', async (req, res) => {
-    if(!req.session.userId){
-      return res.status(403).json({msg:"you need to log in first to access the add item page"})
+    if(!req.session.isEmployee){
+      res.status(403)
+      res.render('faillogin', {layout:false});
   } 
     res.render('additem', {layout:false});
   });
   router.get('/olmec', async (req, res) => {
-  
     res.render('olmec', {layout:false});
   });
   router.get('/maya', async (req, res) => {
@@ -105,8 +107,9 @@ router.get('/', async (req, res) => {
     res.render('aztec', {layout:false});
   });
   router.get('/catalogoptions', async (req, res) => {
-    if(!req.session.userId){
-      return res.status(403).json({msg:"you need to log in first to access the catalog options"})
+    if(!req.session.isEmployee){
+       res.status(403)
+       res.render('faillogin', {layout:false});
   } 
     res.render('catalogoptions', {layout:false});
   });

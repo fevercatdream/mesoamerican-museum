@@ -22,11 +22,6 @@ document.getElementById("upload").addEventListener("click",function (e) {
   false
 );
 
-
-
-
-
-
 const updateBtn = document.querySelector('#update')
   update.addEventListener('click', async (event) => {
     event.preventDefault();

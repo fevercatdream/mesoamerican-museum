@@ -43,6 +43,7 @@ router.post("/login", (req, res) => {
         if(bcrypt.compareSync(req.body.password,foundMus.password)){
           req.session.userId = foundMus.id;
           req.session.musName=foundMus.name;
+          req.session.isEmployee = true;
           return res.json(foundMus);
         } else {
           return res.status(401).json({msg:"invalid username/password"})
