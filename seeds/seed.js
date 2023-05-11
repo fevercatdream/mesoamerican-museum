@@ -274,7 +274,7 @@ const works = [
     {  
         "name": "Olmec Stone Wrestler",
         "artist": "Unknown",
-        "image_url": "http://placekitten.com/200/200",
+        "image_url": "https://res.cloudinary.com/ds1psny5l/image/upload/v1683776731/Olmec_Stone__Wrestler___Veracruz__Protoclassic__600-100_BC__66cm_qqfuum.jpg",
         "description": "The Wrestler is a basalt statuette dating back to between 1500 BCE and 400 BCE, which some believe to be one of the most important sculptures of the Olmec culture. The near life-size figure has been praised not only for its realism and sense of energy, but also for its aesthetic qualities.",
         "date_created": "600-100 BC",
         "type_id": 7,
@@ -328,7 +328,7 @@ const works = [
     {  
         "name": "The Red Palace in San Lorenzo",
         "artist": "Unknown",
-        "image_url": "https://res.cloudinary.com/ds1psny5l/image/upload/v1683778230/The_Olmec__Red_Palace__in_San_Lorenzo.webp_zsd5oz.png",
+        "image_url": "https://res.cloudinary.com/ds1psny5l/image/upload/v1683825473/The_Olmec__Red_Palace__in_San_Lorenzo.webp_degeei.png",
         "description": "Ten colossal stone heads representing heads of past and present rulers have been found at San Lorenzo. Evidence suggests that these heads were plastered and painted in bright colors. They were arranged in ensembles and set in a plaza paved with red sand and yellow gravel.",
         "date_created": "1200-900 BC",
         "type_id": 9,
