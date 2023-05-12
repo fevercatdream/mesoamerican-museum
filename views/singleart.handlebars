@@ -26,13 +26,13 @@
             <h3>Item Description</h3>
             <p class="itemtext">{{work.description}}</p>
             <div class="likebox">
-                <img class="likeicon" src="/icons/heart_icon.jpeg">
-                <p class="likecounter">1647 Likes</p>
+                <img data-artworkID = "{{work.id}}" class="likeicon" src="/icons/heart_icon.jpeg">
+                <p class="likecounter">{{work.num_likes}} Likes</p>
             </div>
         </div>
     </main>
-    <script src="/js/index.js"></script>
-        {{> footer}}
+        {{>footer}}
     </body>
     <script src="/js/singleart.js"></script>
+    <script src="/js/likes.js"></script>
 </html>

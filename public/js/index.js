@@ -3,6 +3,7 @@
 const modalEl = document.querySelector(".modal");
 const modalLoginLink = document.querySelector("#modal-login-link");
 const loginLogoutBtn = document.querySelector('.login')
+console.log(loginLogoutBtn)
 
 // function to show modal
     function openModal() {
