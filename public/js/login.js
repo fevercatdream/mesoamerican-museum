@@ -1,7 +1,7 @@
 const loginForm = document.getElementById('login-form');
-var modalCreateAccountBtn = document.querySelector("#modal-create-account-btn");
-var modalCreateMusAccountBtn = document.querySelector("#modal-em-login-link");
-const loginLogout = document.querySelector('.login')
+const modalVisitorCreateAccountBtn = document.querySelector("#modal-create-account-btn");
+const modalEmCreateMusAccountBtn = document.querySelector("#modal-em-login-link");
+const loginLogout = document.querySelectorAll('.login')
 
 if (loginLogout.innerHTML == 'Logout'){
   loginLogout.addEventListener('click', async function(e){

@@ -12,13 +12,10 @@ const loginLogoutBtn = document.querySelector('.login')
 
 
 // function to show modal
-
     function openModal() {
     //   modalEl.classList.add("is-active");
         modalEl.showModal();
     }
-
-
 
 // function to close modal
 function closeModal(event) {
