@@ -1,3 +1,4 @@
+{
 const mayaBtn = document.getElementById("mayaicon");
 const olmecBtn = document.getElementById("olmecicon");
 const incaBtn = document.getElementById("incaicon");
@@ -34,3 +35,4 @@ mayaNav.addEventListener('click', getMayaCatalog)
 olmecNav.addEventListener('click', getOlmecCatalog)
 incaNav.addEventListener('click', getIncaCatalog)
 aztecNav.addEventListener('click', getAztecCatalog)
+}
