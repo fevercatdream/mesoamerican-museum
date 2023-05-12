@@ -1,7 +1,7 @@
-const loginForm = document.getElementById('login-form');
-const modalVisitorCreateAccountBtn = document.querySelector("#modal-create-account-btn");
-const modalEmCreateMusAccountBtn = document.querySelector("#modal-em-login-link");
-const loginLogout = document.querySelectorAll('.login')
+{
+const modalCreateAccountBtn = document.querySelector("#modal-create-account-btn");
+const modalSubmitBtn = document.querySelector("#modal-submit-btn");
+const loginLogout = document.querySelector('.login');
 
 if (loginLogout.innerHTML == 'Logout'){
   loginLogout.addEventListener('click', async function(e){
@@ -87,3 +87,4 @@ modalCreateAccountBtn.addEventListener("click", async function (event) {
     }
   }
 })};
+}
