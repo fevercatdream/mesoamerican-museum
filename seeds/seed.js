@@ -98,7 +98,8 @@ const works = [
         "description": "This is a stone panel excavated from the ancient city of Cancuén in what is now present day Guatemala. It depicts their ruler Tajal Chan Ahk. Cancuén had one of the largest palaces in the Mayan World and reached its peak in the 7th century.",
         "date_created": "7th Century",
         "type_id": 1,
-        "artTypeId": 1
+        "artTypeId": 1,
+        "num_likes":99999
     },
     {  
         "name": "Copan Stela",

@@ -29,19 +29,18 @@ Artwork.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-
     num_likes: {
       type: DataTypes.INTEGER,
-      defaultValue:
-  },
+      defaultValue: 0
+    }
+},
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
     modelName: 'artwork',
-  }
-);
+  });
 
 // This creates the table in the database
 // Artwork.sync({ force: false });
