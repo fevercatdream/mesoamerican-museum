@@ -259,7 +259,7 @@ h3 {
 .theolmecs, .themayans, .theincans, .theaztecs {
     position: absolute;
     color: var(--textColor);
-    width: 25%;
+    width: 22%;
     height: fit-content;
     margin-left: 28%;
     margin-top: -14.5%;
@@ -273,18 +273,18 @@ h3 {
 }
 
 .themayans {
-    margin-left: 47%;
+    margin-left: 50%;
     margin-top: -14.5%;
 }
 
 .theincans {
     width: 20%;
-    margin-left: 68%;
+    margin-left: 69%;
     margin-top: 3.5%;
 }
 
 .theaztecs {
-    margin-left: 47%;
+    margin-left: 50%;
     margin-top: -14.5%;
 }
 
