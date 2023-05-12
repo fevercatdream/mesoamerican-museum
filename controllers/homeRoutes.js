@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Employee, Civ, ArtType, ArtWork, Visitor } = require('../models')
 
+
 router.get('/', async (req, res) => {
     res.render('index', {layout:false,logged_in:req.session.logged_in});
   });
@@ -63,7 +64,7 @@ router.get('/', async (req, res) => {
     }
    
   });
-
+  
   router.get('/updateitem', async (req, res) => {
     if(!req.session.isEmployee){
       res.status(403)
@@ -101,7 +102,7 @@ router.get('/', async (req, res) => {
   router.get('/notloggedin', async (req, res) => {
     res.render('faillogin', {layout:false});
   });
-
+  
 
 
 
