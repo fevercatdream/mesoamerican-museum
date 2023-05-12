@@ -14,7 +14,7 @@ body {
     height: fit-content;
 }
 
-.collectionh1{
+.collectionh1 {
     color: var(--textColor);
     margin-left: 10%;
     margin-top: 3%;
@@ -156,6 +156,8 @@ h4 {
 .footerlinks {
     margin: 1%;
     margin-top: -1%;
+    font-size: 1.2rem;
+    color: white
 }
 
 .footerlinks:hover {

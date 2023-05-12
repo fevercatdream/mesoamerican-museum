@@ -14,7 +14,7 @@
     <header>
         <img class="headerimage" src="./icons/tenochtitlan2.jpg" alt="arial view of the Palenque ruins">
         <img class="headermobile" src="./icons/tenochtitlan3.jpg" alt="arial view of the Palenque ruins">
-        <img class="museumicon" src="./icons/MAMicon.jpeg" alt="icon of the museum">
+        <a href="/"><img class="museumicon" src="./icons/MAMicon.jpeg" alt="icon of the museum"></a>
         <div class="headbar"></div>
         <div class="backgroundbar"></div>
         <div class="backgroundbar2"></div>
@@ -42,9 +42,9 @@
                     <label class="username" for="username">Enter your Username:</label>
                     <input title="username" type="text" name="username" placeholder="Username"><br>
                     <label class="password" for="password">Enter your Password:</label>
-                    <input title="password" type="text" name="password" placeholder="Password">
-                    <input type="checkbox" id="employeeLogin" name="employee" value="isEmployee">
-                    <label for="employeeLogin">employee</label><br>
+                    <input title="password" type="password" name="password" placeholder="Password">
+                    <label for="employeeLogin">Employee Account</label>
+                    <input type="checkbox" id="employeeLogin" name="employee" value="isEmployee" class="checkbox">
                     <button type="submit" id="modal-create-account-btn" class="createbutton">Create Account</button>
                     <button type="submit" id="modal-submit-btn" class="submitbutton">Login</button>
                 </form>

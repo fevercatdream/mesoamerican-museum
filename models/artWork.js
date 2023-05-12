@@ -29,11 +29,10 @@ Artwork.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    artworkLike: {
-      type: DataTypes.INTEGER,
-      defaultValue: 0,
-    }
 
+    num_likes: {
+      type: DataTypes.INTEGER,
+      defaultValue:
   },
   {
     sequelize,

@@ -36,32 +36,27 @@ const updateBtn = document.querySelector('#update')
     const date_created = document.querySelector('.timeinput').value;
     const typeName = document.querySelector('#item').value;
     const civ = document.querySelector('#civilization').value;
-
-    try{
+    if(!name || !artist || !description || !date_created || typeName==='itemselection' || civ === 'civilizationselection'){
+      success.innerText = "Please fill out the whole form"
+      success.style.display = "block"
+    }else if (!image_url){
+      success.innerText = "Please upload an image"
+      success.style.display = "block"
+    }else{
       const response = await fetch(`/api/artWorks/${artworkId}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, artist, image_url, description, date_created, civ, typeName }),
       });
-      success.innerText = "successfully updated item!"
-      success.style.display = "block"
-
-
-    }catch(err){
-      success.innerText = "couldnt find that item"
-      success.style.display = "block"
-
-      // if (response.ok) {
-      //   success.style.display = "block"
-      //   // window.location.href = '/catalogoptions'; // or any other success page
-      // } else {
-      //   const error = await response.json();
-      //   alert(error.message);
-      // }
-      console.log(err)
-
-
+      if(response.ok){
+        success.innerText = "Successfully Updated Item!"
+        success.style.display = "block"
+      }else{
+        success.innerText = "Couldn't Find That Item"
+        success.style.display = "block"
+      }
     }
+    
   });
 
   const logoutButton = document.getElementById('logout');
@@ -77,29 +72,10 @@ const updateBtn = document.querySelector('#update')
       }
     });
   }
-const homeButton = document.getElementById('home');
+const homeButton = document.getElementById('catalog');
 if (homeButton) {
   homeButton.addEventListener('click', async (event) => {
     event.preventDefault()
-  //   const response = await fetch('/api/logout', { method: 'POST' });
-  //   if (response.ok) {
-  //     window.location.href = '/';
-  //   } else {
-  //     const error = await response.json();
-  //     alert(error.message);
-  //   }
-  window.location.href = '/';
+  window.location.href = '/catalogoptions';
   });
 }
-// const updateButton = document.getElementById('update-button');
-// if (updateButton) {
-//   updateButton.addEventListener('click', async () => {
-//     const response = await fetch('/api/logout', { method: 'POST' });
-//     if (response.ok) {
-//       window.location.href = '/';
-//     } else {
-//       const error = await response.json();
-//       alert(error.message);
-//     }
-//   });
-// }

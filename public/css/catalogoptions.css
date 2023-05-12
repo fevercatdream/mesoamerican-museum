@@ -29,7 +29,7 @@ body{
     background-color: rgb(46, 46, 53);
     border: 3px solid var(--borderColor);
     width: 500px;
-    height: 300px;
+    height: 400px;
     border-radius: 10px;
     display: flex;
     flex-direction: row;

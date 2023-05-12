@@ -38,7 +38,7 @@ h1 {
     display: none;
 }
 
-.museumicon {
+.museumicon, .typeImage {
     border-radius: 50%;
     position: absolute;
     margin-top: 5%;
@@ -103,7 +103,7 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
     color: var(--textColor);
     box-shadow: 8px 8px 20px rgb(15, 15, 15);
@@ -117,6 +117,10 @@ input {
     width: 90%;
     margin-top: 7%;
     margin-bottom: 7%;
+}
+
+.checkbox {
+    width: 30%;
 }
 
 .createbutton, .submitbutton {
@@ -255,7 +259,7 @@ h3 {
 .theolmecs, .themayans, .theincans, .theaztecs {
     position: absolute;
     color: var(--textColor);
-    width: 25%;
+    width: 22%;
     height: fit-content;
     margin-left: 28%;
     margin-top: -14.5%;
@@ -269,18 +273,18 @@ h3 {
 }
 
 .themayans {
-    margin-left: 47%;
+    margin-left: 50%;
     margin-top: -14.5%;
 }
 
 .theincans {
     width: 20%;
-    margin-left: 68%;
+    margin-left: 69%;
     margin-top: 3.5%;
 }
 
 .theaztecs {
-    margin-left: 47%;
+    margin-left: 50%;
     margin-top: -14.5%;
 }
 

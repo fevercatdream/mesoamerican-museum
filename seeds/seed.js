@@ -9,25 +9,25 @@ const employees = [
 ]
 const civs = [
     {
-        name: "Mayan",
+        name: "Mayan Civilization",
         time_period:1200,
         museumId: 1
     
     },
     {
-        name: "Inca",
+        name: "Inca Civilization",
         time_period:1300,
         museumId: 1
     
     },
     {
-        name: "Olmec",
+        name: "Olmec Civilization",
         time_period:1500,
         museumId: 1
     
     },
     {
-        name: "Aztec",
+        name: "Aztec Civilization",
         time_period:1700,
         museumId: 1
     
@@ -119,6 +119,24 @@ const works = [
         "artTypeId": 1
     },
     {  
+        "name": "Mayan Skull",
+        "artist": "test artist",
+        "image_url": "https://res.cloudinary.com/ds1psny5l/image/upload/v1683840616/Mayan_skull_front_p2_mqmuer.jpg",
+        "description": "This wood carving is one of few examples that have survived as most were destroyed by Spanish Colonialists. This statue depicts a dignified seated man that has possibly been functioning as a mirror bearer.",
+        "date_created": "6th Century",
+        "type_id": 1,
+        "artTypeId": 1
+    },
+    {  
+        "name": "Mayan Revival Relief",
+        "artist": "test artist",
+        "image_url": "https://res.cloudinary.com/ds1psny5l/image/upload/v1683840850/Mayan_Revival_relief_1_fu3k8z.jpg",
+        "description": "This wood carving is one of few examples that have survived as most were destroyed by Spanish Colonialists. This statue depicts a dignified seated man that has possibly been functioning as a mirror bearer.",
+        "date_created": "6th Century",
+        "type_id": 1,
+        "artTypeId": 1
+    },
+    {  
         "name": "Flower-shaped Jadeite Earflares",
         "artist": "Unknown",
         "image_url": "https://res.cloudinary.com/ds1psny5l/image/upload/v1683752976/Mesoart/1024px-Flower-Shaped_Earflares_LACMA_M.2007.85.1-.2_1_u4cqee.jpg",
@@ -146,6 +164,24 @@ const works = [
         "artTypeId": 2
     },
     {  
+        "name": "Mayan Necklace",
+        "artist": "Unknown",
+        "image_url": "https://res.cloudinary.com/ds1psny5l/image/upload/v1683840989/Necklace_-_Meta_Overbeck__27770427469_ty1hk8.jpg",
+        "description": 'This mask was created as a funerary mask for a Palenque Queen also known as the "Red Queen". It is made from jade plaques and the green colors stand for life renovation. Also noteable are the inlaid pieces of malachite.',
+        "date_created": "7th Century",
+        "type_id": 2,
+        "artTypeId": 2
+    },
+    {  
+        "name": "Jade Ear Disc",
+        "artist": "Unknown",
+        "image_url": "https://res.cloudinary.com/ds1psny5l/image/upload/v1683841176/WLA_lacma_jadeite_ear_disks_sqwdvi.jpg",
+        "description": 'This mask was created as a funerary mask for a Palenque Queen also known as the "Red Queen". It is made from jade plaques and the green colors stand for life renovation. Also noteable are the inlaid pieces of malachite.',
+        "date_created": "7th Century",
+        "type_id": 2,
+        "artTypeId": 2
+    },
+    {  
         "name": "Tikal Temple",
         "artist": "Unknown",
         "image_url": "https://res.cloudinary.com/ds1psny5l/image/upload/v1683754094/Mesoart/Tikal_Temple_II_n0rcjb.jpg",
@@ -167,6 +203,24 @@ const works = [
         "name": "Copan Ball Court",
         "artist": "Unknown",
         "image_url": "https://res.cloudinary.com/ds1psny5l/image/upload/v1683754093/Mesoart/1024px-Cop%C3%A1n_Ballcourt_fibicx.jpg",
+        "description": "This ball court is a large masonry structure where Mesoamericans played hip-ball. The shape is identified as a long narrow alley flanked by two horrizontal walls with sloping faces. They were used for functions other than ballgames, like wrestling matches and feasts.",
+        "date_created": "426-822 CE",
+        "type_id": 3,
+        "artTypeId": 3
+    },
+    {  
+        "name": "Mayan Wall Detail",
+        "artist": "Unknown",
+        "image_url": "https://res.cloudinary.com/ds1psny5l/image/upload/v1683841292/Aurora_detail_Mayan_Archit_2008_m0sag7.jpg",
+        "description": "This ball court is a large masonry structure where Mesoamericans played hip-ball. The shape is identified as a long narrow alley flanked by two horrizontal walls with sloping faces. They were used for functions other than ballgames, like wrestling matches and feasts.",
+        "date_created": "426-822 CE",
+        "type_id": 3,
+        "artTypeId": 3
+    },
+    {  
+        "name": "Mayan Crested Temple",
+        "artist": "Unknown",
+        "image_url": "https://res.cloudinary.com/ds1psny5l/image/upload/v1683841391/800px-Mayan_crested_temple_vjtm0i.jpg",
         "description": "This ball court is a large masonry structure where Mesoamericans played hip-ball. The shape is identified as a long narrow alley flanked by two horrizontal walls with sloping faces. They were used for functions other than ballgames, like wrestling matches and feasts.",
         "date_created": "426-822 CE",
         "type_id": 3,
