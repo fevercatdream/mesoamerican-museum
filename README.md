@@ -85,44 +85,66 @@ To maintain a museum collection of artifacts in a database using a CRUD (create,
 ### Deployed Site
 https://mysterious-stream-999999.herokuapp.com/
 
+
 ### ERD
 ![ERD](./assets/images/erd.png)
 
 
 ### Wireframe
+wireframe index catalog civart singleart
 ![wireframe index catalog civart singleart](./assets/images/wireframe-index-catalog-civart-singleart.png)
-
+wireframe add update delete
 ![wireframe add update delete](./assets/images/wireframe-add-update-delete.png)
-
+wireframe login modal
 ![wireframe login modal](./assets/images/wireframe-login-modal.png)
 
 
 ### Screenshot Desktop View
+Desktop View Index
 ![Desktop View Index](./assets/images/desktop-index.png)
+Desktop View Civ
 ![Desktop View Civ](./assets/images/desktop-civ.png)
+Desktop View Single Art
 ![Desktop View Single Art](./assets/images/desktop-singleart.png)
-![Desktop View Catalogoptions](./assets/images/desktop-catalogoptions.png)
+Desktop View Catalog Options
+![Desktop View Catalog Options](./assets/images/desktop-catalogoptions.png)
+Desktop View Add
 ![Desktop View Add](./assets/images/desktop-additem.png)
+Desktop View Update
 ![Desktop View Update](./assets/images/desktop-updateitem.png)
+Desktop View Delete
 ![Desktop View Delete](./assets/images/desktop-deleteitem.png)
 
-
 ### Screenshot Tablet View
+Tablet View Index
 ![Tablet View Index](./assets/images/tablet-index.png)
+Tablet View Civ
 ![Tablet View Civ](./assets/images/tablet-civ.png)
+Tablet View Single Art
 ![Tablet View Single Art](./assets/images/tablet-singleart.png)
-![Tablet View Catalogoptions](./assets/images/tablet-catalogoptions.png)
+Tablet View Catalog Options
+![Tablet View Catalog Options](./assets/images/tablet-catalogoptions.png)
+Tablet View Add
 ![Tablet View Add](./assets/images/tablet-additem.png)
+Tablet View Update
 ![Tablet View Update](./assets/images/tablet-updateitem.png)
+Tablet View Delete
 ![Tablet View Delete](./assets/images/tablet-deleteitem.png)
 
 ### Screenshot Mobile View
+Mobile View Index
 ![Mobile View Index](./assets/images/mobile-index.png)
+Mobile View Civ
 ![Mobile View Civ](./assets/images/mobile-civ.png)
+Mobile View Single Art
 ![Mobile View Single Art](./assets/images/mobile-singleart.png)
-![Mobile View Catalogoptions](./assets/images/mobile-catalogoptions.png)
+Mobile View Catalog Options
+![Mobile View Catalog Options](./assets/images/mobile-catalogoptions.png)
+Mobile View Add
 ![Mobile View Add](./assets/images/mobile-additem.png)
+Mobile View Update
 ![Mobile View Update](./assets/images/mobile-updateitem.png)
+Mobile View Delete
 ![Mobile View Delete](./assets/images/mobile-deleteitem.png)
 
 

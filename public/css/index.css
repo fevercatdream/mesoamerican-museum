@@ -38,7 +38,7 @@ h1 {
     display: none;
 }
 
-.museumicon {
+.museumicon, .typeImage {
     border-radius: 50%;
     position: absolute;
     margin-top: 5%;
