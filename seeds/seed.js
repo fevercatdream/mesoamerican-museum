@@ -9,25 +9,25 @@ const employees = [
 ]
 const civs = [
     {
-        name: "Mayan",
+        name: "Mayan Civilization",
         time_period:1200,
         museumId: 1
     
     },
     {
-        name: "Inca",
+        name: "Inca Civilization",
         time_period:1300,
         museumId: 1
     
     },
     {
-        name: "Olmec",
+        name: "Olmec Civilization",
         time_period:1500,
         museumId: 1
     
     },
     {
-        name: "Aztec",
+        name: "Aztec Civilization",
         time_period:1700,
         museumId: 1
     
