@@ -10,6 +10,10 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    height: 60vh;
+}
+
 .collectionh1{
     color: var(--textColor);
     margin-left: 14%;
@@ -125,9 +129,8 @@ h3{
 }
 
 .footer {
-    position: absolute;
     height: 10px;
-    bottom: 0px;
+    margin-top: 95vh;
     width: 99%;
     padding-right: 2%;
     z-index: -1;
